@@ -7,44 +7,36 @@ on:
 
 
 jobs:
-    sync_latest_from_upstream:
-      runs-on: ubuntu-latest
-      name: Sync latest commits from upstream repo  
-      steps:
-      - name: Checkout target repo
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-          token: ${{ secrets.GH_TOKEN }}
-          persist-credentials: false
-      # - name: Sync upstream changes
-      #   id: sync
-      #   uses: aormsby/Fork-Sync-With-Upstream-action@v3.4
-      #   with:
-      #       target_sync_branch: develop
-      #       # REQUIRED 'target_repo_token' exactly like this!
-      #       target_repo_token: ${{ secrets.GH_TOKEN }}
-      #       upstream_sync_branch: develop
-      #       upstream_sync_repo: YoYoGames/GameMaker-Manual
-      #       upstream_repo_access_token: ${{ secrets.GH_TOKEN }} 
-      #       git_config_user: ksuchitra532 
-      #       git_config_email: null
-      #       git_config_pull_rebase: true      
-      # - name: Sync upstream changes
-      #   id: sync-lts
-      #   uses: aormsby/Fork-Sync-With-Upstream-action@v3.4
-      #   with:
-      #         target_sync_branch: main-lts
-      #         # REQUIRED 'target_repo_token' exactly like this!
-      #         target_repo_token: ${{ secrets.GH_TOKEN }}
-      #         upstream_sync_branch: main-lts
-      #         upstream_sync_repo: YoYoGames/GameMaker-Manual
-      #         upstream_repo_access_token: ${{ secrets.GH_TOKEN }}    
-      - name: GitHub Sync to Upstream Repository
-        uses: rovast/sync-upstream-repo@v0.0.1
-        with: 
-          upstream_repo: https://github.com/YoYoGames/GameMaker-Manual # change this
-          upstream_branch: develop # change this
-          downstream_branch: develop # change this
-          token: ${{ secrets.GH_TOKEN }}
-
+  sync_latest_from_upstream:
+    runs-on: ubuntu-latest
+    name: Sync latest commits from upstream repo  
+    steps:
+    - name: Checkout target repo
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+        token: ${{ secrets.GH_TOKEN }}
+        persist-credentials: false
+    - name: Sync upstream changes
+      id: sync
+      uses: aormsby/Fork-Sync-With-Upstream-action@v3.4
+      with:
+          target_sync_branch: develop
+          # REQUIRED 'target_repo_token' exactly like this!
+          target_repo_token: ${{ secrets.GH_TOKEN }}
+          upstream_sync_branch: develop
+          upstream_sync_repo: YoYoGames/GameMaker-Manual
+          upstream_repo_access_token: ${{ secrets.GH_TOKEN }} 
+          git_config_user: ksuchitra532 
+          git_config_email: null
+          git_config_pull_rebase: true      
+    - name: Sync upstream changes
+      id: sync-lts
+      uses: aormsby/Fork-Sync-With-Upstream-action@v3.4
+      with:
+            target_sync_branch: main-lts
+            # REQUIRED 'target_repo_token' exactly like this!
+            target_repo_token: ${{ secrets.GH_TOKEN }}
+            upstream_sync_branch: main-lts
+            upstream_sync_repo: YoYoGames/GameMaker-Manual
+            upstream_repo_access_token: ${{ secrets.GH_TOKEN }}              
