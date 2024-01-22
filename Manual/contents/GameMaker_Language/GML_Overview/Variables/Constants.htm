@@ -36,7 +36,7 @@
   <p>Você poderia então usar isto em seu código desta maneira:</p>
   <p class="code">pos++;<br />
     <br />
-    if (pos &gt;= total_weapons)<br />
+    if (pos &gt;= TOTAL_WEAPONS)<br />
     {<br />
         pos = 0;<br />
     }
@@ -62,38 +62,38 @@
   <p>Um enumero é um &quot;enumerador&quot;, e permite essencialmente criar seu próprio tipo de dados limitado com uma lista de valores constantes, e eles têm a seguinte estrutura:</p>
   <p class="code">enum <i>&lt;variable&gt;</i><br />
     {<br />
-    <i>    &lt;constant&gt;</i> [= <i>&lt;value&gt;</i>],<br />
-    <i>    &lt;constant&gt;</i> [= <i>&lt;value&gt;</i>],<br />
+    <i>    &lt;MEMBER&gt;</i> [= <i>&lt;VALUE&gt;</i>],<br />
+    <i>    &lt;<i>MEMBER</i>&gt;</i> [= <i>&lt;<i>VALUE</i>&gt;</i>],<br />
         // etc...<br />
     }
   </p>
   <p>No exemplo a seguir, criamos um enumero para as cores do arco-íris e lhe atribuímos várias constantes e valores padrão:</p>
   <p class="code">enum rainbowcolours<br />
     {<br />
-        red,<br />
-        orange,<br />
-        yellow,<br />
-        green,<br />
-        blue,<br />
-        indigo,<br />
-        violet<br />
+        RED,<br />
+        ORANGE,<br />
+        YELLOW,<br />
+        GREEN,<br />
+        BLUE,<br />
+        INDIGO,<br />
+        VIOLET<br />
     }</p>
   <p>As entradas de enumeração só podem ser <b>números inteiros</b> ou <b><span class="glossextra">expressões</span></b> com enumeração anterior que avaliam para um número inteiro, e por padrão são numeradas de 0 para cima, de modo que nosso exemplo dado acima seria o padrão para <span class="inline">red = 0</span>, <span class="inline">orange = 1</span>, <span class="inline">yellow = 2</span>, etc...</p>
   <p>Você também pode atribuir valores às variáveis do enumero no momento da criação:</p>
   <p class="code">enum enum_test<br />
     {<br />
-        val = 10;<br />
+        VAL = 10<br />
     }<br />
     <br />
-    enum rainbowcolours<br />
+    enum RAINBOW<br />
     {<br />
-        red = 5,<br />
-        orange = 5 * 2,<br />
-        yellow = 15,<br />
-        green = 20,<br />
-        blue = 25,<br />
-        indigo = 30,<br />
-        violet = 35 * enum_test.val<br />
+        RED = 5,<br />
+        ORANGE = 5 * 2,<br />
+        YELLOW = 15,<br />
+        GREEN = 20,<br />
+        BLUE = 25,<br />
+        INDIGO = 30,<br />
+        VIOLET = 35 * ENUM_TEST.VAL<br />
     }
   </p>
   <p>Observe no exemplo acima que usamos outro enumero para criar uma expressão para &quot;violeta&quot;. Isto só funciona se o enum a ser referenciado foi criado <i>antes do</i> enum que o está usando em uma expressão, mas não funcionará para variáveis ou funções, uma vez que o valor do enum deve poder ser avaliado como uma constante quando o projeto estiver <a class="glossterm" data-glossterm="Compilação" href="#">Compilando</a>. Observe também que todos os valores de enumeração são avaliados para valores <b>inteiros</b>, e quando você cria seus próprios valores, você deve estar ciente de que <i>somente valores inteiros são permitidos</i> para que os enumeros funcionem. Este valor pode ser qualquer número inteiro que um número de precisão duplo de ponto flutuante possa representar, inclusive valores negativos.</p>

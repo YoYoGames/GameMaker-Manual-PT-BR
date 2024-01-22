@@ -40,7 +40,7 @@
   <p>No código acima para o Exemplo 1, há um <a href="../GML_Reference/Asset_Management/Instances/instance_exists.htm"><span class="inline">instance_exists()</span></a> chamada no bloco de código. Isto porque a utilização do método de ponto para acessar ou alterar outro valor de instâncias dará um erro e travará o jogo se a instância não existir, e há a possibilidade de que este seja o caso neste exemplo. Entretanto, não precisamos da verificação nos exemplos 2 e 3 porque <i>sabemos</i> que a instância está lá, já que no exemplo 2 a criamos, e no exemplo 3, é a outra instância em um evento de colisão. Entretanto, se houver <i>qualquer</i> possibilidade de que a instância possa ser destruída, desativada ou de outra forma removida do <span class="notranslate">room</span> enquanto estiver usando este método, você deve <i>sempre</i> verificar antes usando a função <span class="inline">instance_exists()</span> ou a função <a href="../GML_Reference/Asset_Management/Instances/instance_number.htm"><span class="inline">instance_number()</span></a> função.</p>
   <p>Observe que você não pode usar a <a href="Instance_Keywords.htm">palavra-chave</a> especial &quot;<span class="inline">all</span>&quot; com este método para direcionar todas as instâncias (por exemplo: <span class="inline">all.val = 10</span> daria um erro), mas você <i>pode</i> usar as palavras-chave &quot;<span class="inline">other</span>&quot; e &quot;<span class="inline">self</span>&quot; sem problemas. Por exemplo, usando <span class="inline">other</span> em um <a href="../../The_Asset_Editors/Object_Properties/Object_Events.htm">evento de colisão</a>:</p>
   <p class="code">// Example 3 other.hp -= 10;<br />
-    if other.hp &lt;= 0<br />
+    if (other.hp &lt;= 0)<br />
     {<br />
         other.sprite_index = spr_E_Dead;<br />
     }</p>
@@ -51,8 +51,8 @@
     <br />
     //or<br />
     <br />
-    var inst = instance_nearest(x, y, obj);<br />
-    inst.speed = 0;
+    var _inst = instance_nearest(x, y, obj);<br />
+    _inst.speed = 0;
   </p>
   <p>Todas estas são formas perfeitamente válidas de ler, alterar e definir variáveis em outras instâncias, e funcionam porque o ponto é realmente um <i>operador</i>. Ele toma um valor como <a class="glossterm" data-glossterm="operand" href="#">operando</a> da esquerda e uma variável como operando da direita, e retorna o endereço desta variável em particular na <span class="notranslate">object</span> ou instância indicada. Todos os nomes <span class="notranslate">object</span>, constantes, IDs etc... representam simplesmente valores e estes podem ser tratados como qualquer outro valor.</p>
   <p>A outra maneira de fazer referência a variáveis em outro caso é usar a função <span class="notranslate">GameMaker Language</span> <span class="inline">with()</span> , que é discutida em detalhes <a href="Language_Features/with.htm">aqui</a>:</p>
