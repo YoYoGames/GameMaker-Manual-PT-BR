@@ -75,7 +75,7 @@
     inst = collision_rectangle(50, 50, 200, 100, obj_Ball, false, true);<br />
     if inst != noone<br />
     {<br />
-        with (inst) instance_destroy();<br />
+        instance_destroy(inst);<br />
     }</p>
   <p>Este código curto usa a verificação do ângulo de colisão_reta angular uma área no <span class="notranslate">room</span> de 50x, 50y (parte superior esquerda do retângulo) a 200x, 200y (parte inferior direita do retângulo) para uma instância de um <span class="notranslate">object</span> chamado &quot;obj_ball&quot;. Ele armazena o valor de retorno em uma variável temporária que é então verificada para ver se esse valor é um id de instância, ou a palavra-chave <a href="../../../GML_Overview/Instance_Keywords.htm"><b>noone</b></a>. Se <i>não</i> for <b>ninguém</b>, então usa a identificação da instância armazenada para destruir o <span class="notranslate">object</span>.</p>
   <p> </p>
