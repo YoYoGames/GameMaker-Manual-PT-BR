@@ -45,7 +45,7 @@
   <p class="code">xboxlive_achievement_load_friends();</p>
   <p>Isto enviará um pedido de informações sobre os amigos usuários e gerará uma chamada assíncrona de retorno com o mapa especial <span class="inline">async_load</span> DS contendo os seguintes dados:</p>
   <p class="code">var ident = ds_map_find_value(async_load, &quot;id&quot;);<br />
-    if ident == xboxlive_achievement_friends_info<br />
+    if (ident == xboxlive_achievement_friends_info) <br />
     {<br />
         var numfriends = ds_map_find_value(async_load, &quot;numfriends&quot;);<br />
         global.numfriends = numfriends;<br />
