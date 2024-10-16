@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>http_get_file</title>
-  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <meta name="generator" content="Adobe RoboHelp 2022" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
@@ -62,14 +62,14 @@
   <p>O código acima solicitará um arquivo da URL dada e o definirá para ser baixado para a área de armazenamento local (como especificado nas Opções de Jogo HTML5), em um diretório &quot;Downloads&quot; com o nome do arquivo dado (isto não precisa ser o mesmo que o nome do arquivo fonte, mas deve usar o mesmo arquivo <span class="notranslate">extension</span>). O índice do mapa <span class="inline">async_load</span> será armazenado na variável &quot;file&quot; para que você possa verificar se o retorno de chamada está correto no Evento Assíncrono, e se o diretório de salvamento não existir, ele será criado. O Evento Assíncrono acionado seria o subevento <b>HTTP</b>, e nesse evento você teria algo como o seguinte:</p>
   <p class="code">if ds_map_find_value(async_load, &quot;id&quot;) == file<br />
     {<br />
-        var status = ds_map_find_value(async_load, &quot;status&quot;);<br />
-        if (status == 0) <br />
+        var _status = async_load[? &quot;status&quot;];<br />
+        if (_status == 0)<br />
         {<br />
-            var path = ds_map_find_value(async_load, &quot;result&quot;);<br />
-            var files = zip_unzip(path, &quot;/NewContent/&quot;);<br />
-            if (files &gt; 0) <br />
+            var _path = async_load[? &quot;result&quot;];<br />
+            var _files = zip_unzip(path, &quot;/NewContent/&quot;);<br />
+            if (_files &gt; 0)<br />
             {<br />
-                global.ExtraContent = true;<br />
+                global.extra_content = true;<br />
             }<br />
         }<br />
     }</p>

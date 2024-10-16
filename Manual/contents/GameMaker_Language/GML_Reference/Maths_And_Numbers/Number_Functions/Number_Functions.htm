@@ -20,12 +20,12 @@
   <p>Esta distinção entre inteiros e flutuadores é muito importante quando se trata do desenvolvimento de plataformas cruzadas, pois a precisão dos cálculos feitos em um <span class="notranslate">Windows</span> PC <i>não</i> é a mesma que a precisão desses mesmos cálculos quando feitos em um dispositivo móvel. Isto significa que você deve prestar atenção especial ao fazer comparações, por exemplo:</p>
   <p class="code">if (image_index == 1)<br />
     {<br />
-        do something...<br />
+        // Do something...<br />
     }</p>
   <p>No exemplo acima, se estivermos definindo o <span class="inline">image_speed</span> como 0,25 - por exemplo - então após quatro passos você pode assumir que o valor <span class="inline">image_index</span> seria 1, mas <i>pode</i> ser um valor como 1,0000002 devido à forma como a matemática de ponto flutuante funciona e, portanto, a avaliação não será <span class="inline">true</span>. Estes tipos de erros podem ser bastante difíceis de depurar e por isso é sempre bom estar atento a eles e planejar com antecedência e usar outros meios de verificação de valores ou usar as funções apropriadas de piso ou arredondamento (listadas abaixo) para converter o número para verificar em um número inteiro (para mais informações sobre matemática de ponto flutuante e porque isto é um problema, por favor <a href="https://floating-point-gui.de/" target="_blank">veja aqui</a>). Por exemplo, o código acima poderia ser escrito como:</p>
   <p class="code">if (floor(image_index) == 1)<br />
     {<br />
-        do something...<br />
+        // Do something...<br />
     }</p>
   <p>Também vale a pena notar que ao utilizar os alvos do <b>Compilador YoYo</b>, todas as expressões e funções são <i>avaliadas da esquerda para a direita</i>, enquanto em todas as outras plataformas alvo são avaliadas <i>da direita para a esquerda</i>, o que significa que isto - por exemplo - dará resultados diferentes dependendo da plataforma:</p>
   <p class="code">val = max(num, ++num, num++);</p>

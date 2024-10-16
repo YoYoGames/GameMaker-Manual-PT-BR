@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
   <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
-  <meta name="topic-comment" content="Page outlining the with function" />
+  <meta name="topic-comment" content="Page outlining the with statement" />
   <meta name="rh-index-keywords" content="with" />
   <meta name="search-keywords" content="with" />
 </head>
@@ -30,38 +30,38 @@
   <p>Uma vez que a expressão tenha estabelecido o escopo do <span class="inline">with</span>, a <a class="glossterm" data-glossterm="declaração" href="#">declaração</a> será então executada para cada uma das instâncias indicadas, como se essa instância fosse a instância atual ( <span class="inline">self</span>). Assim, voltando ao nosso problema original, para mover todas as instâncias da bola <span class="notranslate">object</span> 8 pixels para baixo, você digitaria:</p>
   <p class="code">with (obj_ball)<br />
     {<br />
-        y += 8;<br />
+        y += 8;<br />
     }</p>
   <p>Essencialmente este é um <span class="notranslate">loop</span>, e cada <a class="glossterm" data-glossterm="iteração" href="#">iteração</a> do <span class="notranslate">loop</span>, o código será executado em uma instância do <span class="notranslate">object</span> <span class="inline">obj_ball</span>.</p>
   <p>Se você quiser executar várias declarações, basta incluí-las nos colchetes, o mesmo que você faria em torno de qualquer outro bloco de código. Assim, por exemplo, para mover todas as bolas em nosso exemplo para uma posição aleatória e dar-lhes uma velocidade e direção aleatórias, você usaria:</p>
   <p class="code">with (obj_ball)<br />
     {<br />
-        x = random(room_width);<br />
-        y = random(room_height);<br />
-        speed = 1 + random(2);<br />
-        direction = random(360);<br />
+        x = random(room_width);<br />
+        y = random(room_height);<br />
+        speed = 1 + random(2);<br />
+        direction = random(360);<br />
     }</p>
   <p>Como mencionado acima, dentro da(s) declaração(ões), a instância ou estrutura indicada tornou-se a instância alvo (<span class="inline">self</span>) que executa o bloco de código, o que significa que a instância original (que contém o <span class="inline">with</span> e todo o bloco de código) tornou-se a <a href="../Instance_Keywords.htm"><span class="inline">other</span></a> instância. Assim - por exemplo - para mover todas as bolas para a posição da instância atual que realmente contém o código, você pode digitar isto:</p>
   <p class="code">with (obj_ball)<br />
     {<br />
-        x = other.x;<br />
-        y = other.y;<br />
+        x = other.x;<br />
+        y = other.y;<br />
     }</p>
   <p>A declaração <span class="inline">with</span> é uma ferramenta extremamente poderosa e útil em muitas, muitas circunstâncias, portanto é importante que você entenda totalmente como ela pode ser usada. Para ajudar, há mais alguns exemplos de uso abaixo:</p>
   <p class="code">with (instance_create_layer(x, y, &quot;Instances&quot;, obj_Ball))<br />
     {<br />
-        speed = other.speed;<br />
-        direction = other.direction;<br />
+        speed = other.speed;<br />
+        direction = other.direction;<br />
     }</p>
   <p>O código acima criará uma instância de <span class="inline">obj_Ball</span> e lhe atribuirá a velocidade e a direção da instância que executa todo o bloco de código.</p>
   <p class="code">with (instance_nearest(x, y, obj_Ball))<br />
     {<br />
-        instance_destroy();<br />
+        instance_destroy();<br />
     }</p>
   <p>O código acima destruirá a instância de <span class="inline">obj_Ball</span> mais próxima à instância que estiver executando o código.</p>
   <p class="code">with(clone_struct)<br />
     {<br />
-        xx = other.x;<br />
+        xx = other.x;<br />
         yy = other.y;<br />
         spd = other.speed;<br />
         dir = other.direction;<br />
@@ -70,11 +70,12 @@
   <p class="code">var _inst = noone;<br />
     with (obj_ball)<br />
     {<br />
-        if (str &gt; other.str)<br />
-        {<br />
+        if (str &gt; other.str)<br />
+        {<br />
             _inst = id;<br />
         }<br />
     }<br />
+    <br />
     if (_inst != noone)<br />
     {<br />
         target = _inst;<br />
@@ -114,9 +115,11 @@
     </div>
     <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Todos os direitos reservados</span></h5>
   </div>
-  <p> </p>
-  <p><br />
-     </p>
-  <p> </p>
+  <!-- KEYWORDS
+with
+-->
+  <!-- TAGS
+with
+-->
 </body>
 </html>
