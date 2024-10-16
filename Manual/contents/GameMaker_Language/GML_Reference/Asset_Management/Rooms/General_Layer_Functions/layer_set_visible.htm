@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>layer_set_visible</title>
-  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <meta name="generator" content="Adobe RoboHelp 2022" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
@@ -45,13 +45,13 @@
   <p> </p>
   <h4>Exemplo:</h4>
   <p class="code">var lay_id = layer_get_id(&quot;Instances&quot;);<br />
-    if (layer_get_visible(lay_id)) <br />
+    if (layer_get_visible(lay_id))<br />
     {<br />
-        layer_set_visible(lay_id, false);<br />
+    layer_set_visible(lay_id, false);<br />
     }<br />
     else<br />
     {<br />
-        layer_set_visible(lay_id, true);<br />
+    layer_set_visible(lay_id, true);<br />
     }</p>
   <p>O código acima obtém o valor de ID para a camada chamada &quot;Instances&quot; no editor <span class="notranslate">room</span>, então usa o ID para verificar se a camada está visível ou não, alternando a visibilidade da camada dependendo do valor retornado.</p>
   <p> </p>
