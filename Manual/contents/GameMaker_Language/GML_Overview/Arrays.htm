@@ -63,7 +63,7 @@
       total = array[0] + array[5];<br />
       <br />
       // Check an array value<br />
-      if array[9] == 10<br />
+      if (array[9] == 10)<br />
       {<br />
           // Do something<br />
       }<br />
@@ -76,11 +76,11 @@
       <br />
       for (var i = 0; i &lt; 10; ++i)<br />
       {<br />
-          total += array[i];<br />
-          draw_text(32, 32 + (i * 32), array[i]);<br />
+          _total += array[i];<br />
+          draw_text(32, 32 + (i * 32), array[i]);<br />
       }<br />
       <br />
-      draw_text(32, 32 + (i * 32), total);
+      draw_text(32, 32 + (i * 32), _total);
     </p>
     <p class="dropspot">O código acima somará todos os valores em nossa matriz, desenhará cada um deles e então desenhará o valor total no final.</p>
     <h3 class="dropspot">       Eliminação de matrizes</h3>
@@ -217,7 +217,7 @@
   <p>Mais uma vez, tudo isso não é necessário se a opção <strong>Copiar na Gravação</strong> estiver <strong>desativada</strong> (que é a opção padrão e recomendada).</p>
   <p>Descubra mais informações sobre acessores e como eles funcionam, juntamente com um exemplo de arrays, na página seguinte:</p>
   <ul class="colour">
-    <li><a href="Accessors.htm">Accessors</a></li>
+    <li><a data-xref="{title}" href="Accessors.htm">Accessors</a></li>
   </ul>
   <p> </p>
   <p> </p>
