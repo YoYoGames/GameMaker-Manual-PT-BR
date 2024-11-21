@@ -45,7 +45,7 @@
     var new_mask = tile_mirror | tile_flip | tile_rotate | 255;<br />
     if mask != new_mask<br />
     {<br />
-        tilemap_set_mask(map_id, new_mask);<br />
+        tilemap_set_mask(_map_id, _new_mask);<br />
     }</p>
   <p>O código acima obtém o ID do mapa <span class="notranslate">tile</span> da camada dada e então verifica o valor da máscara associada a ela. Se não for o mesmo que o valor definido na variável &quot;new_mask&quot;, então ele é definido para esse valor.</p>
   <p> </p>

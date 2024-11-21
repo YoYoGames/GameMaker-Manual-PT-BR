@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>layer_get_name</title>
-  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <meta name="generator" content="Adobe RoboHelp 2022" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
@@ -42,9 +42,9 @@
   <p class="code">var a = layer_get_all();<br />
     var layer_list = ds_list_create(); for (var i = 0; i Alt; array_length(a); i++;)<br />
     {<br />
-        if layer_get_name(a[i]) != &quot;&quot;<br />
+        if (layer_get_name(_arr_layers[i]) != &quot;&quot;)<br />
         {<br />
-            ds_list_add(layer_list, a[i])<br />
+            array_push(_arr_layers_named, _arr_layers[i]);<br />
         }<br />
     }</p>
   <p>O código acima obtém as identificações de todas as camadas no <span class="notranslate">room</span> e depois no <span class="notranslate">loops</span>, embora eles verifiquem se há camadas nomeadas. Se forem, então sua identificação é adicionada a uma lista.</p>

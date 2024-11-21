@@ -49,7 +49,7 @@
     <li>Defina os valores de nível superior <span class="notranslate">sequence</span> <span class="notranslate">object</span> como comprimento, modo de jogo, velocidade de jogo, etc... Por exemplo:</li>
   </ul>
   <p class="code">myseq.length = 120;<br />
-    myseq.loopmode = seqplay_pingpong</p>
+    myseq.loopmode = seqplay_pingpong;</p>
   <ul class="colour">
     <li>Antes de você poder adicionar faixas ao <span class="notranslate">sequence</span> <span class="notranslate">object</span>, você precisa criá-las, então agora você criaria uma série de faixas de <i>ativos</i> que foram definidos com a função <a href="sequence_track_new.htm"><span class="inline">sequence_track_new()</span></a>. Observe que em código, realmente não há diferença entre <span class="notranslate">asset</span> faixas e faixas de parâmetros - todas elas são simplesmente faixas e como elas se comportam dependerá do tipo de faixa que você criar e se elas são atribuídas como sub-faixas a uma faixa de nível superior ou não. Assim, você criaria uma faixa para um <span class="notranslate">asset</span>, e então atribuiria subfaixas para os diferentes parâmetros a ela e estas subfaixas atuariam como as faixas de <i>parâmetros</i> para o <span class="notranslate">asset</span>. O exemplo abaixo cria uma única faixa gráfica <span class="notranslate">asset</span> que será adicionada ao <span class="notranslate">sequence</span> mais tarde:</li>
   </ul>
@@ -61,7 +61,7 @@
   <p class="code">// Create a new keyframe struct for a graphics asset track and add it to an array (as you can have multiple keys in a frame)<br />
     var graphickeys = array_create(1);<br />
     graphickeys[0] = sequence_keyframe_new(seqtracktype_graphic);<br />
-    // Set the graphics keyframe top level data for the keyframe position and length, etc...<br />
+    // Set the graphics keyframe top level data for the keyframe position and length, etc.<br />
     graphickeys[0].frame = 0;<br />
     graphickeys[0].length = 1;<br />
     graphickeys[0].stretch = true;<br />

@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
   <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
-  <meta name="topic-comment" content="Page outlining the with function" />
+  <meta name="topic-comment" content="Page outlining the with statement" />
   <meta name="rh-index-keywords" content="with" />
   <meta name="search-keywords" content="with" />
 </head>
@@ -22,24 +22,24 @@
   <p>terá exatamente o mesmo efeito porque é simplesmente uma abreviação da primeira afirmação. Então, como <i>podemos</i> conseguir algo assim? É por isso que a declaração <span class="inline">with</span> existe em <span class="notranslate">GML</span>. A declaração em <span class="inline">with</span> tem a seguinte sintaxe:</p>
   <p class="code">with (&lt;expression&gt;)<br />
     {<br />
-        &lt;statement&gt;;<br />
-        &lt;statement&gt;;<br />
-        ...<br />
+    &lt;statement&gt;;<br />
+    &lt;statement&gt;;<br />
+    ...<br />
     }</p>
   <p>Para a <a class="glossterm" data-glossterm="expressão" href="#">expressão</a>, você pode indicar uma ou mais instâncias (ou um <span class="notranslate">struct</span>) para executar o código, usando um ID de instância, o ID <span class="notranslate">object</span> (que indica que <i>todas as instâncias</i> no <span class="notranslate">room</span> deste <span class="notranslate">object</span> devem executar o bloco de código), o ID <span class="notranslate">struct</span>, ou uma das <a href="../Instance_Keywords.htm">palavras-chave</a> especiais (<span class="inline">all</span> ou <span class="inline">other</span>). Isto mudará então o <strong>escopo</strong> do código dentro dos colchetes <span class="inline">{}</span> da instância, <span class="notranslate">struct</span> ou função que realmente detém o código para a instância (ou instâncias ou <span class="notranslate">struct</span>) dada na expressão.</p>
   <p>Uma vez que a expressão tenha estabelecido o escopo do <span class="inline">with</span>, a <a class="glossterm" data-glossterm="declaração" href="#">declaração</a> será então executada para cada uma das instâncias indicadas, como se essa instância fosse a instância atual ( <span class="inline">self</span>). Assim, voltando ao nosso problema original, para mover todas as instâncias da bola <span class="notranslate">object</span> 8 pixels para baixo, você digitaria:</p>
   <p class="code">with (obj_ball)<br />
     {<br />
-        y += 8;<br />
+        y += 8;<br />
     }</p>
   <p>Essencialmente este é um <span class="notranslate">loop</span>, e cada <a class="glossterm" data-glossterm="iteração" href="#">iteração</a> do <span class="notranslate">loop</span>, o código será executado em uma instância do <span class="notranslate">object</span> <span class="inline">obj_ball</span>.</p>
   <p>Se você quiser executar várias declarações, basta incluí-las nos colchetes, o mesmo que você faria em torno de qualquer outro bloco de código. Assim, por exemplo, para mover todas as bolas em nosso exemplo para uma posição aleatória e dar-lhes uma velocidade e direção aleatórias, você usaria:</p>
   <p class="code">with (obj_ball)<br />
     {<br />
-        x = random(room_width);<br />
-        y = random(room_height);<br />
-        speed = 1 + random(2);<br />
-        direction = random(360);<br />
+        x = random(room_width);<br />
+        y = random(room_height);<br />
+        speed = 1 + random(2);<br />
+        direction = random(360);<br />
     }</p>
   <p>Como mencionado acima, dentro da(s) declaração(ões), a instância ou estrutura indicada tornou-se a instância alvo (<span class="inline">self</span>) que executa o bloco de código, o que significa que a instância original (que contém o <span class="inline">with</span> e todo o bloco de código) tornou-se a <a href="../Instance_Keywords.htm"><span class="inline">other</span></a> instância. Assim - por exemplo - para mover todas as bolas para a posição da instância atual que realmente contém o código, você pode digitar isto:</p>
   <p class="code">with (obj_ball)<br />
@@ -86,9 +86,9 @@
     {<br />
         if (++count &gt; 10)<br />
         {<br />
-            break;<br />
+            break;<br />
         }<br />
-        hp = 100;<br />
+        hp = 100;<br />
     }</p>
   <p>O código acima <span class="notranslate">loops</span> através das instâncias no <span class="notranslate">room</span> do <span class="notranslate">object</span> <span class="inline">obj_Enemy</span> e define a variável <span class="inline">hp</span> como 100 para os 10 primeiros que encontra. Se houver mais de 10 instâncias, o com código chamará <span class="inline">break</span> e terminará.</p>
   <p>Um exemplo de utilização do <span class="inline">continue</span> em um laço <span class="inline">with</span> seria:</p>
