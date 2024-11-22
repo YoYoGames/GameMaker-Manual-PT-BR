@@ -56,7 +56,7 @@
   <p> </p>
   <h4>Exemplo:</h4>
   <p class="code">buffer_seek(broadcast_buffer, buffer_seek_start, 0);<br />
-    buffer_write(broadcast_buffer, buffer_string, global.ServerName);<br />
+    buffer_write(broadcast_buffer, buffer_string, global.server_name);<br />
     network_send_broadcast(server, 6511, broadcast_buffer, buffer_tell(broadcast_buffer));</p>
   <p>O código acima escreve o nome <span class="notranslate">string</span> do atual <span class="notranslate">server</span> (armazenado em &quot;global.ServerName&quot;), depois escreve-o em um binário <span class="notranslate">buffer</span> com o id &quot;broadcast_buffer&quot;. Estes dados são então transmitidos localmente para uma faixa de IPs (o IP do dispositivo está atualmente implícito como a faixa base de transmissão) para a porta 6511.</p>
   <p> </p>
