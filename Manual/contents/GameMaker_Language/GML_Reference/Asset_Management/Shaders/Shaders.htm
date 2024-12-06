@@ -30,9 +30,9 @@
     colour_to_set = shader_get_uniform(sShaderDemo5, &quot;f_Colour2&quot;);</p>
   <p>Uma vez que você tenha as alças uniformes, elas podem então ser definidas no código <span class="notranslate">shader</span> para o <b>evento de sorteio</b> como este:</p>
   <p class="code">shader_set(sShaderDemo5);<br />
-    shader_set_uniform_f(colour_to_find, 1,1,1 );<br />
-    shader_set_uniform_f(colour_to_set, 1,0,0 );<br />
-    draw_sprite(sprite_index,image_index,x+24, y);<br />
+    shader_set_uniform_f(colour_to_find, 1, 1, 1);<br />
+    shader_set_uniform_f(colour_to_set, 1, 0, 0);<br />
+    draw_sprite(sprite_index, image_index, x + 24, y);<br />
     shader_reset();</p>
   <p>Uma última coisa a notar é que embora <span class="notranslate">shaders</span> seja aceito em todas as plataformas, eles ainda são específicos do dispositivo e se o hardware ou software do dispositivo não puder usar <span class="notranslate">shaders</span> então você receberá um erro. Portanto, recomenda-se que você verifique se o <span class="notranslate">shader</span> foi compilado antes de colocar os uniformes ou usar o próprio <span class="notranslate">shader</span>, desta forma:</p>
   <p class="code">if (shader_is_compiled(myShader))<br />
