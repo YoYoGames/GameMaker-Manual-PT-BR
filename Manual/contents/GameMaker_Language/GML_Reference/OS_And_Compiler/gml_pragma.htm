@@ -31,6 +31,10 @@
      <p class="code">gml_pragma(&quot;UnityBuild&quot;, &quot;true&quot;);</p>
       O benefício de fazer uma construção de unidade é que as construções são mais rápidas, mas o lado negativo é que ela faz uma construção <i>completa</i> cada vez, portanto, mesmo que você mude uma única parte do código, ela irá construir tudo novamente sem usar nenhum arquivo em cache. Isto foi adicionado especificamente para a exportação do Xbox One usando o YYC, embora possa ser chamado para outros builds<b>(somente YYC</b>). Para mais informações sobre compilações de unidades, por favor, veja <a href="http://buffered.io/posts/the-magic-of-unity-builds/" target="_blank">aqui</a>.
     </li>
+    <li>&quot;<strong>MarkTagAsUsed</strong>&quot; - When &quot;<strong>Automatically remove unused assets when compiling</strong>&quot; is enabled in the <a data-xref="{title}" href="../../../Settings/Game_Options.htm">Game Options</a>, any unused assets are stripped from the compiled game. This can break games that dynamically load assets at runtime. With this pragma you can mark the <a data-xref="{text}" href="../../../Introduction/The_Asset_Browser.htm#h" title="tags">Tags</a> that should not be stripped and any assets with the assigned tags will always be present in the compiled game package.
+      <p class="code">gml_pragma(&quot;MarkTagAsUsed&quot;, &quot;used&quot;);<br />
+        gml_pragma(&quot;MarkTagAsUsed&quot;, &quot;multiple&quot;, &quot;tags&quot;, &quot;can&quot;, &quot;be&quot;, &quot;specified&quot;);</p>
+    </li>
   </ul>
   <p class="note"><b>NOTA</b>: O primeiro argumento para a função <span class="inline">gml_pragma</span> <b>deve ser um tempo de compilação <span class="notranslate">string</span> constante</b> e não uma variável.</p>
   <p> </p>
