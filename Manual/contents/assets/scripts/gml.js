@@ -2820,12 +2820,10 @@ export default function(hljs) {
    * supported in the engine.)
    */
   const DOT_ACCESSOR_REG = /\b\.\b/;
-
   /**
    * Expressions, which form part of a valid statement.
    */
   const EXPRESSION = [];
-
   /**
    * A template string substitution. `contains` is filled in after `EXPRESSION` is defined due to
    * nesting.
@@ -2837,7 +2835,6 @@ export default function(hljs) {
     endScope: "literal",
     contains: EXPRESSION
   };
-
   /**
    * A template string substitution for use with the older `string()` optional args with `"{0}"`,
    * etc.
@@ -2846,7 +2843,6 @@ export default function(hljs) {
     match: /{[0-9]+}/,
     scope: "literal"
   };
-
   /**
    * An escape sequence in a string.
    */
@@ -2857,7 +2853,6 @@ export default function(hljs) {
       { match: /\\[^\n]/ }
     ]
   };
-
   /**
    * Various types of strings supported in the engine.
    */
@@ -2901,7 +2896,6 @@ export default function(hljs) {
       }
     ]
   };
-
   /**
    * Various representations of numbers
    */
@@ -2915,7 +2909,6 @@ export default function(hljs) {
       { match: /\b[0-9][0-9_.]*/ }
     ]
   };
-
   /**
    * Pre-processor modes for macro definitions and regions.
    */
@@ -2956,12 +2949,10 @@ export default function(hljs) {
       },
     ]
   };
-
   /**
    * A single-line comment.
    */
   const COMMENT_LINE = hljs.COMMENT('//', /\$|\n/);
-
   /**
    * Modes for the types of comments supported in GML.
    */
@@ -2971,7 +2962,6 @@ export default function(hljs) {
       hljs.C_BLOCK_COMMENT_MODE,
     ]
   };
-
   /**
    * Dot accessor usage with a special highlighting case for `global`.
    */
@@ -3007,7 +2997,6 @@ export default function(hljs) {
       }
     },
   ];
-
   /**
    * Function call sites, just looking for `<ident>(`. This creates false positives
    * for keywords such as `if (<condition>)`, so has lower priority in the mode `contains` list.
@@ -3022,7 +3011,6 @@ export default function(hljs) {
       1: "function"
     }
   };
-
   /**
    * The manual likes using `obj_` and such to define assets. Sneaky trick to make it look nicer :P
    */
@@ -3034,7 +3022,6 @@ export default function(hljs) {
       { begin: "obj_" },
     ]
   };
-
   /**
    * A ternary expression, matching partial ternary as `? <EXPRESSION> :`.
    * Effectively exists to prevent {@link STRUCT_LITERAL_MEMBER} from stealing `<EXPRESSION> :`.
@@ -3044,7 +3031,6 @@ export default function(hljs) {
     end: /:/,
     contains: EXPRESSION
   };
-
   const SWITCH_CASE = {
     begin: [
       /case/,
@@ -3070,7 +3056,6 @@ export default function(hljs) {
       2: "variable-instance"
     },
   };
-
   /**
    * A function declaration matching for:
    * ```gml
@@ -3089,7 +3074,6 @@ export default function(hljs) {
       3: "function"
     }
   };
-
   /**
    * An enum definition in the form:
    * ```gml
@@ -3129,7 +3113,6 @@ export default function(hljs) {
       }
     ]
   };
-
   EXPRESSION.push(
     STRING,
     TERNARY,
@@ -3138,7 +3121,6 @@ export default function(hljs) {
     FUNCTION_CALL,
     USER_ASSET_CONSTANT
   );
-
   return {
     name: 'GML',
     case_insensitive: false, // language is case-sensitive
