@@ -23,10 +23,10 @@
     <p class="code">list_index[| index]</p>
     <p class="dropspot">Assim, quando você tiver usado <span class="inline">ds_list_create()</span> para criar sua lista, você usaria o índice da lista (que você armazenou em uma variável) para referenciá-lo, sendo o valor &quot;índice&quot; a posição na lista a ser definida ou adicionada. Por exemplo, o seguinte código cria uma lista e depois adiciona 10 entradas, definindo cada entrada como número aleatório de 0 a 9:</p>
     <p class="code">ds = ds_list_create();<br />
-      var index = 0;<br />
+      var _index = 0;<br />
       repeat(10)<br />
       {<br />
-          ds[| index++] = irandom(9);<br />
+          ds[| _index++] = irandom(9);<br />
       }</p>
     <p class="dropspot">Observe que se você estiver usando uma expressão para adicionar uma referência a um índice que já tem um valor, o valor anterior será substituído em vez de ter um índice adicional adicionado à lista. Para adicionar mais entradas, você precisaria saber o tamanho da ds_list e adicioná-los ao final. Vale notar também que você pode definir um índice de lista <i>maior</i> do que o tamanho da lista que está sendo referenciada, e isto definirá esse valor, expandindo a lista ao mesmo tempo e inicializando todas as posições da lista até o índice dado como 0.</p>
     <p class="dropspot">Uma vez criada a estrutura de sua lista e preenchida com dados, para obter valores da lista, você teria algo parecido:</p>
@@ -56,15 +56,15 @@
     <p class="dropspot">Depois de criar sua grade com a função <span class="inline">ds_grid_create()</span>, você usaria o índice da grade que você armazenou em uma variável para referenciá-la, sendo &quot;xpos&quot; e &quot;ypos&quot; a posição dentro da grade para obter ou definir um valor. Por exemplo, o seguinte código cria uma grade, limpa-a para 0 e depois adiciona algumas entradas a ela:</p>
     <p class="code">ds = ds_grid_create();<br />
       ds_grid_clear(ds, 0);<br />
-      var gw = ds_grid_width(ds) - 1;<br />
-      var gh = ds_grid_height(ds) - 1;<br />
+      var _gw = ds_grid_width(ds) - 1;<br />
+      var _gh = ds_grid_height(ds) - 1;<br />
       repeat(10)<br />
       {<br />
-          var xx = irandom(gw);<br />
-          var yy = irandom(gh);<br />
-          if (ds[# xx, yy] == 0)<br />
+          var _xx = irandom(_gw);<br />
+          var _yy = irandom(_gh);<br />
+          if (ds[# _xx, _yy] == 0)<br />
           {<br />
-              ds[# xx, yy] = 1;<br />
+              ds[# _xx, _yy] = 1;<br />
           }<br />
       }</p>
     <p class="dropspot">Uma vez criada sua estrutura de grade e preenchida com dados, para obter valores de uma posição específica da grade, você teria algo parecido:</p>
@@ -84,7 +84,8 @@
     <p class="dropspot">A função em si teria algo assim:</p>
     <p class="code">function array_populate(_array)<br />
       {<br />
-          var a = _array; var i = 0; repeat(25)<br />
+          var a = _array; var i = 0;<br />
+          repeat(25)<br />
           {<br />
               i = irandom(99);<br />
               while (a[i] != 0)<br />

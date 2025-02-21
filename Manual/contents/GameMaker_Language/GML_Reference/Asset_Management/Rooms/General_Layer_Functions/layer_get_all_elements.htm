@@ -40,11 +40,11 @@
   <p> </p>
   <h4>Exemplo:</h4>
   <p class="code">var a = layer_get_all_elements(layer);<br />
-    for (var i = 0; i &lt; array_length(a); i++;)<br />
+    for (var i = 0; i &lt; array_length(a); i++)<br />
     {<br />
         if (layer_get_element_type(a[i]) == layerelementtype_sprite)<br />
         {<br />
-            layer_sprite_destroy(a[i])<br />
+            layer_sprite_destroy(a[i]);<br />
         }<br />
     }</p>
   <p>O código acima obtém as identificações de todos os elementos da instância designados para a camada da instância que executa o código. O código então verifica se algum dos elementos retornados é <span class="notranslate">sprite</span> <span class="notranslate">assets</span> e se eles são destruídos.</p>
