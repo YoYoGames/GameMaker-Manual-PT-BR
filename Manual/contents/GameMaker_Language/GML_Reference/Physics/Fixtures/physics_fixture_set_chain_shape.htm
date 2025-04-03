@@ -46,9 +46,9 @@
     var fix = physics_fixture_create(); physics_fixture_set_chain_shape(fix, false);<br />
     for (var i = 0; i &lt; 10; i++;)<br />
     {<br />
-        physics_fixture_add_point(fix, xx, yy);<br />
-        xx += 50 + random(150);<br />
-        yy = (room_height / 2) - 250 + irandom(500);<br />
+        physics_fixture_add_point(_fix, _xx, _yy);<br />
+        _xx += 50 + random(150);<br />
+        _yy = (room_height / 2) - 250 + irandom(500);<br />
     }<br />
     physics_fixture_bind(fix, id);</p>
   <p>O código acima criará uma linha de &quot;bordas&quot; com uma variedade de alturas ao longo do comprimento do <span class="notranslate">room</span>.</p>
