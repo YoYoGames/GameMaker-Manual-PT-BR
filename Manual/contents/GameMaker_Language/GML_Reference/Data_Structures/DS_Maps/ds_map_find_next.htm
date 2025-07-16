@@ -47,9 +47,10 @@
     {<br />
         if (key != &quot;gold&quot;)<br />
         {<br />
-            key = ds_map_find_next(inventory, key);<br />
+            break;<br />
         }<br />
-        else break;<br />
+        <br />
+        _key = ds_map_find_next(inventory, _key);<br />
     }</p>
   <p>O código acima cria algumas variáveis temporárias e depois obtém o tamanho do mapa DS e encontra a primeira chave como armazenada pelo computador no mapa. Em seguida, ele usa um <span class="inline">for</span> <span class="notranslate">loop</span> para iterar através do mapa DS procurando o valor da chave &quot;ouro&quot;. Se ele o encontrar, ele rompe o <span class="notranslate">loop</span>.</p>
   <p> </p>

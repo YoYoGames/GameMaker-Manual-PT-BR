@@ -56,7 +56,7 @@
   <h4>Exemplo:</h4>
   <p class="code">if mp_linear_step_object(mouse_x, mouse_y, 5, obj_Wall)<br />
     {<br />
-        instance_create_layer(x, y, &quot;Effects&quot;, obj_Explosion);<br />
+        instance_create_layer(x, y, &quot;Effects&quot;, obj_explosion);<br />
         instance_destroy();<br />
     }</p>
   <p>O código acima fará com que o <span class="notranslate">object</span> se mova em direção ao mouse a uma velocidade de 5 pixels por passo, verificando apenas se há colisões com o <span class="notranslate">object</span> &quot;obj_Wall&quot;. Uma vez alcançada a posição do mouse, criará um <span class="notranslate">object</span> &quot;obj_Explosion&quot; e se destruirá.</p>
