@@ -116,7 +116,7 @@
   <p> </p>
   <p>Uma característica importante dos acessores é o fato de que eles podem ser <i>acorrentados</i> juntos. Isto significa que se você tiver várias estruturas de dados e/ou matrizes aninhadas, não há mais a necessidade de usar uma variedade de funções para obter acesso a um valor que está profundamente dentro da estrutura aninhada. Por exemplo, digamos que você tenha uma matriz, e cada item da matriz é uma lista DS, como esta:</p>
   <p class="code">array = array_create(3);<br />
-    for (var i = 0; i &lt; 3; ++i;)<br />
+    for (var i = 0; i &lt; 3; ++i)<br />
     {<br />
         array[i] = ds_list_create();<br />
         switch(i)<br />
