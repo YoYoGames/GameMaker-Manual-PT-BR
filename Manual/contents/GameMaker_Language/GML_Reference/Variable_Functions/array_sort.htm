@@ -59,9 +59,9 @@
   <h4>Exemplo:</h4>
   <p class="code">var _a = [10, 9, 8, 7, 6, 5];<br />
     <br />
-    array_sort(_a, function(elm1, elm2)<br />
+    array_sort(_a, function(current, next)<br />
     {<br />
-        return elm1 - elm2;<br />
+        return current - next;<br />
     });
   </p>
   <p>O código acima usa uma função de classificação personalizada para classificar a matriz em uma ordem ascendente. A função de ordenação pega os dois elementos da matriz como <span class="inline">elm1</span> e <span class="inline">elm2</span> e realiza uma subtração sobre eles. Se <span class="inline">elm1</span> for maior que <span class="inline">elm2</span>, a subtração resulta em um número positivo que empurra <span class="inline">elm1</span> para depois de <span class="inline">elm2</span>, colocando-os, portanto, em ordem ascendente.</p>
