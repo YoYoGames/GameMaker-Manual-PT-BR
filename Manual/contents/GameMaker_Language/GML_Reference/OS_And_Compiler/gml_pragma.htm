@@ -39,6 +39,9 @@
       <p class="code">gml_pragma(&quot;LegacySetObjectOrder&quot;, Object2, Object3, Object1);</p>
       Using the code above, <span class="inline2">Object2</span> will be listed first, followed by <span class="inline2">Object3</span> and <span class="inline2">Object1</span>.
     </li>
+    <li><strong>&quot;MarkUILayerAsUsed&quot;</strong> - This pragma marks the UI layer with the given name as used to the asset compiler. This makes sure a UI layer present in a prefab is added to the main project upon export.
+      <p class="code">gml_pragma(&quot;MarkUILayerAsUsed&quot;, &quot;UI Layer Name&quot;);</p>
+    </li>
   </ul>
   <p class="note"><b>NOTA</b>: O primeiro argumento para a função <span class="inline">gml_pragma</span> <b>deve ser um tempo de compilação <span class="notranslate">string</span> constante</b> e não uma variável.</p>
   <p> </p>
