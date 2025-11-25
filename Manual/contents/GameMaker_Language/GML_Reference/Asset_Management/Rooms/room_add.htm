@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>room_add</h1>
+  <h1><span data-field="title" data-format="default">room_add</span></h1>
   <p>Esta função criará um novo, vazio, <span class="notranslate">room</span> e o adicionará ao seu jogo, retornando seu índice para ser armazenado em uma variável para todos os outros códigos que lidam com este <span class="notranslate">room</span>. Note que cada <span class="notranslate">room</span> é permanentemente adicionado ao jogo até que o executável seja fechado, ou seja: <i>salas adicionadas através de código não podem ser apagadas novamente</i>. Isto tem implicações importantes para o uso da memória e, portanto, você deve usar esta função com cuidado.</p>
   <p class="note"><b>NOTA</b>: O novo <span class="notranslate">rooms</span> não faz parte do pedido habitual <span class="notranslate">room</span>, portanto não tem um &quot;anterior&quot; ou &quot;próximo&quot; <span class="notranslate">room</span> (o que significa que as funções <span style="font-size:1px;"><a href="room_next.htm"><span class="inline">room_next()</span></a></span> e <span style="font-size:1px;"><a href="room_previous.htm"><span class="inline">room_previous()</span></a></span> não vai funcionar). Para pular do <span class="notranslate">room</span> adicionado para outro, você deve usar o índice do próprio <span class="notranslate">room</span>.</p>
   <p> </p>

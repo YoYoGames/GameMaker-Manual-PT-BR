@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>audio_emitter_velocity</h1>
+  <h1><span data-field="title" data-format="default">audio_emitter_velocity</span></h1>
   <p>Esta função pode ser usada para dar um efeito <em>Doppler </em>emissor e simular o movimento de áudio baseado no vetor que é resolvido a partir das posições relativas x, y e z. Se o emissor em si não vai se mover, você normalmente não precisaria definir estes valores, mas, por exemplo, se você estiver fazendo um jogo de tiro rolante onde os inimigos vêm da direita e rolam para a esquerda, você definiria isto para ter uma velocidade de (hspeed, 0, 0) no evento de criação dos inimigos (e atualizaria o emissor de cada instância no evento de passo usando <a href="audio_emitter_position.htm"><span class="inline">audio_emitter_position()</span></a>) para dar a qualquer som emitido pelas instâncias inimigas o Doppler correto ao passar pela instância do jogador (que, por sua vez, estaria usando a função <a href="../Audio_Listeners/audio_listener_position.htm"><span class="inline">audio_listener_position()</span></a> para colocar o <i>ouvinte</i> na posição correta).</p>
   <p> </p>
   <h4>Sintaxe:</h4>

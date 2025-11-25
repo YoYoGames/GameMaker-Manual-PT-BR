@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>audio_sound_gain</h1>
+  <h1><span data-field="title" data-format="default">audio_sound_gain</span></h1>
   <p>Com esta função, você pode desbotar um som dentro ou fora durante um determinado período de tempo, ou pode ser usado para definir o ganho de som instantaneamente.</p>
   <p>O tempo é medido em milissegundos, e a função requer que você insira um nível final de ganho para que o som tenha alcançado até o final desse tempo. Este ganho pode ser entre 0 (silencioso) e qualquer valor maior que 0, embora normalmente se considere o volume máximo como 1. Qualquer coisa acima de 1 pode ser usada mas, dependendo do som usado e da plataforma a ser compilada, você pode obter distorção ou recorte quando o som for reproduzido. Observe que a escala de ganho é linear, e para alterar instantaneamente o ganho, basta definir o argumento de tempo para 0.</p>
   <p>Esta função afetará <i>todas as</i> instâncias do som que estão tocando atualmente no <span class="notranslate">room</span> se o índice for um recurso sonoro, e o volume final será o volume em que todas as outras instâncias do som serão tocadas. Entretanto, se você tiver utilizado o índice retornado de uma função como <a href="audio_play_sound.htm"><span class="inline">audio_play_sound()</span></a> afetará apenas uma instância do som.</p>

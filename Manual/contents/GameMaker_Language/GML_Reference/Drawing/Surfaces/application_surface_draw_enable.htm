@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>application_surface_draw_enable</h1>
+  <h1><span data-field="title" data-format="default">application_surface_draw_enable</span></h1>
   <p>Você pode usar esta função para ativar ou desativar o desenho automático da superfície da aplicação. Por padrão isto está habilitado, mas em muitos casos você vai querer assumir quando e como a superfície é desenhada (ao utilizar <span class="notranslate">shaders</span> por exemplo), em cujo caso
     você usaria esta função para defini-la como falsa, para que você mesmo a possa desenhar quando e como você precisar. É importante observar que quando você <span class="notranslate">switch</span> desenha automaticamente e desenha a superfície da aplicação você mesmo, que você pode ver certos problemas
     com o componente alfa de <span class="notranslate">sprites</span> e a própria superfície. Isto porque <span data-keyref="GameMaker Name">o GameMaker</span> desenhará a superfície de aplicação <i>sem mistura alfa</i> quando o desenho automático estiver ligado. Se você <span class="notranslate">switch</span> estiver fora do desenho automático, então você precisa

@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>ds_map_secure_load_buffer</h1>
+  <h1><span data-field="title" data-format="default">ds_map_secure_load_buffer</span></h1>
   <p>Esta função irá carregar um mapa DS salvo em segurança a partir de um <span class="notranslate">buffer</span>. Você deve ter carregado previamente o <span class="notranslate">buffer</span> na memória (usando <a href="../../Buffers/buffer_load.htm"><span class="inline">buffer_load()</span></a>) e, em seguida, passando isso para esta função, retornará um mapa DS preenchido com o conteúdo do <span class="notranslate">buffer</span>. Note que o <span class="notranslate">buffer</span> deve ter sido criado usando a função <span class="inline"><a href="ds_map_secure_save_buffer.htm">ds_map_secure_save_buffer()</a></span> para que isto funcione corretamente, e também note que se o mapa DS sendo carregado contivesse uma matriz, esta seria convertida em uma lista DS em vez de ser carregada.</p>
   <p class="note"><b>IMPORTANTE!</b> Uma das características de um arquivo seguro salvo é que ele está travado no dispositivo em que foi criado, de modo que você não pode carregar um arquivo salvo em um dispositivo em um projeto em execução em outro dispositivo.</p>
   <p class="note"><strong>NOTA</strong>: Esta função não é suportada em HTML5 e UWP.</p>

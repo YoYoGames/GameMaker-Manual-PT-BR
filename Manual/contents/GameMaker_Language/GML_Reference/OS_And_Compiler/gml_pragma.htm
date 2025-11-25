@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>gml_pragma</h1>
+  <h1><span data-field="title" data-format="default">gml_pragma</span></h1>
   <p>A função <span class="inline">gml_pragma</span> afeta a forma como o alvo dado compila seu código e deve ser chamado com os diferentes comandos para otimizar ainda mais a compilação final do seu projeto. Estes comandos são efetivamente <i>pré-processados</i> antes que o jogo seja compilado e, portanto, a função pode ser colocada em qualquer lugar em seu projeto e ainda será processada antes que o jogo seja totalmente compilado. Os comandos disponíveis são os seguintes:</p>
   <ul class="colour">
     <li>&quot;<b>forceinline</b>&quot; - Quando a função é chamada com o pragma &quot;forceinline&quot; em uma <b>função de script</b>, o YYC compilará o projeto com a função inline, em vez de referenciada. Isto dará um impulso adicional ao processamento, mas deve-se ter cuidado ao usá-la, pois também inflará o tamanho final do arquivo executável, especialmente se o código in-lined for grande e/ou usado em vários lugares diferentes, bem como aumentará muito o tempo de compilação. Note que este pragma <b>só</b> é <b>válido quando se constrói usando o YYC</b>.</li>

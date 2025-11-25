@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>superfície_de_solução</title>
+  <title>buffer_get_surface</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
   <script src="../../../assets/scripts/main_script.js"></script>
@@ -15,7 +15,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>superfície_de_solução</h1>
+  <h1><span data-field="title" data-format="default">buffer_get_surface</span></h1>
   <p>Com esta função você pode escrever informações de uma superfície para uma determinada <span class="notranslate">buffer</span>. O <span class="notranslate">buffer</span> deve ter sido criado anteriormente e deve ser um <span class="notranslate">buffer</span> de 1 byte alinhado suficientemente grande para armazenar dados para a superfície que você vai escrever (se não tiver certeza, use um buffer de <a href="buffer_create.htm">crescimento</a> ou veja o exemplo no final desta página).</p>
   <p>As informações para a superfície serão sempre escritas até o início do <span class="notranslate">buffer</span> (independentemente da posição de busca), mas você pode escolher um valor de offset (em bytes) para mover a posição de escrita desde o início do <span class="notranslate">buffer</span>.</p>
   <p>Note que a função escreve cada pixel da superfície no <span class="notranslate">buffer</span> usando uma formatação <b>RGBA</b> no alvo <span class="notranslate">Windows</span>, mas em outros alvos pode ser diferente dependendo do sistema operacional ou mesmo do dispositivo.</p>

@@ -15,7 +15,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>layer_create</h1>
+  <h1><span data-field="title" data-format="default">layer_create</span></h1>
   <p>Esta função é utilizada para criar uma nova camada dentro da atual <span class="notranslate">room</span>. Você fornece a profundidade que a nova camada deve ocupar e a função retorna o valor único de identificação da camada que pode então ser usado para acessar a camada em outras funções. Você também pode fornecer um argumento opcional de &quot;nome&quot;, que lhe permitirá dar à camada um nome específico (como um <span class="notranslate">string</span>), e em vez de usar o ID da camada para acessar a camada, você pode usar este nome <span class="notranslate">string</span> em vez disso, embora deva ser notado que usar o nome <span class="notranslate">strings</span> terá um impacto maior no desempenho do que usar apenas o valor de ID. Se você não especificar o nome da camada, então será atribuído à camada criada um nome com o formato &quot;<span class="inline">_layer_XXX</span>&quot;, onde &quot;XXX&quot; é um valor hexadecimal usado para dar à camada um nome único.</p>
   <p>Ao dar um valor de profundidade, este será maior quanto mais &quot;longe&quot; da câmera a camada está e menor quanto mais &quot;perto&quot; da câmera a camada está, portanto, se você tiver três camadas com profundidades -100, 0, 100, as camadas desenharão na ordem 100, 0, -100, de modo que a camada &quot;superior&quot; (ou seja, a mais próxima da visão da câmera e assim desenhada sobre tudo mais) será a camada com a profundidade -100.</p>
   <p>A imagem a seguir mostra um esquema de como funciona a profundidade para camadas:</p>

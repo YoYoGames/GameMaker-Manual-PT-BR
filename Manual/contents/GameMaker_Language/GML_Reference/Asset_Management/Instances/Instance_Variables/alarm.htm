@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>alarme</title>
+  <title>alarm</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../../assets/scripts/main_script.js"></script>
@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>alarme</h1>
+  <h1><span data-field="title" data-format="default">alarm</span></h1>
   <p>Esta <a href="../../../../GML_Overview/Arrays.htm">matriz de</a> 1 dimensão é usada para obter o valor atual para quaisquer alarmes que a instância possa ter, ou pode ser usada para definir esses alarmes. Há doze alarmes embutidos em cada instância de um <span class="notranslate">object</span>, e cada um tem seu próprio <a href="../../../../../The_Asset_Editors/Object_Properties/Object_Events.htm"><span class="notranslate">event</span></a> que será executado quando esta variável chegar a 0.</p>
   <p>Os alarmes são contados no início de cada etapa, <strong>após</strong> o evento da etapa inicial, mas <strong>antes</strong> do evento da etapa principal, e antes que qualquer coisa seja entregue para o quadro. Isto significa que se você definir um alarme para <span class="inline2">1</span> no evento Begin Step, seu evento será executado nesse mesmo quadro (pois o alarme será contado até 0 após o término do Begin Step), mas se você definir um alarme para <span class="inline2">1</span> no evento Step, ele será executado no próximo quadro.</p>
   <p>Deve-se observar que o alarme não está terminado quando chega a 0 (embora o evento tenha sido acionado), pois o próximo passo será descer para -1, portanto, se você precisar parar um alarme por qualquer motivo, você deve definir seu valor de matriz para -1 <i>e não</i> 0. Os tempos de alarme são calculados em <i>etapas de jogo</i>, com um valor de 30 sendo 30 passos, 60 sendo 60 passos, etc...</p>

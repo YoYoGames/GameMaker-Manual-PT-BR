@@ -15,7 +15,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>json_parse</h1>
+  <h1><span data-field="title" data-format="default">json_parse</span></h1>
   <p>Esta função pode ser usada para analisar um JSON <span class="notranslate">string</span> (ou criado anteriormente usando <a href="json_stringify.htm"><span class="notranslate">json_stringify</span></a> ou de qualquer fonte válida), e convertê-lo em uma coleção de matrizes ou <span class="notranslate">structs</span>, onde uma matriz é o equivalente a uma matriz JSON e uma <span class="notranslate">struct</span> é o equivalente a uma matriz JSON <span class="notranslate">object</span>. Você fornece o <span class="notranslate">string</span> para analisar, e a função retornará o array de nível superior ou <span class="notranslate">struct</span> que pode então ser usado em seu código. Se você não tiver certeza do conteúdo do JSON, você pode usar as diferentes <a href="../../Variable_Functions/Variable_Functions.htm">Funções Variáveis</a> (como <a href="../../Variable_Functions/typeof.htm"><span class="inline">typeof()</span></a> e <a href="../../Variable_Functions/variable_struct_get_names.htm"><span class="inline">variable_struct_get_names()</span></a> no caso de um <span class="notranslate">struct</span>) para verificar o conteúdo devolvido. Note que tentar analisar um valor inválido (ou seja: não um <span class="notranslate">string</span>) lançará um erro de exceção.</p>
   <p>Ao utilizar esta função, há algumas coisas importantes a serem observadas:</p>
   <ul class="colour">

@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>surface_set_target</h1>
+  <h1><span data-field="title" data-format="default">surface_set_target</span></h1>
   <p>Com esta função, você define todos os desenhos adicionais para a superfície alvo em vez da tela e, desta forma, você pode dizer ao <span data-keyref="GameMaker Name">GameMaker</span> para desenhar apenas coisas específicas para a superfície especificada. Observe que se você não chamar <a href="surface_reset_target.htm"><span class="inline">surface_reset_target()</span></a> depois de terminar, nada será desenhado na tela, pois todos os outros desenhos (mesmo em outros casos) serão feitos na superfície. Você também deve perceber que nada será visto se a própria superfície não for desenhada na tela no evento de desenho de uma instância. Você pode verificar o valor de retorno desta função também como uma ferramenta de depuração para verificar se o alvo da superfície foi ou não definido, sendo que um valor de retorno de 0 é uma falha na definição do alvo e qualquer outro valor positivo é um sucesso.</p>
   <p>Uma coisa que deve ser notada é que as superfícies são <i>empilhadas</i> para que você não possa pular de alvo em alvo e depois reiniciar para o alvo normal de extração no final, mas sim abrir e fechar os alvos de renderização. Por exemplo, isto <b>não</b> funcionará corretamente:</p>
   <p class="code">surface_set_target(surf1);<br />

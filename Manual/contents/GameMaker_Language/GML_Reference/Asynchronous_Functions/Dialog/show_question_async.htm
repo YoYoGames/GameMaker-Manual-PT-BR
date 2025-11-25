@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>show_question_async</h1>
+  <h1><span data-field="title" data-format="default">show_question_async</span></h1>
   <p>Esta função abre uma janela e exibe ao usuário a pergunta que você define na função. Esta é uma função assíncrona, e como tal o <span data-keyref="GameMaker Name">GameMaker</span> <i>não</i> bloqueia o dispositivo em que está sendo executado enquanto espera por uma resposta, mas sim continua a executar eventos como de costume. A função tem dois botões que mostram &quot;Sim&quot; e &quot;Não&quot;, e uma vez que o usuário tenha pressionado um, um evento de <b>Diálogo</b> Assíncrono é acionado, o qual, <i>somente</i> para a duração desse evento, terá um mapa DS armazenado na variável <a href="../../../GML_Overview/Variables/Builtin_Global_Variables/async_load.htm"><span class="inline">async_load</span></a>.</p>
   <p>Este mapa conterá as duas chaves, &quot;<strong>id</strong>&quot; e &quot;<strong>status</strong>&quot;. &quot;id&quot; é o valor que foi retornado pela função quando chamado, enquanto o &quot;status&quot; será <span class="inline">true</span> ou <span class="inline">false</span> para &quot;Yes&quot; e &quot;No&quot; respectivamente.</p>
   <p class="note"><strong><em><span class="note">NOTA</span></em></strong><em> Esta função é <span data-keyref="Dialog for debug only"> <strong>apenas</strong> para <strong>depuração e teste</strong></span>e não deve ser usada em jogos lançados. Para isso, você deve criar uma interface de usuário personalizada para receber informações dos jogadores, para que você tenha controle total sobre a aparência e o comportamento dos diálogos.</em></p>

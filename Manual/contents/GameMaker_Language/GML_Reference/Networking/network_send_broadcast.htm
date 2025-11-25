@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>network_send_broadcast</h1>
+  <h1><span data-field="title" data-format="default">network_send_broadcast</span></h1>
   <p>Com esta função você pode transmitir os dados de um <span class="notranslate">buffer</span> localmente para uma gama de endereços IP (para mais informações em <span class="notranslate">buffers</span> veja <a href="../Buffers/Buffers.htm">Referência - Buffers</a>). A faixa é limitada à do dispositivo executando o <span class="notranslate">server</span>, de modo que se o dispositivo tiver um IP de 92.168.11.130, então os dados serão transmitidos na faixa 92.168.11.*. A função retornará o número de bytes de dados enviados, ou um número inferior a 0 se o envio falhar.</p>
   <p class="note"><span data-conref="../../../assets/snippets/Tag_note.hts"> </span> Esta função só funcionará quando usada com UDP - seu <span class="notranslate">server</span> precisa ser TCP e seu cliente precisa ter um soquete cliente UDP criado com <span style="font-size:1px;"><a href="network_create_socket_ext.htm"><span class="inline">network_create_socket_ext()</span></a></span> a fim de receber quaisquer transmissões enviadas do site <span class="notranslate">server</span>.</p>
   <p class="note"><span data-conref="../../../assets/snippets/Tag_note.hts"> </span> Esta função não funcionará quando utilizada em um projeto em execução no alvo HTML5.</p>

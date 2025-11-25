@@ -16,7 +16,7 @@
   <meta name="condition-tags" content="" />
 </head>
 <body>
-  <h1>video_set_volume</h1>
+  <h1><span data-field="title" data-format="default">video_set_volume</span></h1>
   <p>Esta função altera o volume de áudio do vídeo que é carregado atualmente. Ela toma um valor entre <span class="inline2">0</span> e <span class="inline2">1</span>, onde <span class="inline2">0</span> é silencioso e <span class="inline2">1</span> é o volume máximo.</p>
   <p>Certifique-se de que isto só seja chamado após uma chamada <span class="inline"><a href="video_open.htm">video_open()</a></span>, mas antes de uma chamada <span class="inline"><a href="video_close.htm">video_close()</a></span>, caso contrário não fará nada (pois não haverá um vídeo carregado).</p>
   <p>Em algumas plataformas, esta função só funcionará após o vídeo ter sido completamente carregado, então use <a data-xref="{text}" href="Videos.htm#h">o Async Callbacks</a> para descobrir quando o vídeo estiver pronto e depois mude o volume.</p>

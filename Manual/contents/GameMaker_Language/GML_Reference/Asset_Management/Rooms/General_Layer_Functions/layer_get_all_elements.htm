@@ -15,7 +15,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>layer_get_all_elements</h1>
+  <h1><span data-field="title" data-format="default">layer_get_all_elements</span></h1>
   <p>Você pode usar esta função para obter as <i>identificações dos elementos</i> da camada em questão. Você fornece o ID da camada (que você obtém quando cria a camada usando <a href="layer_create.htm"><span class="inline">layer_create()</span></a>) ou o nome da camada (como um <span class="notranslate">string</span> - isso terá um impacto no desempenho) e a função retornará uma <a href="../../../../GML_Overview/Arrays.htm">matriz</a> de IDs, onde cada entrada na matriz é uma identificação única para um elemento daquela camada. Por exemplo, se a camada for uma <span class="notranslate">Asset</span> Layer, a matriz será preenchida com os valores de ID para cada <span class="notranslate">sprite</span> <span class="notranslate">asset</span> que for atribuído à camada. Note que usar código para trabalhar com camadas significa que você pode atribuir diferentes tipos de elementos à mesma camada - assim você pode ter <span class="notranslate">sprite</span> <span class="notranslate">assets</span> junto com instâncias, por exemplo - neste caso você pode então usar a função <a href="layer_get_element_type.htm"><span class="inline">layer_get_element_type()</span></a> para obter o tipo de elemento com o qual o ID se relaciona.</p>
   <p> </p>
   <h4>Sintaxe:</h4>

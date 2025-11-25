@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>jogo_save</title>
+  <title>game_save</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
   <script src="../../../assets/scripts/main_script.js"></script>
@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>jogo_save</h1>
+  <h1><span data-field="title" data-format="default">game_save</span> <span data-conref="..\..\..\assets\snippets\Tag_deprecated.hts"> </span></h1>
   <p>Esta é uma função herdada que pode ser usada para salvar o estado atual do jogo, e não é mais recomendada para uso. Use as <a href="../File_Handling/File_Handling.htm">funções File</a> para criar um sistema de salvamento personalizado onde você só salva e carrega dados específicos do jogo.</p>
   <p>Esta função salvará o estado do jogo como ele é, porém não salvará nenhum recurso dinâmico sendo usado naquele momento, como estruturas de dados, superfícies, <span class="notranslate">assets</span> adicionado em <span class="notranslate">runtime</span>, etc. Se tal arquivo de gravação for carregado, qualquer atualização do jogo que tenha sido feita após a gravação não será visível, pois restaurará a versão do jogo que foi usada para criar a gravação.</p>
   <p>Note que salvar arquivos criados usando esta função pode não ser suportado por versões atualizadas <a class="glossterm" data-glossterm="Tempo de execução" href="#">em Runtime</a>, portanto, substituir esta função por um novo sistema de salvamento é essencial para garantir a compatibilidade com futuras atualizações <span class="notranslate">GameMaker</span>, e pelas razões listadas acima, atualizações feitas em seu próprio jogo.</p>

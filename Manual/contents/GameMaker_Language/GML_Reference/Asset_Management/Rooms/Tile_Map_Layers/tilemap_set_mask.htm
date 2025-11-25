@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>mapa_modelo_do_cartão</title>
+  <title>tilemap_set_mask</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../../assets/scripts/main_script.js"></script>
@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>mapa_modelo_do_cartão</h1>
+  <h1><span data-field="title" data-format="default">tilemap_set_mask</span></h1>
   <p>Esta função pode ser usada para definir a <b>máscara de bit de azulejo</b> para um único mapa <span class="notranslate">tile</span>. Você dá o ID do elemento do mapa <span class="notranslate">tile</span> (que você obtém ao criar um elemento do mapa <span class="notranslate">tile</span> usando <a href="layer_tilemap_create.htm"><span class="inline">layer_tilemap_create()</span></a> ou quando você usa a função <a href="layer_tilemap_get_id.htm"><span class="inline">layer_tilemap_get_id()</span></a>), e depois o valor da máscara. A idéia é que se você tiver, por exemplo, um pequeno <span class="notranslate">tile set</span> de 16 x 16 <span class="notranslate">tiles</span> então você tem um total de 256 diferentes <span class="notranslate">tiles</span> em seu <span class="notranslate">tile set</span>, que utiliza apenas 8 bits de seu índice no &quot;blob&quot; de dados <span class="notranslate">tile</span> (de um total disponível de 19 bits de dados). Estes bits podem ser &quot;mascarados&quot; e então o resto dos dados <span class="notranslate">tile</span> podem ser usados para armazenar valores adicionais.</p>
   <p>Uma maneira fácil de obter o valor inicial da máscara índice é pegar o número <span class="notranslate">tiles</span> no <span class="notranslate">tile set</span> e subtrair 1, assim um 16x16 <span class="notranslate">tile set</span> tem 256 <span class="notranslate">tiles</span> e um valor de máscara de 255 (ou $ff em hexadecimal), e se o <span class="notranslate">tile set</span> tem um número de <span class="notranslate">tiles</span> que não são uma potência de dois, então arredonde para a potência mais próxima de dois para obter a máscara, por exemplo um <span class="notranslate">tile set</span> que é 20x20 tem 400 <span class="notranslate">tiles</span>, que você arredondaria para 512, e assim obter um valor de índice de máscara de 511 ($1ff em hexadecimal). Além da máscara de índice, normalmente você gostaria de preservar os valores de inverter, girar e espelhar que são atribuídos a um <span class="notranslate">tile</span> também, de modo a ajudar com isso há algumas <b>constantes</b> que podem ser utilizadas. Estas podem ser &quot;ou&quot; - junto com o valor da máscara de índice para preservar esses bits de dados. As seguintes constantes podem ser usadas (veja o código de exemplo abaixo para uso):</p>
   <table>

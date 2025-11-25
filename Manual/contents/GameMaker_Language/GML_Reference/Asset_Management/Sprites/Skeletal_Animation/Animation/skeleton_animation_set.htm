@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>conjunto_esqueleto_animação_esqueleto</title>
+  <title>skeleton_animation_set</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../../../assets/scripts/main_script.js"></script>
@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><span data-field="title" data-format="default">conjunto_esqueleto_animação_esqueleto</span></h1>
+  <h1><span data-field="title" data-format="default">skeleton_animation_set</span></h1>
   <p>Uma vez que você tenha atribuído uma animação esquelética <span class="notranslate">sprite</span> a sua instância, você pode então definir qual <i>conjunto de animação</i> deve ser usado a qualquer momento com esta função. Ao criar seu <span class="notranslate">sprite</span> (em <span class="notranslate">Spine</span>), você terá definido vários conjuntos de animações para diferentes estados e nomeado cada um deles apropriadamente. Esses nomes são o que você usará para dizer ao <span data-keyref="GameMaker Name">GameMaker</span> qual conjunto de animação deve ser usado a qualquer momento em seu jogo. Por exemplo, se seu <span class="notranslate">sprite</span> é para um jogo de plataforma, então você pode ter um conjunto de &quot;salto&quot;, um conjunto de &quot;corrida&quot; e um conjunto de &quot;ociosidade&quot;, todos contidos no <span class="notranslate">sprite</span> e você pode <span class="notranslate">switch</span> entre eles em seu jogo usando esta função.<br />
     A animação é feita em loop, que é o padrão.</p>
   <p>Note que a definição de uma nova animação desta forma irá reinicializar o <a href="../../Sprite_Instance_Variables/image_index.htm"><span class="inline">image_index</span></a> a 0, iniciando o novo conjunto de animação desde o início de sua animação <span class="notranslate">loop</span>. Se este <i>não</i> for o comportamento desejado, então você pode definir um valor &quot;mix&quot; usando <a href="skeleton_animation_mix.htm"><span class="inline">skeleton_animation_mix()</span></a> e quando você definir uma nova animação, ela será facilmente interpolada com o conjunto anterior. Você também deve certificar-se de ter um <span class="notranslate">keyframe</span> no início de cada animação para evitar que os dados sejam retidos de animações anteriores, a menos que você planeje usar trilhas de animação separadas.</p>

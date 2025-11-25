@@ -16,7 +16,7 @@
   <meta name="search-keywords" content="rollback_create_game" />
 </head>
 <body>
-  <h1>rollback_create_game</h1>
+  <h1><span data-field="title" data-format="default">rollback_create_game</span></h1>
   <p>Esta função hospeda um novo jogo multiplayer. Ela requer o número de jogadores que devem estar conectados para que o jogo comece, e opcionalmente permite desativar o <a data-xref="{text}" href="../Rollback_System.htm#h">Sync Test</a>.</p>
   <p>Quando chamado com o Sync Test desativado, o sistema espera que a quantidade de jogadores se junte ao <span class="inline2">num_players</span> antes de <a href="../Rollback_Events.htm">iniciar</a> o jogo. Certifique-se de não criar ou modificar nenhuma instância gerenciada até o início do jogo.</p>
   <p class="note"><span class="tip">DICA</span> Você pode opcionalmente forçar o jogo a começar antes que todos os jogadores tenham aderido, chamando <a href="rollback_start_game.htm"><span class="inline">rollback_start_game()</span></a>.</p>

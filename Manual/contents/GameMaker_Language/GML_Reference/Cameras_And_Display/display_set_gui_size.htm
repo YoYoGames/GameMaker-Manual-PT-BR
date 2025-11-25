@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>display_set_gui_size</h1>
+  <h1><span data-field="title" data-format="default">display_set_gui_size</span></h1>
   <p>Esta função só afetará as coisas desenhadas no <a href="../../../The_Asset_Editors/Object_Properties/Draw_Events.htm">evento de desenho da GUI</a> e pode ser usada para definir uma largura e altura específicas para todos os componentes da GUI nesse evento, e não importa o que
     tamanho do display ou janela é usado para exibir o GUI, ele será escalado para caber corretamente. A posição da GUI (ou seja: a posição (0,0)) dependerá de se você usou a função <a href="display_set_gui_maximise.htm"><span class="inline">display_set_gui_maximise()</span></a>    ou não. Se você não usar esta função (a configuração padrão), então a camada GUI será posicionada com seu (0,0) ponto na mesma posição da superfície de aplicação (a área onde seu jogo está sendo desenhado) e a largura e altura
     ser esticado para se ajustar a esta superfície, de modo que o ajuste de uma largura GUI de 256px com esta função quando a superfície de aplicação é de 512px esticaria aqueles 256 pixels para se ajustar, tornando efetivamente os pixels duas vezes maiores. Isto é ideal para aqueles jogos

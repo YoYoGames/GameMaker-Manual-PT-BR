@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>ds_list_mark_as_map</h1>
+  <h1><span data-field="title" data-format="default">ds_list_mark_as_map</span></h1>
   <p>Esta função irá &quot;marcar&quot; (ou &quot;sinalizar&quot;) uma determinada posição dentro de uma lista DS previamente criada como segurando um <a href="../DS_Maps/DS_Maps.htm">mapa DS</a>. Esta funcionalidade é necessária ao codificar o JSON <span class="notranslate">strings</span> (que você pode criar usando <a href="../../File_Handling/Encoding_And_Hashing/json_encode.htm"><span class="inline">json_encode()</span></a>), mas também pode ser útil quando se aninham estruturas de dados, pois os itens marcados desta forma serão automaticamente coletados (destruídos) quando a lista DS pai for destruída. Isto significa que você não precisa passar manualmente pelo conteúdo da lista e destruir as estruturas de dados marcadas individualmente antes de destruir a lista &quot;pai&quot;. Entretanto, se você apagar a posição da lista individualmente, a estrutura de dados nela contida <i>não</i> será coletada e você deve chamar a função apropriada de destruição do mapa DS antes de apagar a posição da lista pai. Observe também que se você chamar a função <a href="ds_list_clear.htm"><span class="inline">ds_list_clear()</span></a> em uma lista, quaisquer itens assinalados como mapas também serão destruídos quando a lista for limpa.</p>
   <p>Vale notar também que se a posição que foi marcada mudar dentro da lista, a &quot;marca&quot; se moverá com ela, então se você tiver marcado a posição 3 na lista (por exemplo) e depois inserir mais 2 itens abaixo dela para que ela se mova para a posição 5, ela <i>ainda</i> será marcada como um mapa.</p>
   <p> </p>

@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>camera_apply</h1>
+  <h1><span data-field="title" data-format="default">camera_apply</span></h1>
   <p>Esta função aplicará as configurações da câmera em questão à vista atual da câmera que está sendo apresentada imediatamente. Enquanto você pode definir qualquer câmera de visualização usando as funções específicas <span class="inline">camera_set_*</span>, as novas configurações não serão usadas para renderização até o <i>próximo</i> quadro do jogo, mas com esta função você pode fazer estas mudanças imediatamente. Se você estiver usando várias visões, então a função deve ser usada no <b>Evento de Sorteio</b> e você pode usar a variável <a href="view_current.htm"><span class="inline">view_current</span></a> para aplicar seletivamente a câmera em questão apenas à vista da câmera que está sendo apresentada atualmente. Note que isto NÃO altera o valor de ID da câmera, apenas as configurações para aquela câmera, e que se você usar esta função na câmera padrão (ou seja: a câmera interna que <span data-keyref="GameMaker Name">o GameMaker</span> usa quando nenhuma câmera de visualização está ativa) as mudanças serão sobrescritas no próximo quadro do jogo pelas configurações internas para desenhar o <span class="notranslate">room</span>.</p>
   <p> </p>
   <h4>Sintaxe:</h4>

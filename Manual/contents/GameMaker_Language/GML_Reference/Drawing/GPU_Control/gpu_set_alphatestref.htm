@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>gpu_set_alphatestref</h1>
+  <h1><span data-field="title" data-format="default">gpu_set_alphatestref</span></h1>
   <p>Esta função definirá o valor de referência para o teste alfa (quando tiver sido habilitado usando o <a href="gpu_set_alphatestenable.htm"><span class="inline">gpu_set_alphatestenable()</span></a>). Este é o limiar de &quot;corte&quot; no qual os pixels com alfa não serão desenhados.</p>
   <p>Basicamente, se você tiver este valor ajustado para 0 e tiver a interpolação linear ativada (seja nas Opções de Jogo ou usando <a href="gpu_set_texfilter.htm"><span class="inline">gpu_set_texfilter()</span></a>), você ainda pode obter erros visuais nas bordas da sobreposição <span class="notranslate">objects</span>. Isto porque você pode ter áreas <i>quase</i> completamente transparentes que bloqueiam coisas desenhadas atrás delas, mas se você definir este valor de referência para, por exemplo, 254 (ou seja, um abaixo do máximo), isto garante que apenas 100% dos pixels opacos serão desenhados. Você também pode desligar a interpolação <span class="notranslate">texture</span>, o que normalmente lhe permitiria usar os valores padrão sem problemas e sem necessidade de usar esta função, porém muito depende do trabalho artístico da fonte.</p>
   <p class="note"><b>NOTA</b>: Este é um recurso avançado de desenho, portanto se você não tem certeza se precisa ou não, ou não sabe exatamente o que ele faz, provavelmente é melhor não usá-lo, pois pode corromper seriamente a forma como seu jogo é desenhado.</p>

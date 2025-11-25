@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>object_set_mask</h1>
+  <h1><span data-field="title" data-format="default">object_set_mask</span></h1>
   <p>Com esta função você pode definir o índice de máscara de um <span class="notranslate">object</span> específico (para mais informações sobre máscaras, consulte <a href="../../../../The_Asset_Editors/Objects.htm">o editor <span class="notranslate">Object</span> </a>). Isto significa que todas as instâncias deste <span class="notranslate">object</span> que são criadas <i>após a máscara ter sido mudada</i> serão criadas com esta nova máscara, enquanto as instâncias que já estão no <span class="notranslate">room</span> podem não ser afetadas. Você pode definir isto como -1 para remover uma máscara <span class="notranslate">sprite</span> e assim, por padrão, para a máscara definida para o <span class="notranslate">sprite</span> do <span class="notranslate">object</span> (ou sem máscaras se nenhuma <span class="notranslate">sprite</span> tiver sido escolhida).</p>
   <p>Por favor, note que esta não é uma função de instância! Você pode definir o índice de máscara de instâncias individuais usando a função <a href="../Sprites/Sprite_Instance_Variables/mask_index.htm"><span class="inline">mask_index</span></a> e, portanto, têm dez instâncias todas com uma máscara diferente da <span class="notranslate">object</span> de onde foram criadas, e mesmo se você alterar o índice de máscara do <span class="notranslate">object</span> usando esta função, todas as instâncias que estão atualmente no <span class="notranslate">room</span> permanecerão como estavam, e somente as instâncias criadas após a chamada da função começarão com a nova máscara.</p>
   <p> </p>

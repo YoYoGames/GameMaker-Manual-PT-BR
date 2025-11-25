@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>layer_depth</h1>
+  <h1><span data-field="title" data-format="default">layer_depth</span></h1>
   <p>Esta função pode ser usada para alterar a <b>profundidade</b> da camada dada, alterando a ordem na qual seu conteúdo será apresentado à tela. Você fornece a identificação da camada (que você obtém quando cria a camada usando <a href="layer_create.htm"><span class="inline">layer_create()</span></a>) ou o nome da camada (como um <span class="notranslate">string</span> - isso terá um impacto no desempenho) e então dar a nova profundidade para defini-lo (uma forma de valor inteiro -16000 a 16000). A profundidade da camada é definida como sendo maior quando &quot;mais longe&quot; da câmera e menor quando &quot;mais perto&quot; da câmera, assim, se você tiver três camadas com profundidades -100, 0, 100, as camadas serão desenhadas na ordem 100, 0, -100, de modo que a camada &quot;superior&quot; (ou seja, a mais próxima da visão da câmera e assim desenhada sobre tudo mais) será a camada com a profundidade -100.</p>
   <p>A imagem a seguir mostra um esquema de como funciona a profundidade para camadas:</p>
   <p><img>Observe que você pode verificar a profundidade de uma camada a qualquer momento usando a função <a href="layer_get_depth.htm"><span class="inline">layer_get_depth()</span></a>. Observe também que as profundidades mínima e máxima das camadas são de -16000 a 16000, e qualquer coisa fora dessas profundidades <b>não será apresentada</b>. Se você precisar de uma profundidade fora dessa faixa, então você precisará usar a função <a href="layer_force_draw_depth.htm"><span class="inline">layer_force_draw_depth()</span></a>.</p>

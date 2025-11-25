@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>gpu_set_ztestenable</h1>
+  <h1><span data-field="title" data-format="default">gpu_set_ztestenable</span></h1>
   <p>Esta função pode ser usada para ativar ou desativar o teste de z-buffer, afetando a forma como as coisas serão desenhadas (em geral, só é útil quando se trabalha com projetos 3D). Essencialmente, por padrão, quando o teste z está desligado e você tem dois <span class="notranslate">objects</span> desenhando para o mesmo espaço,
    <i>ambos</i> <span class="notranslate">objects</span> serão prestados independentemente do fato de um desenhar em demasia o outro, resultando em chamadas desnecessárias de saque. Se você <span class="notranslate">switch</span> isto em seguida, o z-buffer é testado para ver se um <span class="notranslate">object</span> será &quot;visível&quot; e não desenhado se for
     não. Observe que este é o comportamento <i>padrão</i>, mas você pode mudar isso mudando o tipo de comparação usada para testes com z-buffer (veja a função <a href="gpu_get_zfunc.htm"><span class="inline">gpu_set_zfunc()</span></a>.</p>

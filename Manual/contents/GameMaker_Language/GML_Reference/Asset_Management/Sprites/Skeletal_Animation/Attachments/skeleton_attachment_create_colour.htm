@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>esqueleto_criar_côr_cores</title>
+  <title>skeleton_attachment_create_colour</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../../../assets/scripts/main_script.js"></script>
@@ -15,7 +15,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>esqueleto_criar_côr_cores</h1>
+  <h1><span data-field="title" data-format="default">skeleton_attachment_create_colour</span></h1>
   <p>Quando você cria sua animação esquelética <span class="notranslate">sprite</span>, você pode atribuir <i>ranhuras de fixação</i> e <i>anexos</i> para ir nelas. Estas são simplesmente imagens (<span class="notranslate">sprites</span>) que são separadas da animação, mas quando anexadas se moverão junto com o osso ao qual estão anexadas. Normalmente você atribuiria estes anexos em seu programa de animação (<span class="notranslate">Spine</span>), mas com esta função você pode criar seu próprio em tempo de execução usando um <span class="notranslate">sprite</span> <span class="notranslate">asset</span> de seu jogo. a função requer que você dê um nome ao anexo (como um <span class="notranslate">string</span>) e então defina o <a href="../../Sprite_Instance_Variables/sprite_index.htm"><span class="inline">sprite_index</span></a> e <a href="../../Sprite_Instance_Variables/image_index.htm"><span class="inline">image_index</span></a> para usar, assim como a origem x e y (que pode ser diferente daquela definida pelo <span class="notranslate">sprite</span> nas propriedades <span class="notranslate">sprite</span> ), e você também pode definir qualquer transformação que desejar aplicar à imagem quando anexada, assim como a cor a ser misturada com a imagem e o seu valor alfa (transparência). Se o anexo foi criado com sucesso, a função retornará <span class="inline">1</span> e se não foi (você forneceu um índice <span class="notranslate">sprite</span> inválido, ou a base <span class="notranslate">sprite</span> não é um <span class="notranslate">Spine</span> <span class="notranslate">sprite</span>), então ele retornará <span class="inline">-1</span>.</p>
   <p>Vale notar que o exemplo <span class="notranslate">sprite</span> pode ter uma cor de mistura e um ajuste alfa (<a href="../../Sprite_Instance_Variables/image_blend.htm"><span class="inline">image_blend</span></a> e <a href="../../Sprite_Instance_Variables/image_alpha.htm"><span class="inline">image_alpha</span></a>), assim como a ranhura de fixação (ver a função <a href="../Slots/skeleton_slot_colour_set.htm"><span class="inline">skeleton_slot_colour_set()</span></a>), e assim a cor final e alfa que o anexo designado <span class="notranslate">sprite</span> para o slot terá será um composto de todos esses valores.</p>
   <p> </p>

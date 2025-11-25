@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>esqueleto_mix_animação</title>
+  <title>skeleton_animation_mix</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../../../assets/scripts/main_script.js"></script>
@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>esqueleto_mix_animação</h1>
+  <h1><span data-field="title" data-format="default">skeleton_animation_mix</span></h1>
   <p>Você pode <span class="notranslate">switch</span> animações facilmente usando o <a href="skeleton_animation_set.htm"><span class="inline">skeleton_animation_set()</span></a> mas isso pode causar um salto ou gagueira, já que uma animação é trocada por outra. Para evitar isso, você pode definir o valor da mistura entre dois conjuntos de animação e o <span class="notranslate">sprite</span> irá interpolar entre eles. Normalmente, você gostaria de fazer isso no Create Event da instância com a animação esquelética, pois ela só precisa ser definida uma vez, e o <span data-keyref="GameMaker Name">GameMaker</span> interpolará todas as outras mudanças no <span class="notranslate">sprite</span> usando os conjuntos de animação naquela instância. Note que o valor de duração é de 0 a 1, onde um valor de 0,5 teria uma interpolação &quot;metade e metade&quot; de um conjunto para o outro.</p>
   <p class="note"><span class="note">NOTA</span> A espinha 4.0 muda como a animação rotacional funciona, já que não interpola mais a rotação usando a rota mais curta possível, mas usa os valores absolutos em seu <span class="notranslate">keyframes</span> para interpolação. Isso pode causar um comportamento inesperado se você estiver atualizando sua animação <span class="notranslate">Spine</span> a partir de uma versão mais antiga, e mudanças dentro de seu projeto <span class="notranslate">Spine</span> podem ser necessárias para que as rotações se comportem conforme necessário.</p>
   <p> </p>

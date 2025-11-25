@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>instance_create_depth</h1>
+  <h1><span data-field="title" data-format="default">instance_create_depth</span></h1>
   <p>Com esta função você pode criar uma nova instância do especificado <span class="notranslate">object</span> em qualquer ponto dentro do <span class="notranslate">room</span> e na profundidade especificada. A profundidade pode ser qualquer valor, onde quanto menor a profundidade, mais &quot;perto&quot; da câmera as coisas serão desenhadas e quanto maior a profundidade, mais longe, então uma instância na profundidade -200 será desenhada sobre uma instância na profundidade +300 (por exemplo).</p>
   <p>Note que esta função irá realmente criar uma camada <span class="notranslate">room</span> para a instância, já que todas as instâncias <i>devem</i> estar em uma camada no <span class="notranslate">room</span>, mas como esta é uma camada <i>gerenciada</i> (ou seja: não uma que você criou através do código ou no <span class="notranslate">room</span>, mas uma que <span data-keyref="GameMaker Name">o GameMaker</span> criou automaticamente). Você não pode acessar essa camada, e o <a href="Instance_Variables/layer.htm"><span class="inline">layer</span></a> a variável de instância retornará -1.</p>
   <p class="note"><span class="important">IMPORTANTE</span> Existe uma profundidade mínima e máxima de camada de -16000 a 16000. Qualquer coisa colocada em uma profundidade fora dessa faixa <b>não será desenhada</b>, embora todos os eventos ainda funcionem normalmente.</p>

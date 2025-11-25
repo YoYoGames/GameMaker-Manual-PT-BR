@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>buffer_async_group_begin</h1>
+  <h1><span data-field="title" data-format="default">buffer_async_group_begin</span></h1>
   <p>Esta função é chamada quando se deseja começar a salvar de múltiplos <span class="notranslate">buffers</span> para múltiplos arquivos (ou carregar múltiplos <span class="notranslate">buffers</span>). O <span class="inline2">nome do grupo</span> é um <span class="notranslate">string</span> e será usado como o nome do diretório onde os arquivos são salvos, e deve ser usado como parte do arquivo <span class="notranslate">path</span> ao carregar os arquivos de volta para o <span class="notranslate">IDE</span> posteriormente (usando qualquer um dos <a href="buffer_load.htm"><span class="inline">buffer_load()</span></a> funções). Esta função é <i>apenas</i> para uso com o <a href="buffer_save_async.htm"><span class="inline">buffer_save_async()</span></a> e <span class="inline"><a href="buffer_load_async.htm">buffer_load_async()</a></span> e você também deve terminar o grupo async chamando <a href="buffer_async_group_end.htm"><span class="inline">buffer_async_group_end()</span></a> caso contrário, os arquivos não serão salvos/carregados.</p>
   <p>Note que para as plataformas de console (como PS4 por exemplo), o <span class="inline2">nome do grupo</span> será usado como a descrição do slot salvo, e usar esta função pode ajudá-lo a evitar que a IU mostre para cada arquivo que está sendo salvo. Observe também que ao utilizar o UWP, você pode navegar pelos jogos salvos entre as janelas das lojas Xbox nativas e Microsoft, criando um grupo que é o mesmo que um grupo ERA Xbox, por exemplo:</p>
   <p class="code">if os_type == os_uwp<br />

@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>lista_de_ângulo_de_colisão</title>
+  <title>collision_rectangle_list</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
@@ -15,7 +15,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>lista_de_ângulo_de_colisão</h1>
+  <h1><span data-field="title" data-format="default">collision_rectangle_list</span></h1>
   <p>Esta função é a mesma que a <a href="collision_rectangle.htm"><span class="inline">collision_rectangle()</span></a> apenas, em vez de apenas detectar uma instância em colisão de cada vez, ele detectará várias instâncias. Você fornece as posições x/y da parte superior esquerda e inferior direita da área para verificar juntamente com o <span class="notranslate">object</span> para verificar, e você pode definir a verificação para ser precisa (neste caso todas as instâncias sendo verificadas precisarão ter máscaras de colisão <i>precisas</i> ) e se a verificação deve ou não incluir a instância chamadora.</p>
   <p>Você também fornece uma <a href="../../Data_Structures/DS_Lists/DS_Lists.htm">lista DS</a>, portanto o <a href="../../Asset_Management/Instances/Instance_Variables/id.htm"><span class="inline">id</span></a> valores de quaisquer instâncias que estejam colidindo com a instância de chamada serão adicionados ao final da lista dada. Você pode <a href="../../Data_Structures/DS_Lists/ds_list_clear.htm">limpar</a> a lista antes de chamar esta função para que ela contenha apenas os resultados desta chamada de função. Você também tem a opção de ordenar as instâncias com base em suas distâncias do centro da área retangular até suas origens. A função retorna o número de instâncias encontradas, ou 0 se nenhuma for encontrada.</p>
   <p>Observe que ao invés de um índice <span class="notranslate">object</span> você pode fornecer a <a href="../../../GML_Overview/Instance_Keywords.htm">palavra-chave da instância</a> <span class="inline">all</span>, para verificar todas as instâncias no atual <span class="notranslate">room</span>, que pode incluir a instância executando o código (dependendo do argumento <span class="inline">notme</span> ).</p>

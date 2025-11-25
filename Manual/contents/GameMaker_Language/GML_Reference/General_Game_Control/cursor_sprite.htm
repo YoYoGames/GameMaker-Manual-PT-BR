@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>cursor_sprite</h1>
+  <h1><span data-field="title" data-format="default">cursor_sprite</span></h1>
   <p>A definição desta variável instruirá <span data-keyref="GameMaker Name"><span data-keyref="GameMaker Name">GameMaker</span></span> para usar o designado <span class="notranslate">sprite</span> como um cursor (basicamente ajustando-o para a posição atual x/y do mouse a cada passo). O valor padrão é -1 que não é <span class="notranslate">sprite</span> para o cursor, mas você pode atribuir qualquer índice <span class="notranslate">sprite</span> do jogo <span class="notranslate">assets</span> ou que tenha sido importado de um recurso externo. Observe que não há como controlar a velocidade da animação ou índice_de_imagem, portanto, se o <span class="notranslate">sprite</span> tiver sub-imagens, estas serão alternadas na mesma velocidade que a velocidade do <span class="notranslate">room</span>. Para remover o cursor <span class="notranslate">sprite</span>, você pode definir esta variável para -1 novamente.</p>
   <p>Também vale a pena notar que esta variável <i>não</i> substitui o cursor da janela do jogo, e que ainda será desenhada como normal. Para evitar isto você pode usar a função <a href="../Cameras_And_Display/The_Game_Window/window_set_cursor.htm"><span class="inline">window_set_cursor()</span></a> e colocá-lo na constante <span class="inline">cr_none</span>, o que tornará o cursor padrão invisível.</p>
   <p> </p>

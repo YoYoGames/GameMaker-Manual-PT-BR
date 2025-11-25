@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>view_current</h1>
+  <h1><span data-field="title" data-format="default">view_current</span></h1>
   <p>Esta variável <b>lida apenas</b> é válida somente no <a href="../../../../The_Asset_Editors/Object_Properties/Draw_Events.htm"><b>Evento de sorteio</b></a> e retorna o porto de vista atual que está sendo feito. O valor de retorno mudará durante o evento de sorteio quando você tiver várias visões, já que o evento de sorteio é chamado <i>uma vez para cada porta de visão em sucessão</i>. Assim, quando (por exemplo) você estiver usando a view port[0] e view port[1] em seu jogo <span class="notranslate">room</span>, o evento de sorteio para <i>TODAS</i> as instâncias será realizado duas vezes, uma para cada porta, e com esta variável você pode verificar qual a view que está sendo sorteada atualmente. Em geral, isto é usado para renderizar apenas detalhes específicos para uma única porta quando várias portas de visualização são visíveis no <span class="notranslate">room</span> ao mesmo tempo. Veja o código de exemplo abaixo.</p>
   <p> </p>
   <h4>Sintaxe:</h4>

@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>part_system_automatic_draw</h1>
+  <h1><span data-field="title" data-format="default">part_system_automatic_draw</span></h1>
   <p>Esta função pode ser usada para <span class="notranslate">switch</span> fora do desenho de um sistema de partículas para que quaisquer atualizações feitas no sistema (automáticas ou não) não sejam vistas. Esta é uma opção puramente visual e quando configurada para <span class="inline">false</span> você não poderá ver as partículas, pois elas não são desenhadas, mas ainda existem e estão mudando de posição, cor, etc... como normalmente aconteceria. Quando o desenho automático estiver desativado, você pode ordenar <i>explicitamente</i> ao <span data-keyref="GameMaker Name">GameMaker</span> que desenhe o estado atual do sistema de partículas usando a função <a href="part_system_drawit.htm"><span class="inline">part_system_drawit()</span></a>e se você definir esta função para <span class="inline">true</span> novamente, você pode <span class="notranslate">switch</span> desenhar automaticamente de volta.</p>
   <p>Uma coisa a ser observada é que se você estiver usando os efeitos simples criados pelas funções <a href="../effect_create_above.htm"><span class="inline">effect_create_above()</span></a> ou <a href="../effect_create_below.htm"><span class="inline">effect_create_below()</span></a> então você pode usar os valores 0 (para efeitos abaixo) ou 1 (para efeitos acima) como o índice do sistema de partículas e assim alternar o desenho automático para estes também (isto também funcionará para alternar o desenho para os efeitos de partículas visuais <span class="notranslate">GML</span> ).</p>
   <p> </p>

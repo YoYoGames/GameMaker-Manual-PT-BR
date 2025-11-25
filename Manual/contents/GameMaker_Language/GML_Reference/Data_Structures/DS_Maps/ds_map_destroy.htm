@@ -14,7 +14,7 @@
 
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>ds_map_destroy</h1>
+  <h1><span data-field="title" data-format="default">ds_map_destroy</span></h1>
   <p>Os mapas DS ocupam espaço na memória, que é alocado a eles quando são criados. Isto significa que você também precisa liberar esta memória quando o mapa DS não é necessário para evitar erros, vazamentos de memória e perda de desempenho ao executar seu jogo. Esta função
     faz exatamente isso. Note que a destruição de um mapa irá desreferenciar quaisquer estruturas de dados armazenadas no mapa, dando um vazamento de memória, portanto você precisaria atravessar o mapa e destruir todos os itens da estrutura de dados manualmente antes de destruí-lo para evitar isso. O
     somente quando você tiver assinalado qualquer item no mapa como uma <a href="../DS_Lists/DS_Lists.htm">lista DS</a> ou como outro <a href="DS_Maps.htm">mapa DS</a>, e nesse caso esses itens serão destruídos e sua memória será limpa

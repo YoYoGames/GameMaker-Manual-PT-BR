@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>shader_set_uniform_f</h1>
+  <h1><span data-field="title" data-format="default">shader_set_uniform_f</span></h1>
   <p>Com esta função você pode definir o valor (ou valores) de uma constante <span class="notranslate">shader</span>. Você deve ter obtido previamente a &quot;manipulação&quot; da constante usando a função <a href="shader_get_uniform.htm"><span class="inline">shader_get_uniform()</span></a>e você terá que saber que tipo de constante é para passar o número correto de valores de ponto flutuante, ou seja: se você tiver um <span class="inline">vec2</span> você terá que passar dois valores para a função.</p>
   <p>Uma exceção à regra acima é quando se trata de valores de cor de 32bit. Você pode passar para o <span class="notranslate">shader</span> até oito valores de cor de 32 bits e eles serão automaticamente convertidos para você em valores vec4 de 0 - 1. Entretanto, para isso você <i>deve</i> usar o nome constante <span class="notranslate">shader</span> <span class="inline">in_Colour</span> , para uma única cor, ou <span class="inline">in_Colour0</span>, <span class="inline">in_Colour1</span>, etc... até <span class="inline">in_Colour7</span> para valores de entrada múltiplos. Os exemplos a seguir mostram como isto se pareceria no próprio <span class="notranslate">shader</span>:</p>
   <p class="code">    //Single colour<br />

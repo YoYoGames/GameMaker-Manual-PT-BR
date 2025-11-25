@@ -15,7 +15,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>instance_deactivate_region</h1>
+  <h1><span data-field="title" data-format="default">instance_deactivate_region</span></h1>
   <p>Com esta função você pode definir uma região dentro do <span class="notranslate">room</span> para desativar instâncias que tenham sido ativadas anteriormente. Esta região pode ser assinalada como &quot;dentro&quot; ou &quot;fora&quot;, como demonstrado na imagem a seguir:</p>
   <p><img>Você pode ver na imagem acima que a instância &quot;maçã&quot; está sempre inativa porque, mesmo que o próprio <span class="notranslate">sprite</span> não se sobreponha à região, a caixa delimitadora sim. Assim, as instâncias são consideradas como estando dentro da região especificada quando sua <i>caixa delimitadora</i> se sobrepõe a ela, e o estado da máscara de colisão (precisa ou não) <b>não</b> é levado em consideração. Observe que a desativação não é instantânea, e uma instância que tenha sido desativada desta forma não será considerada inativa até o final do evento no qual a função foi chamada.</p>
   <p class="note"><b>OBSERVAÇÃO</b>: Se você desativar uma instância em <span class="notranslate">room</span> iniciar (ou seja: a partir do código de criação <span class="notranslate">room</span>, ou a partir de uma instância criar evento de uma instância dentro do <span class="notranslate">room</span>) todas as instâncias que forem colocadas dentro do <span class="notranslate">room</span> do editor <span class="notranslate">room</span> <b>ainda executarão seu evento de criação</b> antes de serem desativadas.</p>

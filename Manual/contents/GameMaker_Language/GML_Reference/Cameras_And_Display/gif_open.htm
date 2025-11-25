@@ -15,7 +15,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>gif_open</h1>
+  <h1><span data-field="title" data-format="default">gif_open</span></h1>
   <p>Com esta função você pode criar uma imagem em formato GIF vazia, pronta para ter dados adicionados a ela. Quando você chama a função, você precisa especificar a largura e a altura do GIF (em pixels, e não há limite superior de tamanho, exceto para a memória disponível), e a função retornará o valor de identificação único usado para identificar o presente em funções subseqüentes, ou retornará -1 se o gif não puder ser inicializado (por exemplo, se a largura/altura for muito grande para a memória disponível). Você também pode especificar um argumento opcional para definir a &quot;cor clara&quot; para o GIF. Este é um valor RGB (sem componente alfa), e limpará o gif para esta cor antes que qualquer coisa seja adicionada a ele. Se você não fornecer um argumento de cor clara, será usada a cor padrão de preto.</p>
   <p>Note que ao utilizar esta função você deve chamar <a href="gif_save.htm"><span class="inline">gif_save()</span></a> para finalizar a criação do GIF antes de abrir outro arquivo para gravação (assim, para cada <span class="inline">gif_open()</span> deve haver um arquivo de acompanhamento <span class="inline">gif_save()</span>).</p>
   <p> </p>

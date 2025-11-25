@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>network_connect_raw_async</h1>
+  <h1><span data-field="title" data-format="default">network_connect_raw_async</span></h1>
   <p>Com esta função você pode enviar um pedido para conectar a um <span class="notranslate">server</span>. A função leva a <i>identificação do soquete</i> para conectar (veja <a href="network_create_socket.htm"><span class="inline">network_create_socket()</span></a>) e exige que você forneça o endereço IP para se conectar
     para (a <span class="notranslate">string</span>), bem como a porta de passagem, e se a conexão falhar, um valor inferior a 0 será devolvido. A diferença entre esta função e <a href="network_connect_async.htm"><span class="inline">network_connect_async()</span></a>é que este
     pode se conectar a qualquer <span class="notranslate">server</span> e não faz nada com os dados brutos, o que significa que você mesmo tem que implementar os protocolos no final do <span class="notranslate">server</span>. Note que esta função é assíncrona, gerando um evento de <a href="../../../The_Asset_Editors/Object_Properties/Async_Events/Networking.htm">rede assíncrona</a> do tipo <span class="inline">network_type_non_blocking_connect</span>.</p>

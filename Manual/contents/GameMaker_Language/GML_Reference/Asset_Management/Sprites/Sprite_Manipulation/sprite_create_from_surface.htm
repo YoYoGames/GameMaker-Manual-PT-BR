@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>sprite_create_from_surface</h1>
+  <h1><span data-field="title" data-format="default">sprite_create_from_surface</span></h1>
   <p>Com esta função você pode criar um <span class="notranslate">sprite</span> a partir de uma superfície previamente inicializada (o valor do índice de superfície é retornado quando você cria a superfície usando <a href="../../../Drawing/Surfaces/surface_create.htm"><span class="inline">surface_create()</span></a>). As coordenadas x e y que você então introduzir na função devem ser relativas à posição (0,0) da <i>superfície</i> (o canto superior esquerdo) e não à janela do jogo (nem à vista se você tiver uma ativa). Os argumentos de largura e altura estão em pixels e definem a largura e altura da parte da superfície a ser utilizada.</p>
   <p>Definindo o argumento &quot;removeback&quot; para <span class="inline">true</span> removerá uma cor do <span class="notranslate">sprite</span>, verificando o pixel <i>inferior esquerdo</i> do <span class="notranslate">sprite</span> para a cor lá e depois usando-a como a cor a ser removida.</p>
   <p>Se você escolher a opção &quot;remover&quot;, você também pode querer que <span data-keyref="GameMaker Name">o GameMaker</span> suavize as bordas do <span class="notranslate">sprite</span>, definindo o argumento &quot;suavizar&quot; para <span class="inline">true</span>. Tudo o que isso faz é criar uma borda semi-transparente ao redor das bordas do <span class="notranslate">sprite</span> após ter tido seu fundo removido.</p>

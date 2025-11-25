@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>instance_create_layer</h1>
+  <h1><span data-field="title" data-format="default">instance_create_layer</span></h1>
   <p>Com esta função você pode criar uma nova instância do especificado <span class="notranslate">object</span> em qualquer ponto dentro do <span class="notranslate">room</span> e na camada especificada. A camada pode ser identificada usando o valor de identificação da camada (como retornado pela função <a href="../Rooms/General_Layer_Functions/layer_create.htm"><span class="inline">layer_create()</span></a>) ou pelo nome da camada (como um <span class="notranslate">string</span>, por exemplo, &quot;instance_layer&quot;) como definido no <a href="../../../../The_Asset_Editors/Rooms.htm">editor da sala</a>.</p>
   <p>Esta função retorna o <a href="Instance_Variables/id.htm"><span class="inline">id</span></a> da nova instância, que pode então ser armazenada em uma variável e usada para acessar essa instância. Note que esta função também chamará o <a href="../../../../The_Asset_Editors/Object_Properties/Object_Events.htm">Create Event</a> da instância sendo criada <i>antes de</i> continuar com o código ou ações para o evento que chamou a função.</p>
   <p class="note"><span class="important">IMPORTANTE</span> Existe uma profundidade mínima e máxima de camada de -16000 a 16000. Qualquer coisa colocada em uma camada fora dessa faixa <b>não será desenhada</b>, embora todos os eventos ainda funcionem normalmente.</p>

@@ -15,7 +15,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>place_free</h1>
+  <h1><span data-field="title" data-format="default">place_free</span></h1>
   <p>Você pode usar esta função para verificar e ver se a instância de chamada colidiria com qualquer instância <i>marcada como <b>sólida</b></i> em seu jogo. Agora, deve ser observado que para que isto funcione, a instância que executa o código deve ter uma máscara de colisão válida (ou para o próprio <span class="notranslate">sprite</span>, ou através do <a href="../../Asset_Management/Sprites/Sprite_Instance_Variables/mask_index.htm"><span class="inline">mask_index</span></a>) e só registrará colisões com aquelas instâncias de bandeira sólida que também possuem uma máscara válida.</p>
   <p>A função em si funciona basicamente tomando a instância e testando para colisões apenas com instâncias marcadas sólidas quando colocadas na posição especificada pelos argumentos x/y. A verificação de colisão pode ser precisa ou baseada na caixa de delimitação da instância, dependendo de que tipo de máscara de colisão foi selecionada.</p>
   <p>Observe que as coordenadas x/y dadas serão niveladas com o inteiro mais próximo antes da verificação ser realizada.</p>

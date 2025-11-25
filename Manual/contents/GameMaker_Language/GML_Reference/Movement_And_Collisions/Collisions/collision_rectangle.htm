@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>colisão_rectângulo</title>
+  <title>collision_rectangle</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
@@ -15,7 +15,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>colisão_rectângulo</h1>
+  <h1><span data-field="title" data-format="default">collision_rectangle</span></h1>
   <p><span class="inline">Collision_rectangle</span> usa os primeiros quatro argumentos (x1,y1,x2,y2) para definir uma área dentro do atual <span class="notranslate">room</span> e depois verifica se <b>algum</b> <span class="notranslate">object</span> que é definido pelo argumento &quot;obj&quot; está em colisão com essa área. Esta colisão pode ser verificada como precisa ou não, e você também pode optar por verificar, por exemplo, se está ou não executando o código em si. Considere esta imagem:</p>
   <p><img>Aqui, o exemplo no meio é usar um retângulo de colisão para verificar a bola <span class="notranslate">objects</span>. Agora, os azuis <i>não</i> têm uma caixa de delimitação precisa e, como você pode ver, mesmo que o <span class="notranslate">sprite</span> não esteja realmente tocando o retângulo, a colisão ainda acontecerá (mesmo que você defina a opção precisa na função como verdadeira) como a caixa de delimitação daquele <span class="notranslate">sprite</span> sobrelaça o retângulo de colisão_correção. Por outro lado, as bolas verdes só serão consideradas em colisão se o próprio <span class="notranslate">sprite</span> sobrelaçar o retângulo. Lembre-se, para que colisões precisas sejam consideradas <i>tanto</i> o <span class="notranslate">object</span> <span class="notranslate">sprite</span> quanto a função de colisão devem ter a marcação precisa como em. Também deve ser observado que o valor de retorno da função pode ser o id de <i>qualquer uma</i> das instâncias consideradas como em colisão.</p>
   <p>Note que ao invés de um índice <span class="notranslate">object</span> você pode fornecer uma instância <a href="../../Asset_Management/Instances/Instance_Variables/id.htm"><span class="inline">id</span></a> para verificar uma instância específica, ou as <a href="../../../GML_Overview/Instance_Keywords.htm">palavras-chave da instância</a> <span class="inline">all</span>, ou <span class="inline">other</span> (dependendo do evento e do escopo do código atual).</p>

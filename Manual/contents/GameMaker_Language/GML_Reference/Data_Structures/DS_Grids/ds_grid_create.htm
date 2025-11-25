@@ -15,7 +15,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>ds_grid_create</h1>
+  <h1><span data-field="title" data-format="default">ds_grid_create</span></h1>
   <p>Com esta função você pode criar uma nova estrutura de dados da grade DS com a largura e altura da célula especificada. Esta função retorna uma identificação que deve ser usada em todas as outras funções que lidam com esta grade DS.</p>
   <p class="note"><b>IMPORTANTE!</b> Quando você cria uma estrutura de dados, o valor do índice para identificá-lo é um valor inteiro começando em 0. Isso significa que estruturas de dados de diferentes tipos podem ter o <b>mesmo</b> valor de índice, portanto, em caso de dúvida, você deve estar usando o <span style="font-size:1px;"><a href="../ds_exists.htm"><span class="inline">ds_exists()</span></a></span> antes de acessá-los. Observe também que os índices são reutilizados, de modo que um valor de índice de estrutura de dados destruída pode ser usado por um índice recém-criado posteriormente.</p>
   <p> </p>
