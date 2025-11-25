@@ -19,11 +19,11 @@
   <p><img>Os erros de corredor são geralmente mais graves do que os erros de compilação, pois significa que há algo seriamente errado com seu código que nem o editor de código nem o compilador foram capazes de detectar, e como tal você deve prestar atenção a todos esses erros. Quando um ocorre, você pode usar o botão <strong>Copiar</strong> no pop-up para copiar o erro para a área de transferência que você pode então colar em um arquivo de texto (ou onde quer que seja) para referência futura.</p>
   <p>A estrutura deste erro é a seguinte:</p>
   <ul class="colour">
-    <li><img><br>
+    <li><img><br />
       Isto mostra o Evento em que o erro ocorreu, assim como o <span class="notranslate">Object</span> (onde aplicável).</li>
-    <li><img><br>
+    <li><img><br />
       Isto mostra o erro real.  Assim, mostra o <em>escopo </em>do erro e o tipo de erro que ele é. O primeiro valor entre parênteses será a identificação da instância que estava executando o código - ou poderia ser um dos valores especiais listados na tabela abaixo - e o segundo é um valor interno que <span data-keyref="GameMaker Name">o GameMaker</span> usa para identificar bugs e pode ser ignorado. No caso da imagem acima, está dizendo que a variável <span class="inline">_image</span> não foi definida (ou seja: não existe antes de ser acessada) no <span class="notranslate">object</span> <span class="inline">obj_EA_DEMO_Control</span>.</li>
-    <li><img><br>
+    <li><img><br />
       Isto mostra o número de linha em que o erro ocorre, bem como um trecho de código mostrando a posição. Note que isto nem sempre é 100% preciso devido à forma como o jogo é compilado, mas deve ser suficiente para ajudá-lo a encontrar exatamente onde o problema está.</li>
   </ul>
   <p>Como mencionado acima, certas mensagens de erro identificarão o escopo não por um valor de identificação de instância, mas sim por um valor <em>negativo </em>. Estes valores podem ser usados para identificar a natureza exata do erro e o que ele se refere com os seguintes valores possíveis:</p>
@@ -264,7 +264,7 @@
         <td style="text-align: center;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px"><span class="inline">With</span></td>
         <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Não é possível usar global com declaração</td>
         <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Com</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Você tentou usar &quot;<span class="inline">global</span>&quot; como uma variável dentro de uma declaração &quot;<span class="inline">with</span>&quot;, ou seja:<br>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Você tentou usar &quot;<span class="inline">global</span>&quot; como uma variável dentro de uma declaração &quot;<span class="inline">with</span>&quot;, ou seja:<br />
           <span class="inline">with (global)<br />
                {<br />
                //do something;<br />
@@ -275,7 +275,7 @@
         <td style="text-align: center;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px"><span class="inline">With</span></td>
         <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Não é possível usar o local com declaração</td>
         <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Com</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Você tentou usar &quot;<span class="inline">local</span>&quot; como uma variável dentro de uma declaração &quot;<span class="inline">with</span>&quot;, ou seja:<br>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Você tentou usar &quot;<span class="inline">local</span>&quot; como uma variável dentro de uma declaração &quot;<span class="inline">with</span>&quot;, ou seja:<br />
           <span class="inline">with (local)<br />
                {<br />
                //do something;<br />

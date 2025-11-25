@@ -48,12 +48,12 @@
     show_debug_message(data);
   </p>
   <p>O código acima cria um novo <span class="notranslate">string</span> contendo um JSON válido <span class="notranslate">object</span>, e então chama <span class="inline">json_parse()</span> para converter esse <span class="notranslate">string</span> em um <span class="notranslate">GML</span> <span class="notranslate">struct</span>. Ele então imprime o resultado para o registro de depuração.</p>
-  <p class="note"><span class="note">NOTA</span> Você notará que o JSON <span class="notranslate">string</span> contém uma contrabarra<span class="inline2">(\</span>) antes de cada dupla citação (<span class="inline2">&quot;</span>) dentro dele:<br>
-    <br>
-   <span class="inline2">json = &quot;{ { } <strong>&quot; </strong></span>myObj<br>
-    <br>
-    Isto é para garantir que a citação dupla seja lida como um personagem real dentro do <span class="notranslate">string</span>, em vez de ser lida como parte do código e fechar o <span class="notranslate">string</span> prematuramente. Desta forma, estamos usando uma barra invertida para &quot;escapar&quot; da dupla citação.<br>
-    <br>
+  <p class="note"><span class="note">NOTA</span> Você notará que o JSON <span class="notranslate">string</span> contém uma contrabarra<span class="inline2">(\</span>) antes de cada dupla citação (<span class="inline2">&quot;</span>) dentro dele:<br />
+    <br />
+   <span class="inline2">json = &quot;{ { } <strong>&quot; </strong></span>myObj<br />
+    <br />
+    Isto é para garantir que a citação dupla seja lida como um personagem real dentro do <span class="notranslate">string</span>, em vez de ser lida como parte do código e fechar o <span class="notranslate">string</span> prematuramente. Desta forma, estamos usando uma barra invertida para &quot;escapar&quot; da dupla citação.<br />
+    <br />
     Se você estiver carregando JSON de um arquivo externo, entretanto, não há necessidade de escapar dos caracteres desse arquivo e isso pode resultar em erros durante a análise.
   </p>
   <hr />

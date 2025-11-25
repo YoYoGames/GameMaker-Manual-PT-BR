@@ -43,7 +43,7 @@
   <div class="droptext" data-targetname="drop-down2">
     <p class="dropspot">Os controles de tela tratam de vários aspectos de como a tela de desenho principal e seu conteúdo são exibidos. As opções são:</p>
     <ul class="dropspotlist">
-      <li class="dropspot">Toggle Canvas Grid <img>: Isto irá ligar/desligar a grade de lona. Esta é uma grade que <span data-keyref="GameMaker Name">o GameMaker</span> desenha sobre a tela principal para dividi-la em seções, e por padrão é definida para 1px em tamanho. Entretanto, se você clicar no ícone do Menu Grid <img>, você abrirá as opções da grade:<br>
+      <li class="dropspot">Toggle Canvas Grid <img>: Isto irá ligar/desligar a grade de lona. Esta é uma grade que <span data-keyref="GameMaker Name">o GameMaker</span> desenha sobre a tela principal para dividi-la em seções, e por padrão é definida para 1px em tamanho. Entretanto, se você clicar no ícone do Menu Grid <img>, você abrirá as opções da grade:<br />
         <img>Estas opções permitem que você defina a cor e alfa da grade, bem como os valores das células da grade ao longo dos eixos X e Y. Você também tem uma opção para ativar ou desativar o snapping da grade aqui (desativado por padrão).
       </li>
       <li class="dropspot">Controles de zoom de lona <img>: Estes botões controlam o nível atual de zoom de lona. Você pode aumentar ou diminuir o zoom e clicar no botão <img> irá redefinir a tela para 1:1 com a imagem sendo editada. Você também pode clicar no botão Ajustar Janela <img> para fazer toda a tela caber dentro do editor atual <span class="notranslate">workspace</span> (isto fará o zoom in/out conforme apropriado para fazê-lo caber). Note que você também pode aumentar e diminuir o zoom usando o <img> / <img> e a Roda do Rato <img>, e pressionando <img> / <img> + <img> a tela <span class="notranslate">room</span> será 1:1 com a imagem sendo editada.</li>
@@ -140,7 +140,7 @@
         <tr>
           <td class="icons"><img alt="Control Icon" class="icon" height="20" src="../assets/Images/Icons/Icon_Ctrl.png" width="55" /></td>
           <td class="icons"><strong>Texto</strong></td>
-          <td class="text"><br>
+          <td class="text"><br />
             Esta é a ferramenta de entrada de texto. Ela cria uma nova camada de texto onde você pode digitar tudo o que precisar. Você pode configurar o <span class="notranslate">font</span> para usar, assim como a formatação a partir da barra superior do editor de imagens.</td>
         </tr>
         <tr>
@@ -208,22 +208,22 @@
       <li class="dropspot"><strong>Adicionar Moldura</strong> - Adicione uma nova moldura ao <span class="notranslate">sprite</span>.</li>
       <li class="dropspot"><strong>Moldura de inserção</strong> - Inserir uma nova moldura após a que está sendo mostrada atualmente.</li>
       <li class="dropspot"><strong>Excluir nomes selecionados</strong> - Remova o quadro selecionado do <span class="notranslate">sprite</span> (você pode usar <img> / <img> + <img> e/ou <img> + <img> para selecionar vários quadros).</li>
-      <li class="dropspot"><strong>Importar imagem(s)</strong> - Carregar uma imagem para ser usada como um quadro a partir do disco. Note que você pode carregar vários quadros de uma só vez selecionando vários arquivos individuais para importar na janela do explorador. Uma vez selecionado seu arquivo ou arquivos, será mostrada a seguinte janela de importação:<br>
+      <li class="dropspot"><strong>Importar imagem(s)</strong> - Carregar uma imagem para ser usada como um quadro a partir do disco. Note que você pode carregar vários quadros de uma só vez selecionando vários arquivos individuais para importar na janela do explorador. Uma vez selecionado seu arquivo ou arquivos, será mostrada a seguinte janela de importação:<br />
         <img>Aqui você pode escolher como a imagem importada deve ser adicionada ao atual <span class="notranslate">sprite</span>, permitindo que você redimensione toda a tela de desenho, corte ou acolchoe, e também defina a posição &quot;âncora&quot; para colocar a(s) nova(s) imagem(s).
       </li>
-      <li class="dropspot"><strong>Converter em Molduras</strong> - Esta opção converterá uma única imagem em uma série de molduras separadas. Primeiro você deve ter criado um único quadro com todas as partes da animação nele (ou importado uma única imagem de faixa) como o mostrado abaixo:<br>
-        <img>Como esta é uma imagem única e queremos convertê-la em quadros individuais, podemos usar esta opção que abrirá então a seguinte janela:<br>
+      <li class="dropspot"><strong>Converter em Molduras</strong> - Esta opção converterá uma única imagem em uma série de molduras separadas. Primeiro você deve ter criado um único quadro com todas as partes da animação nele (ou importado uma única imagem de faixa) como o mostrado abaixo:<br />
+        <img>Como esta é uma imagem única e queremos convertê-la em quadros individuais, podemos usar esta opção que abrirá então a seguinte janela:<br />
         <img>Aqui você pode definir como a imagem única deve ser dividida para criar os quadros, definindo o número de quadros, a largura e a altura dos quadros e quaisquer valores de offset.
       </li>
       <li class="dropspot"><strong>Importar imagem em tiras</strong> - Esta opção abrirá um explorador de arquivos e o levará a procurar por um único arquivo de imagem em tiras para ser usado na criação de quadros. Uma vez selecionada uma imagem, a janela Importar imagem em tiras será aberta, exatamente como na opção <strong>Converter em quadros</strong> mostrada acima.</li>
       <li class="dropspot"><strong>Exportar para PNG</strong> - Selecionando esta opção, o <span class="notranslate">sprite</span> será exportado como uma única imagem <span class="inline">PNG</span>. Se o <span class="notranslate">sprite</span> tiver mais de uma única imagem, então será criada uma &quot;faixa&quot; <span class="notranslate">sprite</span> com todas as imagens, uma após a outra, e o nome do arquivo salvo será automaticamente anexado com &quot;<span class="inline">_stripX</span>&quot;, onde &quot;<span class="inline">X</span>&quot; é o número de quadros exportados. Por exemplo, um quadro de cinco quadros <span class="notranslate">sprite</span> será exportado como &quot;<span class="inline">sprite_name_strip5.png</span>&quot;.</li>
-      <li class="dropspot"><strong>Redimensionar todos os quadros</strong> - Quando você selecionar esta opção, abrirá a seguinte janela onde você pode definir o caminho que deseja redimensionar todos os quadros de animação que compõem o sprite:<br>
-        <img>Você pode escolher entre <strong>redimensionar </strong>a imagem, ou <strong>redimensionar</strong> a tela. Se optar por redimensionar a imagem, basta selecionar a nova largura e/ou altura para cada quadro, se a redimensionar usando a mesma relação de aspecto, e também se a redimensionar em pixels ou porcentagem. Note que ao escalar você pode ativar ou desativar a <a class="glossterm" data-glossterm="interpolação linear" href="#">interpolação linear</a>, onde tê-la ativada fará com que os pixels se desfaçam ou &quot;manchem&quot; conforme a imagem é escalada (em geral, para a arte de alta resolução você quer isto <em>ativado</em>, mas para a arte de pixels você quer isto <em>desativado</em>).<br>
-        <br>
+      <li class="dropspot"><strong>Redimensionar todos os quadros</strong> - Quando você selecionar esta opção, abrirá a seguinte janela onde você pode definir o caminho que deseja redimensionar todos os quadros de animação que compõem o sprite:<br />
+        <img>Você pode escolher entre <strong>redimensionar </strong>a imagem, ou <strong>redimensionar</strong> a tela. Se optar por redimensionar a imagem, basta selecionar a nova largura e/ou altura para cada quadro, se a redimensionar usando a mesma relação de aspecto, e também se a redimensionar em pixels ou porcentagem. Note que ao escalar você pode ativar ou desativar a <a class="glossterm" data-glossterm="interpolação linear" href="#">interpolação linear</a>, onde tê-la ativada fará com que os pixels se desfaçam ou &quot;manchem&quot; conforme a imagem é escalada (em geral, para a arte de alta resolução você quer isto <em>ativado</em>, mas para a arte de pixels você quer isto <em>desativado</em>).<br />
+        <br />
         A opção de redimensionar a tela não alterará os pixels dentro da imagem, mas, em vez disso, aumentará ou diminuirá o tamanho da tela em que as imagens estão sendo desenhadas. Você pode definir onde a &quot;âncora&quot; para o redimensionamento deve estar usando os ícones de seta, depois definir o novo tamanho (em pixels ou como porcentagem), bem como definir se deseja manter a relação de aspecto dos quadros originais. Note que tornando o quadro menor do que as imagens originais <span class="notranslate">sprite</span>, os pixels serão cortados.
       </li>
       <li class="dropspot"><strong>Cortar todos os quadros para seleção</strong> - Esta opção só estará disponível quando você tiver uma área da imagem selecionada na tela principal do desenho. Ao escolher esta opção, a imagem sendo editada (e todos os outros quadros da animação) será cortada até os limites da seleção.</li>
-      <li class="dropspot"><strong>Auto Trim All Frames</strong> - Esta opção permite aparar todos os píxeis alfa zero em torno das bordas de um <span class="notranslate">sprite</span>. Isto levará em consideração todos os quadros de imagem dentro do <span class="notranslate">sprite</span>, assim cada lado cortará até a borda de qualquer quadro que tenha o pixel alfa mais distante que não seja zero.<br>
+      <li class="dropspot"><strong>Auto Trim All Frames</strong> - Esta opção permite aparar todos os píxeis alfa zero em torno das bordas de um <span class="notranslate">sprite</span>. Isto levará em consideração todos os quadros de imagem dentro do <span class="notranslate">sprite</span>, assim cada lado cortará até a borda de qualquer quadro que tenha o pixel alfa mais distante que não seja zero.<br />
         <img>
       </li>
       <li class="dropspot"><strong>Reverse Frames</strong> - Selecionando esta opção, basta inverter a ordem dos quadros para o <span class="notranslate">sprite</span>.</li>
@@ -241,7 +241,7 @@
       <li class="dropspot"><strong>1:1</strong> - Dimensionar a imagem para ser 1:1 com a resolução (ou seja: tamanho real) e centralizá-la na janela de edição de imagem.</li>
       <li class="dropspot"><strong>Tela de ajuste</strong> - Dimensione a imagem para preencher a janela de edição de imagem.</li>
       <li class="dropspot"><strong>Mostrar grade</strong> - Alternar a grade de pixels. Isto é o mesmo que o botão da grade encontrado nos controles de tela (explicado mais acima nesta página).</li>
-      <li class="dropspot"><strong>Configurações de pele de cebola</strong> - Alterar as configurações de pele de cebola. Isto abrirá a seguinte janela onde você pode ajustar os quadros mostrados pelo botão de pele de cebola, assim como a opacidade e a cor dos quadros de pele de cebola.<br>
+      <li class="dropspot"><strong>Configurações de pele de cebola</strong> - Alterar as configurações de pele de cebola. Isto abrirá a seguinte janela onde você pode ajustar os quadros mostrados pelo botão de pele de cebola, assim como a opacidade e a cor dos quadros de pele de cebola.<br />
         <img>
       </li>
     </ul>
@@ -251,10 +251,10 @@
   <div class="droptext" data-targetname="drop-down11">
     <p class="dropspot"><img>O menu Efeitos é onde você pode adicionar seus próprios plugins de efeitos personalizados, e tem os seguintes efeitos por padrão:</p>
     <ul class="dropspotlist">
-      <li class="dropspot"><strong>Borrão - </strong> Aplique um efeito de borrão na imagem. Você pode definir a intensidade, bem como o tipo de borrão a ser usado (caixa ou gaussiano) e definir se deve ser apenas borrado ao longo do eixo horizontal ou vertical, ou ao longo de ambos. Você pode então optar por aplicar isto somente à camada atual, camadas visíveis ou todas as camadas.<br>
+      <li class="dropspot"><strong>Borrão - </strong> Aplique um efeito de borrão na imagem. Você pode definir a intensidade, bem como o tipo de borrão a ser usado (caixa ou gaussiano) e definir se deve ser apenas borrado ao longo do eixo horizontal ou vertical, ou ao longo de ambos. Você pode então optar por aplicar isto somente à camada atual, camadas visíveis ou todas as camadas.<br />
         <img>
       </li>
-      <li class="dropspot"><strong>Greyscale - </strong> Desaturar a imagem por uma determinada quantidade. Você pode optar por aplicar isto somente à camada atual, camadas visíveis ou todas as camadas.<br>
+      <li class="dropspot"><strong>Greyscale - </strong> Desaturar a imagem por uma determinada quantidade. Você pode optar por aplicar isto somente à camada atual, camadas visíveis ou todas as camadas.<br />
         <img>
       </li>
     </ul>

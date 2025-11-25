@@ -104,18 +104,18 @@
   <p class="note"><b>NOTA</b>: A única coisa que você <b>não pode</b> fazer com a superfície de aplicação é liberá-la. Ela sempre existe, embora o valor do índice para acessá-la possa mudar.</p>
   <p>Quando você executa seu jogo, esta superfície é criada na primeira vez que o <a href="../../../../The_Asset_Editors/Object_Properties/Draw_Events.htm">evento do sorteio</a> é chamado em cada novo <span class="notranslate">room</span> que você entra, o que significa que nada é desenhado até aquele ponto. Entretanto, você ainda pode obter a posição da superfície de aplicação e redimensioná-la no <b>Create Event</b> ou em qualquer outro evento sem receber nenhum erro e os valores utilizados serão relevantes para a superfície quando ela for criada. O verdadeiro <span class="notranslate">sequence</span> de eventos para a criação e desenho da superfície de aplicação é o seguinte:</p>
   <ul class="colour">
-    <li>Evento de pré-estiramento<br>
+    <li>Evento de pré-estiramento<br />
                --- &gt; <b>a superfície de aplicação é criada (se não existir) e o objetivo de renderização é definido</b></li>
     <li><b></b>Para cada porto de visão visível, ou, se nenhum porto de visão estiver ativo, uma vez
       <ul class="colour">
         <li>Evento de início do sorteio</li>
         <li>Evento de sorteio</li>
-        <li>Sorteio do evento final<br>
+        <li>Sorteio do evento final<br />
                   --- &gt; <b>a superfície de aplicação renderiza o alvo é reinicializada aqui</b></li>
       </ul>
     </li>
-    <li><b></b>Evento pós-sorteio<br>
-              --- &gt; <b>a superfície de aplicação é agora atraída para o <a class="glossterm" data-glossterm="buffer de exibição" href="#">buffer de exibição</a> </b> por padrão <b><br>
+    <li><b></b>Evento pós-sorteio<br />
+              --- &gt; <b>a superfície de aplicação é agora atraída para o <a class="glossterm" data-glossterm="buffer de exibição" href="#">buffer de exibição</a> </b> por padrão <b><br />
                          (embora você possa </b> <span class="notranslate">switch</span> isto fora usando <span class="inline"><a href="application_surface_draw_enable.htm">application_surface_draw_enable()</a></span>)</li>
     <li><b></b>Sorteio GUI evento de início</li>
     <li>Sorteio do evento GUI</li>

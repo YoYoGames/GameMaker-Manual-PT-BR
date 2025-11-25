@@ -55,7 +55,7 @@
       </tr>
     </tbody>
   </table>
-  <p><br>
+  <p><br />
     O uso que estas constantes serão colocadas também precisa ser definido para que os valores possam ser &quot;vinculados&quot; adequadamente dentro do <span class="notranslate">shader</span> que está sendo criado. Isto é necessário devido ao fato de que DX e OpenGL têm requisitos diferentes, portanto, se você não os vincula apropriadamente, eles não serão aprovados no <span class="notranslate">shader</span>. As constantes de uso disponíveis que você pode escolher estão listadas abaixo e aquelas que você usa dependerão das especificidades do <span class="notranslate">shader</span> que está sendo criado:</p>
   <table>
     <colgroup>
@@ -116,7 +116,7 @@
       </tr>
     </tbody>
   </table>
-  <p><br>
+  <p><br />
     Há algumas coisas importantes a serem observadas quando se utiliza formatos personalizados como estes:</p>
   <ul class="colour">
     <li>A função <span class="inline">vertex_format_add_custom()</span> suporta apenas <span class="inline">vertex_usage_position</span>, <span class="inline">vertex_usage_colour</span>, <span class="inline">vertex_usage_normal</span> e <span class="inline">vertex_usage_textcoord</span> quando se utiliza GLSL <span class="notranslate">shaders</span>. Estes mapearão para os atributos <span class="notranslate">shader</span> <span class="inline">in_Position</span> , <span class="inline">in_Colour[0 - ...]</span>, <span class="inline">in_Normal</span> respectivamente (qualquer coisa que não seja um destes três atributos - por exemplo: coordenadas <span class="notranslate">texture</span> - pode ser mapeado para qualquer atributo que você definir).</li>

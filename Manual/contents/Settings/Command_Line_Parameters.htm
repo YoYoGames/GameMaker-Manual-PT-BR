@@ -36,12 +36,12 @@
   <div class="droptext" data-targetname="drop-down">
     <p class="dropspot">O corredor <span class="notranslate">YoYo</span> também se beneficia de um parâmetro especial de linha de comando:</p>
     <p class="dropspot" style="padding-top: 0.5em;padding-right: 1em;padding-bottom: 0.5em;padding-left: 5em"><span class="inline">-game &lt;<em>filename</em>&gt;</span>: carrega o arquivo de jogo dado
-      <br>
+      <br />
     </p>
     <p class="dropspot">Por que você usaria isto? Bem, normalmente você não o faria, mas se você deseja ter mais de uma versão de seu jogo rodando de cada vez, isso pode ser feito usando isto, tornando os testes comparativos A/B muito mais fáceis. Com este método, você poderia focar o teste com outra pessoa ou, como designer, obter uma melhor sensação das coisas fazendo testes lado a lado.</p>
     <p class="dropspot">Para montar isto, você precisará saber um par de coisas antes. Para começar, você precisará do <span class="notranslate">path</span> para o próprio Runner. Isto pode ser encontrado na pasta <strong>Program Data</strong> do seu sistema operacional <span class="notranslate">Windows</span> (isto pode estar escondido por padrão, então você precisará alterar as propriedades de visualização para vê-lo), com um formato típico como este:
-      <br>
-      <br>
+      <br />
+      <br />
     </p>
     <p class="code">C:\ProgramData\GameMaker\Cache\runtimes\&lt;runtime_version&gt;\windows\Runner.exe
       <br />
@@ -49,14 +49,14 @@
     <p class="dropspot">Observe que a pasta runtime_version dependerá do <span class="notranslate">runtimes</span> que você tem instalado atualmente. Você também precisará do <span class="notranslate">path</span> para o arquivo <span class="inline">&lt;<em>yourgame</em>&gt;.win</span>, pois é para isso que vamos apontar o corredor. A maneira mais fácil de encontrar isto é ir para a pasta <strong>Temp </strong>(normalmente localizada em <span class="inline">%localappdata%\Temp\GameMakerStudio\&lt;game_name&gt;\</span>) e apenas procurar por <span class="inline">*.win</span>, pois isto lhe mostrará todos aqueles disponíveis e você pode simplesmente escolher o que você precisa para obter o <span class="notranslate">path</span> completo.</p>
     <p class="dropspot">Agora, poderíamos criar um atalho para o corredor como fizemos para o executável, e depois alterar os parâmetros conforme necessário, mas isso significa ter que abri-lo e editá-lo entre testes, o que derrota o propósito de usarmos esta funcionalidade para testes lado a lado. Em vez disso, vamos criar um par de pequenos arquivos &quot;batch&quot; para lidar com isso.</p>
     <p class="dropspot">Para fazer isso, primeiro crie um novo documento de texto em sua área de trabalho e abra-o no Bloco de Notas (ou em qualquer outro editor de texto). Adicione o seguinte:
-      <br>
-      <br>
+      <br />
+      <br />
     </p>
     <p class="code">START C:\ProgramData\GameMaker\Cache\runtimes\&lt;runtime_version&gt;\windows\Runner.exe -game &lt;LOCAL TEMP PATH&gt;\&lt;GAMENAME&gt;.win
       <br />
     </p>
     <p class="dropspot">Você precisa definir a temp <span class="notranslate">path</span> para apontar para seu arquivo <span class="inline">*.win</span>, e então salvá-lo como &quot;<span class="inline">GM_Test_1.bat</span>&quot; em sua área de trabalho (esteja ciente de que o Notepad salvará automaticamente como um arquivo <span class="inline">*.txt</span> a menos que você escolha &quot;todos os arquivos&quot; a partir das opções de diálogo de salvamento). Um exemplo de como deveria ser seu comando final:
-      <br>
+      <br />
     </p>
     <p class="code">START C:\ProgramData\GameMaker\Cache\runtimes\runtime-9.9.1.199\windows\Runner.exe -game D:\Users\Mark\AppData\Local\Temp\GameMaker\AlphaDog_Reboot\AlphaDog_Reboot.win
       <br />
