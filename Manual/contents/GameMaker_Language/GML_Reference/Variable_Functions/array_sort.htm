@@ -30,7 +30,7 @@
   </ul>
   <p class="note"><span class="note">NOTA</span> O valor retornado por sua função personalizada deve ser um número inteiro. Valores de ponto flutuante inferiores a 1 serão lidos como 0, portanto você deve usar <a href="../Maths_And_Numbers/Number_Functions/sign.htm"><span class="inline">sign()</span></a> ou <a href="../Maths_And_Numbers/Number_Functions/round.htm"><span class="inline">round()</span></a> se sua função trabalha com valores de ponto flutuante.</p>
   <p>Se a matriz contém um conjunto de <span class="notranslate">strings</span>, então o <span class="notranslate">strings</span> será ordenado alfabeticamente com base no alfabeto inglês ao usar o tipo padrão de ordenação ascendente/descendente. Todos os outros tipos de dados serão ordenados com base em seu valor numérico, cujos valores exatos dependerão do próprio tipo de dados (por exemplo, um array de <span class="notranslate">buffers</span> seria ordenado com base no valor numérico de seus endereços de memória).</p>
-  <p> </p>
+  <p> </p>
   <h4>Sintaxe:</h4>
   <p class="code">array_sort(variable, sorttype_or_function);</p>
   <table>
@@ -46,16 +46,16 @@
         <td><span class="notranslate">The variable that holds the array.</span></td>
       </tr>
       <tr>
-        <td><span class="notranslate"><span>sorttype_or_function<span> </span></td>
-        <td><span data-keyref="Type_Bool"><a href="../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Booleano</a></span> ou <span data-keyref="Type_Function_Script"><a href="../../../../GameMaker_Language/GML_Overview/Script_Functions.htm" target="_blank">Função do Script</a></span>/<span data-keyref="Type_Method"><a href="../../../../GameMaker_Language/GML_Overview/Method_Variables.htm" target="_blank">Método</a></span></td>
-        <td><span class="notranslate">The sort type (<span><span class="inline">true</span> para ascendente ou <span class="inline">false</span> para descendente) ou uma referência de função a ser usada para a classificação.</td>
+        <td>sorttype_or_function</td>
+        <td><span data-keyref="Type_Bool"><a href="../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Boolean</a></span> ou <span data-keyref="Type_Function_Script"><a href="../../../../GameMaker_Language/GML_Overview/Script_Functions.htm" target="_blank">Script Function</a></span>/<span data-keyref="Type_Method"><a href="../../../../GameMaker_Language/GML_Overview/Method_Variables.htm" target="_blank">Method</a></span></td>
+        <td>The sort type (<span class="inline">true</span> para ascendente ou <span class="inline">false</span> para descendente) ou uma referência de função a ser usada para a classificação.</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
+  <p> </p>
   <h4>Devoluções:</h4>
   <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
+  <p> </p>
   <h4>Exemplo:</h4>
   <p class="code">var _a = [10, 9, 8, 7, 6, 5];<br />
     <br />
@@ -89,9 +89,9 @@
   <p class="code">[ 100003,100004,100005,100006,100007,100008,100009,100010,100011,100012 ]</p>
   <p>O código então cria um método a ser usado na função <span class="inline">array_sort()</span> que retorna a diferença entre cada uma das X posições das instâncias no <span class="notranslate">room</span>. Em seguida, a função <span class="inline">array_sort()</span> é executada usando esse método, ordenando as instâncias por X do mais baixo para o mais alto. A saída para a matriz seria então algo parecido com isto:</p>
   <p class="code">[ 100011,100004,100009,100006,100012,100008,100010,100005,100007,100003 ]</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
@@ -99,7 +99,7 @@
         <div style="float:right">A seguir: <a href="array_length.htm"><span class="notranslate">array_length</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Todos os direitos reservados</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
   </div>
   <!-- KEYWORDS
 array_sort
