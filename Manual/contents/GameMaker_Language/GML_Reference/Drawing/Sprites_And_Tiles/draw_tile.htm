@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>draw_tile</h1>
+  <h1><span data-field="title" data-format="default">draw_tile</span></h1>
   <p>Com esta função você pode extrair qualquer dado <span class="notranslate">tile</span> de um <span class="notranslate">tile set</span> - competir com rotações, inversões e espelhos - definindo o quadro (se animado) e a posição dentro do <span class="notranslate">room</span>. O valor <span class="notranslate">tile set</span> ID é o índice <span class="notranslate">tile set</span> como definido no <span class="notranslate">IDE</span> e os dados <span class="notranslate">tile</span> são os dados &quot;blob&quot; que contém todas as informações sobre o índice <span class="notranslate">tile</span> e as transformações que foram aplicadas. Você pode usar a função <a href="../../Asset_Management/Rooms/Tile_Map_Layers/tilemap_get.htm"><span class="inline">tilemap_get()</span></a> para obter os dados <span class="notranslate">tile</span> que podem então ser manipulados usando as <a href="../../Asset_Management/Rooms/Tile_Map_Layers/Tile_Map_Layers.htm">funções de azulejo</a>, ou você mesmo pode construí-los usando as constantes <span class="notranslate">tile</span> a seguir, juntamente com o valor do índice do <span class="notranslate">tile</span> para criar:</p>
   <table>
     <tbody>
@@ -40,7 +40,7 @@
       </tr>
     </tbody>
   </table>
-  <p><br>
+  <p><br />
     Você &quot;ou&quot; estas constantes com o valor do índice <span class="notranslate">tile</span> obteria os tileados finais:</p>
   <p class="code">var tiledata = 8 | tile_rotate | tile_flip;</p>
   <p>O código acima simplesmente cria uma variável local para armazenar os mosaicos para o <span class="notranslate">tile</span> com o índice 8 no <span class="notranslate">tile set</span>, e é girado e invertido. Isto pode então ser usado para desenhar o <span class="notranslate">tile</span> naquele índice do <span class="notranslate">tile set</span> que você especificar. isto não está ligado a nenhuma camada do mapa de azulejos e o <span class="notranslate">tile</span> será desenhado na profundidade da camada da instância que faz o desenho, na posição x/y que você especificar no <span class="notranslate">room</span>. Note que você também pode definir o quadro para desenhar. Se o indexado <span class="notranslate">tile</span> fizer parte de um conjunto de animação, então você pode definir aqui o número do quadro (de 0 ao número de quadros - 1) e o indexado <span class="notranslate">tile</span> será simplesmente o indicador para o qual o <span class="notranslate">tile set</span> animado está sendo usado enquanto será o quadro dado que será desenhado. Se o <span class="notranslate">tile</span> não faz parte de um conjunto animado, então o frame deve ser ajustado para 0.</p>

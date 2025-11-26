@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>gpu_set_texfilter</h1>
+  <h1><span data-field="title" data-format="default">gpu_set_texfilter</span></h1>
   <p>Esta função pode ser usada para definir a filtragem <span class="notranslate">texture</span> (interpolação linear) de todas as imagens desenhadas na tela do jogo. Quando isto for habilitado (<span class="inline">true</span>) todos os <span class="notranslate">textures</span> serão suavizados quando desenhados (isto inclui <span class="notranslate">sprites</span>, pois eles também são considerados <span class="notranslate">textures</span>), significando que quando escalados ou movidos se não houver uma proporção de 1:1 pixel, então haverá uma &quot;mancha&quot; através de vários pixels que pode fazer as imagens parecerem borradas, dependendo do estilo de arte utilizado. Se isto for desativado (<span class="inline">false</span>), então as imagens serão desenhadas com base no pixel mais próximo quando escalonadas ou movidas, o que pode levar a imagens &quot;em bloco&quot;. O valor padrão é <span class="inline">false</span>, e isto também pode ser alterado nas <b>Opções Globais de Jogo</b> para plataformas alvo individuais.</p>
   <p class="note"><b>NOTA</b>: Esta configuração substituirá qualquer conjunto de interpolação de palco <span class="notranslate">texture</span> para <span class="notranslate">shaders</span> usando a função <a href="gpu_set_texfilter_ext.htm"><span class="inline">gpu_set_texfilter_ext()</span></a>.</p>
   <p class="note"><b>NOTA</b>: No alvo HTML5, esta função só funcionará com WebGL habilitado.</p>

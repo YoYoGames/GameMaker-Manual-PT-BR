@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>audio_criar_grupo_sync</title>
+  <title>audio_create_sync_group</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../../assets/scripts/main_script.js"></script>
@@ -15,7 +15,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>audio_criar_grupo_sync</h1>
+  <h1><span data-field="title" data-format="default">audio_create_sync_group</span></h1>
   <p>Cria um grupo de sincronização e retorna um valor de identificação único para ele que deve então ser usado em todas as outras chamadas de funções de áudio para este grupo. Se você quiser que o grupo seja <span class="notranslate">loop</span>, então passe em <span class="inline">true</span>, caso contrário passe em <span class="inline">false</span>, mas note que se você quiser que eles sejam <span class="notranslate">loop</span>, <i>todas as faixas adicionadas posteriormente precisam ter o mesmo comprimento</i>. Note que quando você criar um grupo de sincronização, você precisará liberar a memória e os sons associados a ele quando não estiver em uso, usando o <a href="audio_destroy_sync_group.htm"><span class="inline">audio_destroy_sync_group()</span></a> função - por exemplo, nos eventos <b>Room End</b> ou <b>Destroy</b>.</p>
   <p class="note"><b>NOTA</b>: Esta funcionalidade não está disponível para a plataforma de destino HTML5.</p>
   <p> </p>

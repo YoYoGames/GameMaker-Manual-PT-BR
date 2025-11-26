@@ -15,7 +15,7 @@
   <meta name="search-keywords" content="call_later" />
 </head>
 <body>
-  <h1>call_later</h1>
+  <h1><span data-field="title" data-format="default">call_later</span></h1>
   <p>Esta função aciona uma função de retorno após o tempo especificado ou após um certo intervalo. Ela faz isto criando uma <span data-keyref="Type_Resource_TimeSource">Fonte de Tempo</span> (ver <a data-xref="{title}" href="Time_Sources.htm">Fontes de Tempo</a>).</p>
   <p>Para cancelar a função de retorno de chamada, veja <a data-xref="{title}" href="call_cancel.htm">call_cancel</a>.</p>
   <p class="note"><span class="important">IMPORTANTE</span> Enquanto esta função retorna um ID de fonte de tempo real, este ID não pode ser usado com as funções de fonte de tempo, pois as fontes de tempo usadas por <a href="call_later.htm">call_later</a> e <a href="call_cancel.htm">call_cancel</a> são &quot;invisíveis&quot; - elas não aparecerão como filhos de nenhuma fonte de tempo embutida e não podem ser usadas com outras funções de fonte de tempo. Elas estão, entretanto, incluídas na contagem da fonte de tempo retornada pelo <a href="../Debugging/debug_event.htm">debug_event(&quot;ResourceCou<span class="inline"></span>nts&quot;)</a>.</p>

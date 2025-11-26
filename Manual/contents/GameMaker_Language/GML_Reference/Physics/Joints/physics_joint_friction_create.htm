@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>física_fricção_junta_criar</title>
+  <title>physics_joint_friction_create</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
@@ -15,7 +15,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>física_fricção_junta_criar</h1>
+  <h1><span data-field="title" data-format="default">physics_joint_friction_create</span></h1>
   <p>A junta de fricção é um pouco diferente de todas as outras juntas na simulação física, pois a conexão criada não restringirá a posição ou o movimento das instâncias, mas sim sua velocidade e rotação. Isto funciona tomando os valores máximos de entrada de força e torque e aplicando-os à segunda fixação para reduzir a velocidade e o momento angular para os mesmos valores da primeira instância. Assim, se você tiver uma instância estacionária e uma instância móvel, então conecte-as com uma junta de fricção, a instância móvel diminuirá gradualmente até que também esteja estacionária. Se ambas as instâncias estiverem se movendo, então a segunda instância terá sua velocidade de movimento modificada para corresponder à da primeira instância.</p>
   <p><img>Como na maioria das outras juntas, você fornece as instâncias a serem unidas, assim como a posição da junta a ser criada no <span class="notranslate">room</span>. Você então fornece a força máxima e o torque máximo (atrito direcional e rotacional), e se você definir o valor &quot;col&quot; para <span class="inline">true</span> então as duas instâncias podem interagir e colidir uma com a outra, mas <i>somente</i> se elas tiverem eventos de colisão, porém se for definida para <span class="inline">false</span>, elas não colidirão não importa o que aconteça.</p>
   <p> </p>

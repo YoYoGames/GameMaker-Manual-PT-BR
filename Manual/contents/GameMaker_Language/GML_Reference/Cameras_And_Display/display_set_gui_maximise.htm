@@ -15,7 +15,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>display_set_gui_maximise</h1>
+  <h1><span data-field="title" data-format="default">display_set_gui_maximise</span></h1>
   <p>Esta função pode ser usada para maximizar a camada GUI e configurá-la para ser escalonada e compensada em relação às dimensões da tela, em vez da posição e dimensões padrão da superfície de aplicação. Por padrão, a camada GUI é 1:1 com a resolução da superfície de aplicação e desenhada também na posição (0,0) da superfície. Entretanto, isto nem sempre é o que você deseja e, portanto, você pode usar esta função para defini-la a ser desenhada em relação à posição absoluta (0,0) da tela ou da janela de jogo. Os argumentos que você fornecer para esta função dependerão do efeito que você deseja que ela tenha sobre a camada GUI. A simples chamada da função sem argumentos irá definir a camada GUI a ser desenhada na posição (0,0) da tela ou da janela do jogo, com a largura e a altura sendo escalonadas para se ajustar a toda a área:</p>
   <p class="code">display_set_gui_maximise();</p>
   <p>Entretanto, você pode definir o <i>fator de escala</i> para a camada GUI, e a largura e a altura serão escalonadas por essa quantidade. Lembre-se que a camada GUI é sempre feita para se ajustar ao tamanho da tela ou da janela de jogo, ou da superfície de aplicação, portanto, ajustando este valor para qualquer outra coisa que não seja 1, basicamente escalona-se a contagem de pixels ao longo da largura e da altura. Se sua tela for 1024x768 e você definir o fator de escala em 0,5, então sua camada GUI terá a metade do tamanho da tela, efetivamente dobrando o tamanho do pixel:</p>

@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>network_set_config</h1>
+  <h1><span data-field="title" data-format="default">network_set_config</span></h1>
   <p>Com esta função, você pode definir diferentes configurações de rede.</p>
   <p class="note"><b>OBSERVAÇÃO</b>: Esta função não funcionará quando utilizada em um projeto em execução no alvo HTML5.</p>
   <p>Estas configurações são dadas como <b>constantes</b> e a configuração dependerá da constante que você tiver escolhido. A tabela abaixo lista as constantes disponíveis e suas configurações:</p>
@@ -65,7 +65,7 @@
       </tr>
     </tbody>
   </table>
-  <p><br>
+  <p><br />
     A primeira opção (<span class="inline">network_config_connect_timeout</span>) simplesmente define o tempo limite para conexão a um <span class="notranslate">server</span> mas não muda o comportamento da conexão além do tempo que você tem que esperar. É recomendável que você não defina isso muito baixo e o mantenha em cerca de 1000 para um jogo LAN apenas ou cerca de 4000 para a Internet, ou o jogo pode falhar em se conectar aleatoriamente. Se você deseja definir um valor de timeout para enviar/receber pacotes, então use a função <a href="network_set_timeout.htm"><span class="inline">network_set_timeout()</span></a>.</p>
   <p>A segunda opção (<span class="inline">network_config_use_non_blocking_socket</span>) significa que as funções <span class="inline">network_connect_*</span> (não-async) devolverão todas um <span class="inline">socket_id</span> instantaneamente, <i>mas você não pode enviar ou receber naquele soquete até que tenha recebido um evento de rede assimétrica</i>. O evento acionado terá a chave &quot;tipo&quot; definida para <span class="inline">network_type_non_blocking_connect</span> (você pode encontrar mais detalhes na página do <a href="../../../The_Asset_Editors/Object_Properties/Async_Events/Networking.htm">Evento Assíncrono de Rede</a>). Esta é uma configuração <b>global</b>, pois o <span data-keyref="GameMaker Name">GameMaker</span> não suporta uma mistura de bloqueio e não-bloqueio em uma aplicação.</p>
   <p>A terceira e quarta opções (<span class="inline">network_config_enable_reliable_udp</span>, <span class="inline">network_config_disable_reliable_udp</span>) são para habilitar ou desabilitar o protocolo confiável do <span data-keyref="GameMaker Name">GameMaker</span> UDP e, como tal, <b>só</b> devem <b>ser usadas com conexões UDP</b>. O que &quot;confiável&quot; neste caso significa que, quando ativado em <i>ambas as</i> extremidades de uma conexão, o <span data-keyref="GameMaker Name">GameMaker</span> tentará verificar se seus pacotes chegaram corretamente e reenviará os que não chegarem (nota, não garantimos que em seus pacotes chegarão por ordem de transmissão). Ao utilizar um tipo de soquete confiável, haverá um cabeçalho de 12 bytes adicionado a todos os pacotes udp que contém informações necessárias ao <span data-keyref="GameMaker Name">GameMaker</span> para verificar se os pacotes estão errados e reenviar os pacotes que faltam. Os seguintes pontos são dignos de nota quando se utiliza esta opção:</p>

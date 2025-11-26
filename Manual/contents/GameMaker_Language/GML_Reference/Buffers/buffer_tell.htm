@@ -15,7 +15,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>buffer_tell</h1>
+  <h1><span data-field="title" data-format="default">buffer_tell</span></h1>
   <p>Quando você lê ou escreve dados em um <span class="notranslate">buffer</span> usando o <a href="buffer_read.htm"><span class="inline">buffer_read()</span></a> ou <a href="buffer_write.htm"><span class="inline">buffer_write()</span></a> a posição atual de &quot;buscar&quot; é avançada pelos bytes escritos ou lidos, e com
     esta função você pode obter a posição atual de &quot;procurar&quot; para uso em outras funções <span class="notranslate">buffer</span>. Por exemplo, se seu alinhamento <span class="notranslate">buffer</span> estiver configurado para 4 bytes e você escrever um único dado que seja 1 byte em tamanho, então faça um <span class="inline">buffer_tell()</span>,
     Você receberá um valor de retorno de 1. Entretanto, se você escrever outro dado, também 1 byte em tamanho, então faça um <span class="inline">buffer_tell()</span>, você receberá um valor de retorno de 5, pois o alinhamento &quot;almofadou&quot; os dados para aquela posição.</p>

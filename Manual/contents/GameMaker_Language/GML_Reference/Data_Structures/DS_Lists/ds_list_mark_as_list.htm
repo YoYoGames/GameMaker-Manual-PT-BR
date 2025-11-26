@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>ds_list_as_list_as_list</title>
+  <title>ds_list_mark_as_list</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>ds_list_as_list_as_list</h1>
+  <h1><span data-field="title" data-format="default">ds_list_mark_as_list</span></h1>
   <p>Esta função irá &quot;marcar&quot; (ou &quot;sinalizar&quot;) uma determinada posição dentro de uma lista de DS previamente criada como detentora de outra lista de DS. Esta funcionalidade é necessária ao codificar o JSON <span class="notranslate">strings</span> (que você pode criar usando <a href="../../File_Handling/Encoding_And_Hashing/json_encode.htm"><span class="inline">json_encode()</span></a>), mas também pode ser útil quando se aninham estruturas de dados, pois os itens marcados desta forma serão automaticamente coletados (destruídos) quando a lista DS pai for destruída. Isto significa que você não precisa passar manualmente pelo conteúdo da lista e destruir as estruturas de dados marcadas individualmente antes de destruir a lista &quot;pai&quot;. Entretanto, se você apagar a posição da lista individualmente, a lista DS nela contida <i>não</i> será coletada e você deve chamar a função apropriada de destruição da lista DS antes de apagar o item da posição da lista pai. Observe também que se você chamar a função <a href="ds_list_clear.htm"><span class="inline">ds_list_clear()</span></a> em uma lista, quaisquer itens assinalados como listas serão destruídos também quando a lista for limpa.</p>
   <p>Vale notar também que se a posição que foi marcada mudar dentro da lista, a &quot;marca&quot; se moverá com ela, então se você tiver marcado a posição 3 na lista (por exemplo) e depois inserir mais 2 itens abaixo dela para que ela se mova para a posição 5, ela <i>ainda</i> será marcada como uma lista.</p>
   <p> </p>

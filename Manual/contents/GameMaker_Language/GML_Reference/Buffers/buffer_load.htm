@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>buffer_load</h1>
+  <h1><span data-field="title" data-format="default">buffer_load</span></h1>
   <p>Esta função é utilizada para carregar um <span class="notranslate">buffer</span> que foi salvo anteriormente usando o <a href="buffer_save.htm"><span class="inline">buffer_save()</span></a> bem como quaisquer <a href="../../../Settings/Included_Files.htm" title="Included Files">Arquivos incluídos</a> ou arquivos carregados externamente. Ele retornará um novo ID do buffer que é criado pela função como um &quot;grow&quot; <span class="notranslate">buffer</span> (veja <a href="buffer_create.htm">aqui</a>) com um alinhamento de bytes de 1. Este ID deve ser armazenado em uma variável e usado em todas as chamadas de funções posteriores a este <span class="notranslate">buffer</span>. Se a carga falhar por qualquer motivo, a função retornará -1 e uma mensagem será exibida na janela de saída do compilador dizendo que a carga falhou.</p>
   <p class="note"><span class="note">NOTA</span> É importante que você remova da memória qualquer recurso criado dinamicamente como este quando não precisar mais deles para evitar vazamentos de memória, por isso, quando você terminar com o <span class="notranslate">buffer</span> que você criou, deverá liberá-lo novamente usando <a href="buffer_delete.htm"><span class="inline">buffer_delete()</span></a>.</p>
   <h2>Notas específicas da plataforma</h2>

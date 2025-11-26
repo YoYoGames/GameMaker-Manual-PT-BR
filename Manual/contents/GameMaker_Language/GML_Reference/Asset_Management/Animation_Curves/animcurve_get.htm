@@ -15,7 +15,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>animcurve_get</h1>
+  <h1><span data-field="title" data-format="default">animcurve_get</span></h1>
   <p>Esta função devolverá uma <a href="../../../GML_Overview/Structs.htm">estrutura</a> contendo todos os dados para o dado <span class="notranslate">animation curve</span>. Você fornece o ID <span class="notranslate">animation curve</span> <span class="notranslate">asset</span> (conforme definido no Browser <span class="notranslate">Asset</span> ), e a função retornará um <span class="notranslate">struct</span> com as seguintes variáveis:</p>
   <table>
     <colgroup>
@@ -44,7 +44,7 @@
       </tr>
     </tbody>
   </table>
-  <p><br>
+  <p><br />
     A variável <span class="inline">channels</span> no <span class="notranslate">struct</span> é um <a href="../../../GML_Overview/Arrays.htm">array</a> onde cada item do array é um <span data-keyref="Type_Struct_AnimCurve_Channel"><a data-rhwidget="HyperlinkPopover" href="../../../../../GameMaker_Language/GML_Reference/Asset_Management/Animation_Curves/animcurve_get_channel.htm">Curva de Animação Estruturas de Canal</a></span> com dados relativos a um canal dentro da curva. O canal <span class="notranslate">struct</span> é explicado <a href="animcurve_channel_new.htm">nesta página</a>.</p>
   <p>Assim como nos canais, os pontos em um único canal são armazenados como <span class="notranslate">structs</span> em uma matriz, onde cada item da matriz é um único ponto <span class="notranslate">struct</span>. O ponto <span class="notranslate">struct</span> é explicado <a href="animcurve_point_new.htm">nesta página</a>.</p>
   <p>Observe que se a função falhar (por exemplo, a Curva de Animação dada <span class="notranslate">asset</span> não existe), então a função retornará -1.</p>

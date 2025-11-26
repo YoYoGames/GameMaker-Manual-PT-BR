@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>profundidade</title>
+  <title>depth</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../../assets/scripts/main_script.js"></script>
@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>profundidade</h1>
+  <h1><span data-field="title" data-format="default">depth</span></h1>
   <p>Quando você cria um <span class="notranslate">object</span> você pode atribuir-lhe uma <i>profundidade</i> inicial que define como as instâncias desse <span class="notranslate">object</span> serão desenhadas no <span class="notranslate">room</span> quando o jogo estiver sendo jogado e essa variável pode ser usada para obter e alterar esse valor de profundidade enquanto o jogo estiver sendo executado. Você normalmente não precisaria usar esta variável, pois você deve definir instâncias a serem adicionadas a <a href="layer.htm">camadas</a> discretas, que por sua vez são definidas para uma profundidade específica, mas pode ser que você queira mudar a profundidade de uma instância usando este valor, caso em que uma &quot;camada temporária&quot; será criada especificamente para a instância na profundidade determinada. Note que quando nenhuma instância estiver na mesma profundidade, esta camada temporária será removida da memória (ao contrário das camadas regulares que permanecerão mesmo que não tenham nada sobre elas).</p>
   <p class="note"><b>IMPORTANTE!</b> Quando você modifica a variável <span class="inline">depth</span> e o <span data-keyref="GameMaker Name">GameMaker</span> gerencia as camadas, as camadas incorporadas <span style="font-size:1px;"><a href="layer.htm"><span class="inline">layer</span></a></span> retornará -1 e não o ID da camada, uma vez que as camadas gerenciadas não podem ser manipuladas através de código.</p>
   <p>No <span data-keyref="GameMaker Name">GameMaker</span>, quanto menor o valor de profundidade de uma instância, &quot;mais perto da câmera&quot; essa instância será desenhada, enquanto um valor de profundidade maior significa que a instância será desenhada &quot;mais longe da câmera&quot;, ou seja: -1000 é desenhada em cima de -100, que é desenhada em cima de 0, e assim por diante.</p>

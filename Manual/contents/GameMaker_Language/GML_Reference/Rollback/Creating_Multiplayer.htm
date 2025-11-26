@@ -15,10 +15,10 @@
 </head>
 <body>
   <h1>Criar um jogo multiplayer</h1>
-  <p class="note">Esta página o levará através dos passos detalhados para criar seu primeiro jogo multiplayer.<br>
-    <br>
-    Para obter informações sobre o sistema Rollback, leia <a data-xref="{title}" href="Rollback_System.htm">Sistema Rollback</a>.<br>
-    <br>
+  <p class="note">Esta página o levará através dos passos detalhados para criar seu primeiro jogo multiplayer.<br />
+    <br />
+    Para obter informações sobre o sistema Rollback, leia <a data-xref="{title}" href="Rollback_System.htm">Sistema Rollback</a>.<br />
+    <br />
     Para obter detalhes sobre todas as funções Rollback, leia <a data-xref="{title}" href="Rollback_Functions/Rollback_Functions.htm">Funções Rollback</a>.
   </p>
   <h2>Montagem do projeto</h2>
@@ -26,8 +26,8 @@
   <p>Criar dois objetos:</p>
   <ul class="colour">
     <li><strong>obj_game</strong>: Isto irá administrar seu jogo multiplayer.</li>
-    <li><strong>obj_player</strong>: Este será seu verdadeiro jogador <span class="notranslate">object</span>. Cada jogador conectado terá sua própria instância deste <span class="notranslate">object</span> que ele pode controlar.<br>
-      <br>
+    <li><strong>obj_player</strong>: Este será seu verdadeiro jogador <span class="notranslate">object</span>. Cada jogador conectado terá sua própria instância deste <span class="notranslate">object</span> que ele pode controlar.<br />
+      <br />
       Atribua seu jogador <span class="notranslate">sprite</span> ao jogador <span class="notranslate">object</span>.
     </li>
   </ul>
@@ -53,8 +53,8 @@
   <h2>Jogadores em movimento</h2>
   <p>A entrada é gerenciada pelo sistema Rollback e sincronizada automaticamente entre os jogadores.</p>
   <p>Em seu player <span class="notranslate">object</span>, ligue para <span class="inline"><a href="Rollback_Functions/rollback_get_input.htm">rollback_get_input()</a></span> para obter um <span class="notranslate">struct</span> contendo todas as entradas padrão, que são as seguintes:</p>
-  <p class="note"><span class="inline"><strong>left</strong>, <strong>right</strong>, <strong>up</strong>, <strong>down</strong>, <strong>Z</strong>, <strong>X</strong>, <strong>C</strong>, <strong>space</strong></span><br>
-    <br>
+  <p class="note"><span class="inline"><strong>left</strong>, <strong>right</strong>, <strong>up</strong>, <strong>down</strong>, <strong>Z</strong>, <strong>X</strong>, <strong>C</strong>, <strong>space</strong></span><br />
+    <br />
     <em>Estes indicam se a chave é mantida.</em> <span class="inline">*<strong>_pressed</strong></span> <em>e </em><span class="inline">*<strong>_released</strong></span> <em>variantes também são fornecidas.</em>
   </p>
   <p>Para definir seus próprios inputs, consulte <a data-xref="{title}" href="Defining_Inputs.htm">Definindo os Inputs</a>.</p>

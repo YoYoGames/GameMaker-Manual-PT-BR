@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>file_text_write_real</h1>
+  <h1><span data-field="title" data-format="default">file_text_write_real</span></h1>
   <p>Com esta função você pode escrever um número para o arquivo de texto previamente aberto. Note que como o valor a ser escrito pode ser um número real, todos os decimais serão escritos com um &quot;.&quot; como separador. Se o arquivo já contém informações, estas informações serão apagadas e o <span class="notranslate">string</span> será escrito no início do arquivo, a menos que você tenha aberto o arquivo com o <a href="file_text_open_append.htm"><span class="inline">file_text_open_append()</span></a>. Você também pode evitar isso usando o <a href="file_text_readln.htm"><span class="inline">file_text_readln()</span></a> função junto com o <a href="file_text_eof.htm"><span class="inline">file_text_eof()</span></a> para <span class="notranslate">loop</span> através do conteúdo do arquivo até chegar ao final e depois começar a escrever.</p>
   <p>É importante notar que ao escrever números muito grandes em um arquivo de texto usando esta função, ele pode ser traduzido para um formato padrão simplificado, como &quot;6.6624e+003&quot;, que não pode ser lido de volta para o <span data-keyref="GameMaker Name">GameMaker</span> corretamente. Para evitar problemas como este, você deve, em vez disso, converter o valor para <span class="notranslate">string</span> e usar a função <a href="file_text_write_string.htm"><span class="inline">file_text_write_string()</span></a> ao invés disso.</p>
   <p> </p>

@@ -15,7 +15,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>animcurve_get_channel</h1>
+  <h1><span data-field="title" data-format="default">animcurve_get_channel</span></h1>
   <p>Esta função retornará a <a href="../../../GML_Overview/Structs.htm">estrutura</a> contendo os dados do canal especificado em <span class="notranslate">animation curve</span> <span class="notranslate">asset</span>. Você fornece o ID <span class="notranslate">animation curve</span> ou <span class="notranslate">struct</span>, bem como o nome do canal ou índice, e a função retornará um <span class="notranslate">struct</span> com o seguinte formato:</p>
   <table>
     <colgroup>
@@ -51,7 +51,7 @@
       </tr>
     </tbody>
   </table>
-  <p><br>
+  <p><br />
     O ID <span class="notranslate">animation curve</span> é o nome do <span class="notranslate">animation curve</span> como foi definido no Browser <span class="notranslate">Asset</span>, ou o ponteiro <span class="notranslate">struct</span> como retornado pela função <a href="animcurve_create.htm"><span class="inline">animcurve_create()</span></a>. O nome do canal é um <span class="notranslate">string</span> que se refere ao canal como foi definido na Curva de Animação <span class="notranslate">asset</span>, ou você pode fornecer um valor de índice, que é de 0 a <i>n</i>, onde <i>n</i> é o último canal na curva <span class="notranslate">asset</span> (por exemplo: se um <span class="notranslate">animation curve</span> tem 4 canais, eles serão indexados de 0 a 3). Note que passar um valor de índice exigirá menos processamento do que passar no nome de um canal. Se a função falhar (ou seja: não existe nenhum canal com o nome dado ou índice), então você receberá um erro.</p>
   <p>Os pontos em um único canal são armazenados como <span class="notranslate">structs</span> em uma <a href="../../../GML_Overview/Arrays.htm">matriz</a>, onde cada item da matriz é um único ponto <span class="notranslate">struct</span>. O ponto <span class="notranslate">struct</span> tem as seguintes variáveis:</p>
   <table>

@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>fisica_distância_distância_criar</title>
+  <title>physics_joint_distance_create</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
@@ -15,7 +15,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>fisica_distância_distância_criar</h1>
+  <h1><span data-field="title" data-format="default">physics_joint_distance_create</span></h1>
   <p>Uma das juntas mais simples é uma junta à distância que diz que a distância entre dois pontos em duas instâncias deve ser constante. Quando você especifica uma junta de distância, as duas instâncias já devem ser criadas e ter uma fixação atribuída, então você define os dois pontos de ancoragem nas coordenadas <span class="notranslate">room</span>. O primeiro ponto de ancoragem é conectado à instância 1, o segundo ponto de ancoragem é conectado à instância 2 e a distância entre estes pontos implica o comprimento da restrição de distância. A imagem abaixo mostra como isto funciona:</p>
   <p><img>Como você pode ver, os pontos de ancoragem são especificados como coordenadas <span class="notranslate">room</span>, portanto deve-se ter cuidado ao defini-los, especialmente se as instâncias estão sendo criadas ao mesmo tempo que as juntas, em vez de serem colocadas no <span class="notranslate">room</span> através do editor <span class="notranslate">room</span>. Você também deve perceber que as juntas são criadas independentemente do tamanho do <span class="notranslate">sprite</span> das instâncias ou das fixações que elas têm anexadas. Portanto, se você criar uma junta à distância em outro lugar que não seja a origem da instância, ela ainda é válida e restringirá as duas instâncias em relação à posição na qual foi criada. Se você definir o valor &quot;col&quot; para <span class="inline">true</span> então as duas instâncias podem interagir e colidir uma com a outra, mas <i>somente</i> se elas tiverem eventos de colisão, porém se for definido para <span class="inline">false</span>, elas não irão colidir não importa o que aconteça.</p>
   <p> </p>

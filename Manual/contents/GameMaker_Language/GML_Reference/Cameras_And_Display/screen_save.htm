@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>screen_save</h1>
+  <h1><span data-field="title" data-format="default">screen_save</span></h1>
   <p>Com esta função, você pode salvar uma captura de tela do jogo como ela aparece atualmente na janela do jogo.</p>
   <p>O arquivo será salvo no diretório de trabalho do jogo, que no windows está localizado em <span class="inline">&lt;drive&gt;:/Users/YOURUSERNAME/AppData/Local/[Game Name]/</span> e no Mac seria <span class="inline">~/Library/Application Support/[Game Name]/</span>. A imagem capturada será a renderização final da superfície de aplicação do jogo, ou (se a superfície da aplicação tiver sido desativada) será uma imagem de toda a tela ou janela.</p>
   <p>É importante notar que a função foi projetada para ser chamada no <b>evento final do Draw GUI</b>, que deve dar resultados consistentes em todas as plataformas. A sua utilização em qualquer outro evento pode não funcionar como esperado, e pode dar resultados diferentes entre alvos diferentes e até mesmo entre dispositivos.</p>

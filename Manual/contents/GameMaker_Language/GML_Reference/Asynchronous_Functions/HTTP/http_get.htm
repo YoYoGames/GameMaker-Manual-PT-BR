@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>http_get</h1>
+  <h1><span data-field="title" data-format="default">http_get</span></h1>
   <p>Com esta função, você se conecta ao URL especificado a fim de recuperar informações. Como esta é uma função assíncrona, o <span data-keyref="GameMaker Name">GameMaker</span> não bloqueará enquanto espera por uma resposta, mas continuará funcionando a menos que receba informações de retorno de chamada. Estas informações estarão na forma de um <span class="notranslate">string</span> e desencadearão um <b>Evento Async</b> em qualquer instância que tenha um definido em suas propriedades <span class="notranslate">object</span>. Você também deve observar que os parâmetros de solicitação HTTP (os bits às vezes &quot;tacked on&quot; até o final de uma URL quando você envia um formulário em uma página web) são perfeitamente aceitáveis ao usar esta função, por exemplo:</p>
   <p class="code">http_get(&quot;http://www.example.com/logon?username=&quot;+name);</p>
   <p>passará o <span class="notranslate">string</span> mantido na variável &quot;name&quot; para o <span class="notranslate">server</span> bem como uma recuperação dos dados a partir dessa URL. Portanto, essencialmente, a qualquer momento, um simples e curto pedaço de dados precisa ser passado do cliente para o <span class="notranslate">server</span>, esta seria uma escolha razoável como função a ser usada.</p>

@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>layer_set_fx</h1>
+  <h1><span data-field="title" data-format="default">layer_set_fx</span></h1>
   <p>Esta função é utilizada para atribuir um FX <span class="notranslate">struct</span> a um <span class="notranslate">Room</span> Layer. Você especifica o ID ou o nome da camada que deseja modificar, e então um FX <span class="notranslate">struct</span> (como retornado de <span class="inline"><a href="fx_create.htm">fx_create()</a></span> ou <span class="inline"><a href="layer_get_fx.htm">layer_get_fx()</a></span>) que será aplicado à camada especificada, tornando o efeito visível no <span class="notranslate">room</span>.</p>
   <p>Se você especificar uma camada que não seja uma camada de filtro/efeito, mas que seja de outro tipo (como uma camada de instância, <span class="notranslate">Asset</span> Layer, <span class="notranslate">Tile</span> Layer, etc.), então o efeito será aplicado ao conteúdo dessa camada, bem como a quaisquer camadas abaixo dela.</p>
   <p>Se a camada especificada já tiver um FX <span class="notranslate">struct</span> atribuído a ele, ele será substituído pelo novo.</p>

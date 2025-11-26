@@ -16,7 +16,7 @@
   <meta name="search-keywords" content="rollback_sync_on_frame" />
 </head>
 <body>
-  <h1>rollback_sync_on_frame</h1>
+  <h1><span data-field="title" data-format="default">rollback_sync_on_frame</span></h1>
   <p>Esta função verifica se todos os jogadores estão sincronizados no quadro atual, o que significa que seus estados não se baseiam em previsões, mas nos dados reais recebidos deles. Em tal caso, ela retorna <span class="inline2">verdadeiro</span>.</p>
   <p>Se os jogadores não estiverem sincronizados no quadro atual, ele retorna <span class="inline2">falso</span>, e tenta sincronizar todos os jogadores.</p>
   <p>A tentativa de sincronizar os jogadores com esta função pode causar um congelamento. Você deve garantir que esta função não seja chamada continuamente em um evento Step.</p>

@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>gpu_set_cullmode</h1>
+  <h1><span data-field="title" data-format="default">gpu_set_cullmode</span></h1>
   <p>Esta função pode ser usada para definir o modo de abate de retaguarda. Um polígono (primitivo) tem um lado <i>frontal</i> e um lado <i>posterior</i>. Diz-se que o lado da frente é o lado onde os vértices são definidos em ordem <b>anti-horária</b>. Normalmente ambos os lados são desenhados, mas se você fizer uma forma fechada (como uma pirâmide) então isto é um desperdício de poder de processamento porque o lado de trás do triângulo nunca pode ser visto. É nestes casos que você pode <span class="notranslate">switch</span> sobre o corte da face traseira, pois isso economiza cerca da metade do tempo de desenho, embora isso signifique que você tem a tarefa de definir seus polígonos da maneira correta para evitar problemas.</p>
   <p>O valor do modo de abate utilizado deve ser uma das seguintes constantes (o valor padrão é <span class="inline">cull_noculling</span>):</p>
   <table>

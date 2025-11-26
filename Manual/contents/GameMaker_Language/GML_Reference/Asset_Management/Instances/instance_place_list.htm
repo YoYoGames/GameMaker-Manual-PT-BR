@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>lista_de_lugares_da_classe</title>
+  <title>instance_place_list</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
@@ -15,7 +15,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>lista_de_lugares_da_classe</h1>
+  <h1><span data-field="title" data-format="default">instance_place_list</span></h1>
   <p>Com esta função você pode verificar uma posição para uma colisão com todas as instâncias de uma <span class="notranslate">object</span> usando a máscara de colisão da instância que executa o código para a verificação. Quando você usa esta função você está efetivamente pedindo <span data-keyref="GameMaker Name">ao GameMaker</span> para mover a instância para a nova posição, verificar se há uma colisão e, em seguida, voltar e dizer-lhe se uma colisão foi encontrada ou não. Isto funcionará para colisões precisas, mas somente se tanto a instância e as instâncias da <span class="notranslate">object</span> que está sendo verificada tiverem máscaras de colisão precisas selecionadas, caso contrário somente serão aplicadas colisões de caixas delimitadoras.</p>
   <p>Você também fornece uma <a href="../../Data_Structures/DS_Lists/DS_Lists.htm">lista DS</a>, portanto o <a href="Instance_Variables/id.htm"><span class="inline">id</span></a> valores de quaisquer instâncias que estejam colidindo com a instância de chamada serão adicionados ao final da lista dada. Você pode <a href="../../Data_Structures/DS_Lists/ds_list_clear.htm">limpar</a> a lista antes de chamar esta função para que ela contenha apenas os resultados desta chamada de função. Você também tem a opção de ordenar a lista com base na distância da origem da instância fazendo a verificação até a origem das instâncias que se encontram em colisão.</p>
   <p>Note que a função também aceita a palavra-chave especial <a href="../../../GML_Overview/Instance_Keywords.htm"><b><span class="inline">all</span></b></a>Neste caso, todas as instâncias encontradas em colisão serão listadas. A função retorna o número de instâncias encontradas, ou 0 se nenhuma for encontrada.</p>

@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>audio_emitter_gain</h1>
+  <h1><span data-field="title" data-format="default">audio_emitter_gain</span></h1>
   <p>Esta função define o ganho máximo (volume) para o som. O volume percebido para um som pode mudar dependendo do <a href="audio_emitter_falloff.htm">valor de queda</a> e da posição que ele tem em relação ao <i>ouvinte</i>, mas ao definir o ganho com esta função, o volume total nunca excederá o valor de ganho especificado. A imagem abaixo ilustra como o ganho afeta o volume do emissor quando a queda é maior que 0:</p>
   <p><img>Esta função mudará o volume do som enquanto ele estiver sendo reproduzido, bem como todos os sons subseqüentes reproduzidos através do emissor em questão. Note que em algumas plataformas você pode ter um ganho maior que 1, embora um valor de 1 seja considerado &quot;volume total&quot; e qualquer coisa maior possa introduzir clipping de áudio ou distorção.</p>
   <p class="note"><b><span class="note">NOTA</span> </b>o volume final também será influenciado pelo ganho de áudio global que foi definido pela função <span style="font-size:1px;"><a href="../audio_master_gain.htm"><span class="inline">audio_master_gain()</span></a></span>.</p>

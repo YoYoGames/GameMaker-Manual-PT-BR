@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>sprite_flush_multi</h1>
+  <h1><span data-field="title" data-format="default">sprite_flush_multi</span></h1>
   <p>Com esta função, você pode remover qualquer número de páginas <span class="notranslate">texture</span> para o dado <span class="notranslate">sprites</span> da memória <span class="notranslate">texture</span>. Você fornece os índices <span class="notranslate">sprite</span> como uma matriz e as páginas <span class="notranslate">texture</span> para as quais eles são designados serão removidas da memória <span class="notranslate">texture</span>. Observe que se uma das
     as páginas <span class="notranslate">texture</span> são usadas em outro lugar no <span class="notranslate">room</span> (por outra instância <span class="notranslate">sprite</span> ou um fundo, etc...) você pode ter um pequeno acerto de desempenho, já que a página é imediatamente recarregada de novo na memória, portanto, deve-se ter cuidado ao usar esta função.
     Note que a função retornará <span class="inline">-1</span> se a descarga não for suportada pelos recursos escolhidos, ou retornará <span class="inline">0</span> se todos funcionarem corretamente.</p>

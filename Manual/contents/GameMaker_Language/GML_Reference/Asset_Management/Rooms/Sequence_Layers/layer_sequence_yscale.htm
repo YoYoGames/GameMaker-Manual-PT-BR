@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>camada_seqüência_escala</title>
+  <title>layer_sequence_yscale</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../../assets/scripts/main_script.js"></script>
@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>camada_seqüência_escala</h1>
+  <h1><span data-field="title" data-format="default">layer_sequence_yscale</span></h1>
   <p>Com esta função, você pode definir a escala Y para o elemento <span class="notranslate">sequence</span> dado. Você fornece o ID do elemento <span class="notranslate">sequence</span> conforme retornado por <a href="layer_sequence_create.htm"><span class="inline">layer_sequence_create()</span></a> ou por uma das <a href="../General_Layer_Functions/General_Layer_Functions.htm">funções dos elementos da camada</a> junto com a nova escala a ser estabelecida no eixo Y e o <span class="notranslate">sequence</span> será escalado por esta quantidade. Uma escala de 1 indica ausência de escala (1:1), valores menores serão escalados para baixo (0,5, por exemplo, será metade da largura do <span class="notranslate">sequence</span>), valores maiores serão escalados para cima e valores negativos serão invertidos no <span class="notranslate">sequence</span> sobre sua origem <i>e</i> escalados, a menos que o valor utilizado seja exatamente -1 (neste caso, o <span class="notranslate">sequence</span> é apenas invertido sobre sua origem sem escala).</p>
   <p>É muito importante observar que a aplicação de escalas <em>irregulares</em> (por exemplo: escalando o eixo X por 3 e o eixo Y por 2) a <span class="notranslate">sequence</span> elementos que contenham qualquer instância que utilize <em>rotação</em>, <strong>pode causar problemas com o desenho da instância, colisões, abates, e muitas outras coisas</strong>. Basicamente, se seu <span class="notranslate">sequence</span> se baseia em <em>qualquer</em> propriedade da instância, então não recomendamos que você combine escalas irregulares junto com a rotação da instância.</p>
   <p>Observe também que você não deve alterar as variáveis <span class="inline">image_xscale</span> <span class="inline">image_yscale</span> <span class="inline">image_angle</span> <span class="inline">x</span> <span class="inline">y</span> para qualquer instância em um <span class="notranslate">sequence</span> que utilize esta função, pois elas serão sobrescritas assim que o <span class="notranslate">sequence</span> for atualizado após a chamada à função.</p>

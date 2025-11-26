@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>room_goto</h1>
+  <h1><span data-field="title" data-format="default">room_goto</span></h1>
   <p>Esta função permite que você vá a qualquer <span class="notranslate">room</span> em seu projeto de jogo, seja criado usando código ou no <span class="notranslate">Asset</span> Browser. Você fornece o índice <span class="notranslate">room</span> (armazenado na variável para o nome <span class="notranslate">room</span>, ou como uma variável retornada da função <a href="room_add.htm"><span class="inline">room_add()</span></a>). Note que o <span class="notranslate">room</span> não mudará até o final do evento onde a função foi chamada, portanto, qualquer código após esta ter sido chamada ainda será executado se no mesmo evento. Esta função também acionará o evento <b>Room End</b>.</p>
   <div data-conref="../../../../assets/snippets/changing_room_stops_instance_creation.hts"> </div>
   <p class="note"><span class="note">NOTA</span> <span class="notranslate">Room</span> Os IDs não são baseados em seu pedido no <span class="notranslate">Asset</span> Browser ou no <span class="notranslate">Room</span> Manager, e assim você deve evitar fornecer um valor numérico diretamente. Em vez disso, use a <a class="glossterm" data-glossterm="constante" href="#">constante de</a> sala para o <span class="notranslate">asset</span> que você deseja referenciar (que é simplesmente seu nome) ou recuperá-lo através de uma função.</p>

@@ -15,7 +15,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>sprite_get_info</h1>
+  <h1><span data-field="title" data-format="default">sprite_get_info</span></h1>
   <p>Esta função é utilizada para recuperar informações para o dado <span class="notranslate">sprite</span>. Você fornece um índice <span class="notranslate">sprite</span> (que pode ser um <span class="notranslate">asset</span> adicionado através do <a href="../../../../../Introduction/The_Asset_Browser.htm">Navegador de Ativos</a> ou um sprite <a href="../Sprite_Manipulation/sprite_add.htm">adicionado</a> em <span class="notranslate">runtime</span>) e a função retorna uma <a href="../../../../GML_Overview/Structs.htm">estrutura</a> com as seguintes variáveis:</p>
   <table>
     <colgroup>
@@ -55,23 +55,24 @@
       <tr>
         <td style=""><strong>transparente</strong></td>
         <td>booleano</td>
-        <td style=""><span class="inline">true</span> se o <span class="notranslate">sprite</span> estiver marcado como transparente, caso contrário <span class="inline">false</span><br>
-         <span>(Isto só pode ser especificado através de <span class="inline"><a href="../Sprite_Manipulation/sprite_add.htm">sprite_add()</a></span> ou funções similares, e será <span class="inline">false</span> para <span class="notranslate">sprites</span> criado no <span class="notranslate">IDE</span>)</span>
+        <td style=""><span class="inline">true</span> se o <span class="notranslate">sprite</span> estiver marcado como transparente, caso contrário <span class="inline">false</span><br />
+         <span>(Isto só pode ser especificado através de <span class="inline"><a href="../Sprite_Manipulation/sprite_add.htm">sprite_add()</a></span> ou funções similares, e será <span class="inline">false</span> para <span class="notranslate">sprites</span> criado no <span class="notranslate">IDE</span>)
+</span>
         </td>
       </tr>
       <tr>
         <td style=""><strong>smooth</strong></td>
         <td>booleano</td>
-        <td style=""><span class="inline">true</span> se o <span class="notranslate">sprite</span> estiver marcado como liso, caso contrário <span class="inline">false</span><br>
+        <td style=""><span class="inline">true</span> se o <span class="notranslate">sprite</span> estiver marcado como liso, caso contrário <span class="inline">false</span><br />
           <span><span>(Isto só pode ser especificado através de <span class="inline"><a href="../Sprite_Manipulation/sprite_add.htm">sprite_add()</a></span> ou funções similares, e será <span class="inline">false</span> para <span class="notranslate">sprites</span> criado no <span class="notranslate">IDE</span>)</span><span></span></span>
         </td>
       </tr>
       <tr>
         <td style=""><strong>tipo</strong></td>
         <td>real</td>
-        <td style="">O tipo de duende:<br>
-          <span class="inline">0</span> - Bitmap (Regular <span class="notranslate">sprites</span>)<br>
-          <span class="inline">1</span> - SWF<br>
+        <td style="">O tipo de duende:<br />
+          <span class="inline">0</span> - Bitmap (Regular <span class="notranslate">sprites</span>)<br />
+          <span class="inline">1</span> - SWF<br />
           <span class="inline">2</span> - Lombada
         </td>
       </tr>

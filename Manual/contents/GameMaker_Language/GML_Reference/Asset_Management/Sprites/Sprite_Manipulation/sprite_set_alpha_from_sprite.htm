@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>sprite_set_alpha_from_sprite</h1>
+  <h1><span data-field="title" data-format="default">sprite_set_alpha_from_sprite</span></h1>
   <p>Esta função utiliza o valor/saturação de um <span class="notranslate">sprite</span> e o multiplica com o alfa do alvo <span class="notranslate">sprite</span>. O ideal é que o <span class="notranslate">sprite</span> seja usado para gerar o novo mapa alfa seja em escala cinza, com as áreas brancas tendo um valor alfa equivalente a 1 (opaco), as áreas pretas sendo equivalentes ao alfa 0 (transparente), e as áreas cinzas sendo um alfa entre 0 e 1. O <span class="notranslate">sprite</span> que você está definindo o alfa <i>não pode ser um recurso permanente</i>, nem o <span class="notranslate">sprite</span> que você usa para definir o alfa, pois isso dará um erro. Isto significa que você deve criar dois novos <span class="notranslate">sprites</span> &quot;on the fly&quot; de alguma forma para que a função funcione corretamente. Isto pode ser conseguido usando superfícies, ou criando um <span class="notranslate">sprite</span> a partir da tela (o exemplo de código abaixo mostra como o efeito pode ser obtido com superfícies).</p>
   <p class="note"><b>NOTA</b>: Esta função só é útil para o <b>bitmap</b> <span class="notranslate">sprites</span> e não funcionará com SWF ou JSON (<span class="notranslate">Spine</span>) <span class="notranslate">sprites</span>.</p>
   <p>Abaixo está uma imagem que ilustra como esta função funciona:</p>

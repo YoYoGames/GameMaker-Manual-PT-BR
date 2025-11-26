@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>ini_close</h1>
+  <h1><span data-field="title" data-format="default">ini_close</span></h1>
   <p>Esta função deve ser chamada no momento em que você terminar de ler ou escrever para qualquer arquivo ini aberto. Se você não usar a função após ter usado qualquer uma das funções de gravação ini, então nada será gravado em disco, pois as informações do arquivo são mantidas na memória até que esta função seja chamada, o que força a gravação. Se você tentar abrir um ini sem ter previamente fechado outro (ou o mesmo), você também receberá um erro.</p>
   <p>A função também retornará um <span class="notranslate">string</span> com o arquivo ini codificado nele. Este <span class="notranslate">string</span> pode então ser salvo em um <span class="notranslate">server</span> e/ou usado novamente junto com a função <a href="ini_open_from_string.htm"><span class="inline">ini_open_from_string()</span></a> para recriar o ini.</p>
   <p> </p>

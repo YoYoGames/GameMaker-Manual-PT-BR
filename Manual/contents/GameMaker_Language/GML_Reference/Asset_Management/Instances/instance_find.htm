@@ -15,7 +15,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>instance_find</h1>
+  <h1><span data-field="title" data-format="default">instance_find</span></h1>
   <p>Todas as instâncias têm um identificador único (<a href="Instance_Variables/id.htm"><span class="inline">id</span></a>) que pode ser usada para modificá-las e manipulá-las enquanto um jogo está em execução, mas você pode nem sempre saber qual é a identificação para uma instância específica e, portanto, esta função pode ajudar, pois você pode usá-la para iterar através de todas elas para encontrar o que você precisa. Você especifica o <span class="notranslate">object</span> do qual você quer encontrar a instância e um número, e se houver uma instância nessa posição na lista de instâncias então a função retorna o id dessa instância, e se não retornar a <a href="../../../GML_Overview/Instance_Keywords.htm">palavra-chave</a> especial <span class="inline"><b>noone</b></span>. Você também pode usar a palavra-chave <span class="inline"><b>all</b></span> para iterar todas as instâncias em um <span class="notranslate">room</span>, assim como um pai <span class="notranslate">object</span> para iterar todas as instâncias que fazem parte dessa hierarquia pai/filho, e você pode até mesmo especificar uma instância (se você tiver seu <span class="inline">id</span>) como uma verificação para ver se ela realmente existe no atual <span class="notranslate">room</span>. Observe que como as instâncias são classificadas de forma <i>arbitrária</i>, não há uma ordem específica de como as instâncias são verificadas por esta função, e qualquer instância pode estar em qualquer posição.</p>
   <p>O valor máximo para &quot;n&quot; nesta função seria</p>
   <ul class="colour">

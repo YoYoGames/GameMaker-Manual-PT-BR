@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>superfície_criar_texto</title>
+  <title>surface_create_ext</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
@@ -15,7 +15,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>superfície_criar_texto</h1>
+  <h1><span data-field="title" data-format="default">surface_create_ext</span></h1>
   <p>Esta função permite anexar uma superfície a um elemento de tela que já existe em sua página web, o que significa que você pode efetivamente dividir porções de seu jogo a serem desenhadas em vários lugares diferentes dentro da página. Para isso, você <i>deve</i> ter definido corretamente o elemento de tela dentro da página <span class="inline">*.html</span> de seu jogo usando os tamanhos e nomes corretos que correspondem às superfícies que você deseja criar. Assim, você teria sua tela &quot;principal&quot; e, em seguida, seus elementos secundários de tela de superfície, que serão designados usando esta função para as superfícies corretas. A imagem a seguir é um exemplo de como uma página com três elementos de tela seria configurada:</p>
   <p><img>O layout da página pode ser complicado, especialmente se você desejar que todos os elementos se alinhem corretamente, mas uma vez concluída a difícil tarefa de criar o layout, você pode então adicionar este arquivo <span class="inline">html</span> como o arquivo de página padrão para o jogo usando a <a href="../../../../Settings/Game_Options/HTML5.htm">guia HTML5</a> das <a href="../../../../Settings/Game_Options.htm">Opções do Jogo</a>. A próxima coisa que você deve fazer é configurar seu <span class="notranslate">room</span> e vistas, pois cada superfície precisará ser associada a uma vista específica para &quot;capturar&quot; as imagens do jogo (veja a variável de vista <a href="../../Cameras_And_Display/Cameras_And_Viewports/view_surface_id.htm"><span class="inline">view_surface_id[0...7]</span></a>). A imagem abaixo mostra como o jogo <span class="notranslate">room</span> para o exemplo de lona acima seria apresentado:</p>
   <p><img>Finalmente, você usaria esta função para criar as superfícies, sendo o nome igual ao usado para os elementos da tela e o tamanho correspondente ao tamanho daquela mesma tela. A função retornará o índice da superfície que deverá ser armazenada em uma variável para futuras chamadas de função. Quando a superfície é criada pela primeira vez, ela pode conter &quot;ruído&quot;, pois basicamente é apenas uma área de memória que é posta de lado para o propósito (e que a memória ainda pode conter informações), portanto você pode querer limpar a superfície antes de usar com uma função como <a href="../Colour_And_Alpha/draw_clear_alpha.htm"><span class="inline">draw_clear_alpha()</span></a>.</p>

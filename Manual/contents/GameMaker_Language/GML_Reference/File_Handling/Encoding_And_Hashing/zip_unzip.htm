@@ -15,7 +15,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>zip_unzip</h1>
+  <h1><span data-field="title" data-format="default">zip_unzip</span></h1>
   <p>Esta função abrirá um arquivo zip armazenado e extrairá seu conteúdo para o diretório dado. Note que se você não fornecer um <span class="notranslate">path</span> completo para o diretório ZIP, então a <i>raiz do</i> drive atual será usada, e se você quiser colocá-lo em um <span class="notranslate">path</span> relativo ao diretório de trabalho do pacote de jogos, então você deve usar a função <a href="../File_Directories/working_directory.htm"><span class="inline">working_directory</span></a> como parte da variável <span class="notranslate">path</span> (relativo <span class="notranslate">paths</span> usando &quot;.&quot; ou &quot;...&quot; não funcionará como esperado, portanto deve ser evitado). Observe também que o zip deve fazer parte do pacote do jogo (ou seja: um <a href="../../../../Settings/Included_Files.htm">arquivo incluído</a>) ou ter sido baixado para a área de armazenamento usando <a href="../../Asynchronous_Functions/HTTP/http_get_file.htm">http_get_file()</a>.</p>
   <p>A função retornará um valor indicando o número de arquivos extraídos, ou retornará 0 ou menos se a extração tiver falhado.</p>
   <p> </p>

@@ -15,7 +15,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>layer_get_depth</h1>
+  <h1><span data-field="title" data-format="default">layer_get_depth</span></h1>
   <p>Você pode usar esta função para obter o valor de <i>profundidade</i> associado a uma determinada camada. Você fornece a identificação da camada (que você obtém quando cria a camada usando <a href="layer_create.htm"><span class="inline">layer_create()</span></a>) ou o nome da camada (como um <span class="notranslate">string</span> - isso terá um impacto no desempenho) e a função retornará essa profundidade de camadas como um número real. Note que a profundidade é definida como sendo maior a &quot;mais distante&quot; da câmera e menor a &quot;mais próxima&quot; da câmera, assim, se você tiver três camadas com profundidades -100, 0, 100, as camadas serão desenhadas na ordem 100, 0, -100, de modo que a camada &quot;superior&quot; (ou seja, a mais próxima da visão da câmera e assim desenhada sobre tudo mais) será a camada com a profundidade -100.</p>
   <p>A imagem a seguir mostra um esquema de como funciona a profundidade para camadas:</p>
   <p><img>Observe que se você fornecer um valor de identificação de camada inválido, você receberá um erro.</p>

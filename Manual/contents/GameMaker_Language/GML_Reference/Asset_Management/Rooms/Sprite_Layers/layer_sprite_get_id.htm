@@ -15,7 +15,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>layer_sprite_get_id</h1>
+  <h1><span data-field="title" data-format="default">layer_sprite_get_id</span></h1>
   <p>Esta função pode ser usada para recuperar o valor de identificação único de um elemento <span class="notranslate">sprite</span> em uma camada. Você fornece o ID da camada (que você obtém quando cria a camada usando <a href="../General_Layer_Functions/layer_create.htm"><span class="inline">layer_create()</span></a> ou quando você usa o nome da camada junto com <a href="../General_Layer_Functions/layer_get_id.htm"><span class="inline">layer_get_id()</span></a>) e o nome do elemento <span class="notranslate">sprite</span>, conforme definido no editor <span class="notranslate">Room</span>. A função retornará o valor de identificação associado a esse elemento <span class="notranslate">sprite</span> na camada.</p>
   <p>Note que esta função foi especificamente projetada para uso com <span class="notranslate">sprites</span> que foram adicionados no <span class="notranslate">IDE</span> em uma camada <span class="notranslate">asset</span>, e se você adicionou um <span class="notranslate">sprite</span> a uma camada através de código usando a função <a href="layer_sprite_create.htm"><span class="inline">layer_sprite_create()</span></a>então o ID retornado por essa função deve ser usado para todas as referências futuras (já que o elemento <span class="notranslate">sprite</span> não terá nome a ser passado para esta função).</p>
   <p>Se a camada especificada não existir, ou se o elemento <span class="notranslate">sprite</span> dado não puder ser encontrado, a função retornará -1.</p>

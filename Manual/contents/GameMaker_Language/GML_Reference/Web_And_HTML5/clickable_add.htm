@@ -15,7 +15,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>clickable_add</h1>
+  <h1><span data-field="title" data-format="default">clickable_add</span></h1>
   <p>Com esta função você pode criar um ícone personalizado, clicável, que atua como um &quot;botão&quot; fora da tela do jogo, mas dentro da própria janela do navegador. A função retornará um valor de identificação que deve ser armazenado em uma variável para ser usada em todas as outras funções de botão que referenciam a nova opção clicável. Esta função é muito útil para evitar que o navegador crie uma janela pop-up ao clicar no botão, pois tudo isso é feito através do próprio <span data-keyref="GameMaker Name">GameMaker</span>.</p>
   <p>Primeiro você deve definir a posição, que é relativa ao (0,0) da janela do navegador (canto superior esquerdo) e depois dar a entrada da página <span class="notranslate">texture</span> para o ícone do botão <span class="notranslate">sprite</span> que você deseja que o botão tenha (veja: <a href="../Asset_Management/Sprites/Sprite_Information/sprite_get_tpe.htm"><span class="inline">sprite_get_tpe()</span></a>). Você pode então especificar um URL para abrir ou um <span class="notranslate">script</span> (do navegador <span class="notranslate">Asset</span> do <span data-keyref="GameMaker Name">GameMaker</span>) para ser aberto ou executado. O parâmetro &quot;alvo&quot; que você especifica é o mesmo que o valor padrão do &quot;nome&quot; JavaScript quando você usa o método <span class="inline">open()</span> (esteja ciente de que tudo menos &quot;_self&quot; pode resultar no bloqueio do navegador, ou perguntar ao usuário se ele deseja permitir isso) e o argumento &quot;params&quot; é o mesmo que o parâmetro &quot;specs&quot; do JavaScript para controlar quais propriedades a nova janela/tabela deve exibir (nem todos os navegadores podem suportar todas as características). Se você estiver usando o ícone para executar um <span class="notranslate">script</span> interno, estes dois últimos argumentos podem ser deixados como vazios <span class="notranslate">strings</span> &quot;&quot;&quot;.</p>
   <p>Os alvos válidos são:</p>
@@ -97,7 +97,7 @@
       </tr>
     </tbody>
   </table>
-  <p><br>
+  <p><br />
     Também vale a pena notar que se o argumento URL que você passa é o nome de uma <a href="../../GML_Overview/Script_Functions.htm">função de script</a> (ou seja: não começa com &quot;http://&quot;) E o <span class="notranslate">script</span> é chamado <span class="inline"><b>gmcallback_*</b></span> então você pode obter feeds diretos em um evento html5. Os nomes das funções de script <span data-keyref="GameMaker Name">do GameMaker</span> <i>não</i> são ofuscados se começarem com <span class="inline">gmcallback_</span>.</p>
   <p> </p>
   <h4>Sintaxe:</h4>

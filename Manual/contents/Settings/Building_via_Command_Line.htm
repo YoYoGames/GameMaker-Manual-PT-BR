@@ -51,10 +51,10 @@
         <tr>
           <td style=""><span class="inline">/uf=[user_folder]<strong></strong></span></td>
           <td style="">A pasta do usuário utilizada para recuperar informações sobre a licença
-            <br>
-            <br>
+            <br />
+            <br />
             Em <span class="notranslate">Windows</span>, isto será: <span class="inline"><span>%appdata%\GameMaker\&lt;user_name&gt;_&lt;number&gt;</span>
-            <br>
+            <br />
             Em <span class="notranslate">macOS</span>, este será: : <span class="inline"><span>~/.config/GameMaker/&lt;user_name&gt;_&lt;number&gt;</span> </td>
         </tr>
         <tr>
@@ -76,8 +76,8 @@
         <tr>
           <td style=""><span class="inline">/of=[output_folder_filename]</span></td>
           <td style="">O diretório de saída onde a construção será extraída; não especifique apenas um diretório, pois a entrada móvel é sempre removida (por exemplo: especificar <span class="inline">d:\game\output</span> colocará os arquivos do jogo em <span class="inline">d:\game</span>)
-            <br>
-            <br>
+            <br />
+            <br />
             Se isso não for especificado, um diretório chamado <span class="inline">output</span> será criado no mesmo diretório que o arquivo <span class="inline">.bat</span> (ou de onde o comando está sendo executado), contendo os arquivos de construção extraídos </td>
         </tr>
         <tr>
@@ -279,21 +279,21 @@
         <tr>
           <td style=""><span class="inline">Runtime ListInstalled [directory]</span></td>
           <td style="">Lista o <span class="notranslate">runtimes</span> disponível na pasta atual (<span class="inline">directory</span>=full <span class="notranslate">path</span> para a pasta)
-            <br>
-            <br>
+            <br />
+            <br />
             Você pode especificar um diretório para procurar, mas se ele não for especificado, ele será o padrão para o diretório atual
-            <br>
-            <br>
+            <br />
+            <br />
             Isto também verifica se há um arquivo <span class="inline">receipt.json</span> e uma pasta <span class="inline">manifest</span> dentro do diretório (certificando-se de que é realmente um <span class="notranslate">runtime</span>) </td>
         </tr>
         <tr>
           <td style=""><span class="inline">Runtime Info [version]</span></td>
           <td style="">Imprime informações sobre o mais recente <span class="notranslate">runtime</span> no feed dado; também precisa de um arquivo de licença para mostrar informações sobre os módulos disponíveis para o usuário
-            <br>
-            <br>
+            <br />
+            <br />
             <span class="inline">version</span> pode ser por um <span class="notranslate">string</span> usado para pesquisar os títulos dos feeds (por exemplo: <span class="inline">&quot;739&quot;</span> mostraria informações para todos os builds contendo 739 em seus números de versão), ou pode ser <span class="inline">all</span> para mostrar informações para todos os feeds
-            <br>
-            <br>
+            <br />
+            <br />
             Ele listará os módulos com os nomes dos arquivos <span class="inline">.zip</span> para cada módulo </td>
         </tr>
         <tr>
@@ -303,11 +303,11 @@
         <tr>
           <td style=""><span class="inline">Runtime Verify [folder=.]</span></td>
           <td style="">Calcula os checksums para todos os arquivos instalados e os compara com os checksums escritos no manifesto <span class="inline">folder</span>. Você pode especificar uma pasta a ser verificada, porém, se não for especificada, a pasta será enviada por padrão para o diretório atual.
-            <br>
-            <br>
+            <br />
+            <br />
             Isto irá <span class="notranslate">flag</span> quaisquer arquivos onde os checksums não correspondam, arquivos que estejam faltando e arquivos que não deveriam estar lá.
-            <br>
-            <br>
+            <br />
+            <br />
             Observe que os arquivos de manifesto em si não são verificados e um usuário pode alterar os arquivos de manifesto para corresponder aos arquivos instalados. </td>
         </tr>
       </tbody>
@@ -348,8 +348,8 @@
         <tr>
           <td style=""><span class="inline">/target=[list_of_targets]</span></td>
           <td style="">Lista de alvos separada por vírgula no formato <span class="inline">PLATFORM|DEVICE</span>, por exemplo: <span class="inline">/target=&quot;Windows|Local,HTML|Firefox&quot;</span>
-            <br>
-            <br>
+            <br />
+            <br />
             Se você especificar <strong>tudo</strong>, os testes tentarão ser executados para cada dispositivo no arquivo <span class="inline">devices.json</span>. </td>
         </tr>
       </tbody>

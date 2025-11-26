@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>vértice_formato_add_custom</title>
+  <title>vertex_format_add_custom</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>vértice_formato_add_custom</h1>
+  <h1><span data-field="title" data-format="default">vertex_format_add_custom</span></h1>
   <p>Esta função permite que você utilize um tipo de dados personalizado para atributos específicos do formato <span class="notranslate">vertex</span> como parte do novo formato <span class="notranslate">vertex</span> que está sendo criado. Os valores disponíveis para uso são definidos pelo tipo de constante de dados que você escolher, listados abaixo:</p>
   <table>
     <colgroup>
@@ -55,7 +55,7 @@
       </tr>
     </tbody>
   </table>
-  <p><br>
+  <p><br />
     O uso que estas constantes serão colocadas também precisa ser definido para que os valores possam ser &quot;vinculados&quot; adequadamente dentro do <span class="notranslate">shader</span> que está sendo criado. Isto é necessário devido ao fato de que DX e OpenGL têm requisitos diferentes, portanto, se você não os vincula apropriadamente, eles não serão aprovados no <span class="notranslate">shader</span>. As constantes de uso disponíveis que você pode escolher estão listadas abaixo e aquelas que você usa dependerão das especificidades do <span class="notranslate">shader</span> que está sendo criado:</p>
   <table>
     <colgroup>
@@ -116,7 +116,7 @@
       </tr>
     </tbody>
   </table>
-  <p><br>
+  <p><br />
     Há algumas coisas importantes a serem observadas quando se utiliza formatos personalizados como estes:</p>
   <ul class="colour">
     <li>A função <span class="inline">vertex_format_add_custom()</span> suporta apenas <span class="inline">vertex_usage_position</span>, <span class="inline">vertex_usage_colour</span>, <span class="inline">vertex_usage_normal</span> e <span class="inline">vertex_usage_textcoord</span> quando se utiliza GLSL <span class="notranslate">shaders</span>. Estes mapearão para os atributos <span class="notranslate">shader</span> <span class="inline">in_Position</span> , <span class="inline">in_Colour[0 - ...]</span>, <span class="inline">in_Normal</span> respectivamente (qualquer coisa que não seja um destes três atributos - por exemplo: coordenadas <span class="notranslate">texture</span> - pode ser mapeado para qualquer atributo que você definir).</li>

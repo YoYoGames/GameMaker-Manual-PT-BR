@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>camera_destroy</h1>
+  <h1><span data-field="title" data-format="default">camera_destroy</span></h1>
   <p>Com esta função, você pode destruir qualquer câmera. Ao chamar a função você fornece o valor único de identificação da câmera, que você obtém das funções <span class="inline">camera_create_*</span> ou do <a href="view_camera.htm"><span class="inline">view_camera</span></a> se usando o editor <span class="notranslate">Room</span> para configurar a porta de visualização e a visualização. Você <i>nunca</i> deve destruir uma câmera que está atualmente atribuída a uma vista visível, a menos que você esteja atribuindo uma nova câmera a essa vista no mesmo passo, e você deve <i>sempre</i> destruir quaisquer câmeras que você tenha criado através de código quando não for mais necessário para evitar vazamentos de memória, e você também pode destruir as câmeras padrão se você tiver alguma atribuída no Editor <span class="notranslate">Room</span>, mas você deve atribuir uma nova câmera à porta de vista (ou desabilitá-la) caso contrário você obterá resultados estranhos.</p>
   <p> </p>
   <h4>Sintaxe:</h4>

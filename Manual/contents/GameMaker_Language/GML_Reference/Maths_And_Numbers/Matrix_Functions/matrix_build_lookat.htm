@@ -15,7 +15,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>matrix_build_lookat</h1>
+  <h1><span data-field="title" data-format="default">matrix_build_lookat</span></h1>
   <p>Esta função constrói uma matriz &quot;look-at&quot; (vista) com base nos parâmetros especificados abaixo. Como esta função modifica a matriz de visão e não a matriz de projeção, deve-se primeiro inicializar a matriz de projeção usando a outra função de matriz <a href="matrix_build_projection_perspective.htm"><span class="inline">matrix_build_projection_perspective()</span></a>A câmera de visão é utilizada para mover a câmera dentro da projeção.</p>
   <p>Para definir a visão, primeiro é necessário definir a posição <i>de onde</i> você olha, que é indicada pelos parâmetros (xfrom, yfrom, zfrom). Em seguida, você deve especificar a direção <i>que</i> você olha e isto é feito dando um segundo ponto para olhar com os argumentos (xto, yto, zto). Finalmente, você ainda pode girar a câmera ao redor da linha do ponto de vista para o ponto de vista, e para especificar isto, devemos dar um vetor &quot;para cima&quot; - a direção que está para cima na câmera. Isto é dado pelos três últimos argumentos (xup, yup, zup).</p>
   <p> </p>

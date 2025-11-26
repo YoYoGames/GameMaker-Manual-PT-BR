@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>layer_destroy</h1>
+  <h1><span data-field="title" data-format="default">layer_destroy</span></h1>
   <p>Esta função destruirá a camada dada. Você fornece a identificação da camada (que você obtém quando cria a camada usando <a href="layer_create.htm"><span class="inline">layer_create()</span></a>) ou o nome da camada (como um <span class="notranslate">string</span> - isto terá um impacto no desempenho) e isto irá removê-lo do atual <span class="notranslate">room</span>. Se a camada for uma que foi projetada no editor <span class="notranslate">room</span>, então na próxima vez que você deixar o <span class="notranslate">room</span> e depois retornar, a camada será recriada novamente com o conteúdo original, porém se o <span class="notranslate">room</span> for persistente, a camada será removida, a menos que <span class="notranslate">room</span> persistência seja desligada novamente. Ao destruir uma camada desta forma, todo o seu conteúdo também será removido, portanto, quaisquer IDs de referência para fundos ou mapas <span class="notranslate">tile</span>, etc... não serão mais válidos e quaisquer instâncias atribuídas à camada serão destruídas (realizando seu <strong>Evento de Destruição</strong> ao mesmo tempo, se tiverem um, assim como o <strong>Evento de Limpeza</strong>).</p>
   <p> </p>
   <h4>Sintaxe:</h4>

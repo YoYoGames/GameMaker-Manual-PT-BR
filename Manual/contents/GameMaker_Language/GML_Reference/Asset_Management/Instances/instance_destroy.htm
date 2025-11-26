@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>exemplo_destroy</title>
+  <title>instance_destroy</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
@@ -15,7 +15,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>exemplo_destroy</h1>
+  <h1><span data-field="title" data-format="default">instance_destroy</span></h1>
   <p>Você chama esta função sempre que desejar &quot;destruir&quot; uma instância, normalmente desencadeando um <a href="../../../../The_Asset_Editors/Object_Properties/Object_Events.htm">Evento de Destruição</a> e também um <a href="../../../../The_Asset_Editors/Object_Properties/Object_Events.htm">Evento de Limpeza</a>. Isto o removerá do <span class="notranslate">room</span> até que o <span class="notranslate">room</span> seja reiniciado (a menos que o <span class="notranslate">room</span> seja persistente). Chamar a função sem argumentos simplesmente destruirá a instância que está atualmente em escopo e executando o código, mas você pode fornecer um argumento opcional &quot;id&quot; e direcionar uma instância específica usando o valor da instância <span class="inline"><a href="Instance_Variables/id.htm">id</a></span>, ou você pode direcionar todas as instâncias de um determinado <span class="notranslate">object</span> usando um <a href="../Objects/object_index.htm"><span class="inline">object_index</span></a>. Por exemplo:</p>
   <p class="code">instance_destroy(other);      // destroy the &quot;other&quot; instance in a Collision Event<br />
     instance_destroy(obj_Bullet); // destroy ALL instances of the object &quot;obj_Bullet&quot;</p>

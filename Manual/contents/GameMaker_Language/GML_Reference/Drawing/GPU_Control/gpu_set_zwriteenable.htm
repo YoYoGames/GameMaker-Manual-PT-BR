@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>gpu_set_zwriteenable</h1>
+  <h1><span data-field="title" data-format="default">gpu_set_zwriteenable</span></h1>
   <p>Esta função pode ser usada para ativar (<span class="inline">true</span>) e desativar (<span class="inline">false</span>) o pedido de profundidade usando o z-buffer. Quando uma instância é renderizada no <span data-keyref="GameMaker Name">GameMaker</span>, a profundidade de um pixel gerado (sua coordenada z) é armazenada no z-buffer, então, se outra instância da cena deve ser renderizada no mesmo pixel, as duas profundidades são comparadas (z-testing - veja <a href="gpu_set_ztestenable.htm"><span class="inline">gpu_set_ztestenable()</span></a>) e aquele &quot;mais próximo&quot; do observador é então salvo no z-buffer, substituindo o antigo. Entretanto, isto nem sempre é o que você deseja que aconteça e há momentos em que você pode querer que algo seja arrastado sobre tudo o resto, não importa qual seja seu valor z. Nesses casos, você pode usar esta função para <span class="notranslate">switch</span>, escrevendo para o z-buffer e assim forçar o que estiver sendo desenhado a ser desenhado sobre tudo o resto. Note que a descrição dada aqui é para o modo de comparação <i>padrão</i> do teste z, mas isso pode ser alterado</p>
   <p>O valor padrão é que o z-buffering está ativado (<span class="inline">true</span>).</p>
   <p> </p>

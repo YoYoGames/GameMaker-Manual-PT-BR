@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>layer_sequence_headpos</h1>
+  <h1><span data-field="title" data-format="default">layer_sequence_headpos</span></h1>
   <p>Com esta função você pode definir a posição de <a class="glossterm" data-glossterm="playhead" href="#">cabeça de jogo</a> de um elemento <span class="notranslate">sequence</span> para uma moldura específica. Você fornece o ID do elemento <span class="notranslate">sequence</span> conforme retornado por <a href="layer_sequence_create.htm"><span class="inline">layer_sequence_create()</span></a> ou por uma das <a href="../General_Layer_Functions/General_Layer_Functions.htm">funções dos elementos da camada</a> junto com a nova posição a ser definida. Note que a posição está em <i>quadros</i> e se você definir um valor maior que o número total de quadros (ou menor que 0) então a posição final real do playhead dependerá do tipo de reprodução <span class="notranslate">sequence</span> que foi selecionada, seguindo estas regras:</p>
   <ul class="colour">
     <li><strong>Sem looping</strong>: O playhead se fixará ao final do <span class="notranslate">loop</span> (ou ao início, se o valor dado for negativo)</li>

@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>network_send_raw</h1>
+  <h1><span data-field="title" data-format="default">network_send_raw</span></h1>
   <p>Com esta função, você pode enviar um pacote de dados &quot;bruto&quot; através da rede. A função leva o <i>id do soquete</i> para conectar e então você deve fornecer o <i>id do buffer</i> que contém os dados a serem enviados (para mais informações em <span class="notranslate">buffers</span> veja <a href="../Buffers/Buffers.htm">Referência - Buffers</a>) e finalmente o tamanho (em bytes) do pacote de dados. Os dados enviados não são formatados pelo <span data-keyref="GameMaker Name">GameMaker</span> de forma alguma e os dispositivos receptores receberão os dados como um fluxo, o que significa que você mesmo terá que lidar com eles. A função retornará o número de bytes de dados enviados, ou um número inferior a 0 se o envio falhar.</p>
   <h2>Argumento de Opções</h2>
   <p>O último argumento é opcional, e só é usado com WebSockets. Ele permite que você escolha entre o envio de dados binários ou de texto. Qualquer uma destas constantes pode ser especificada neste argumento:</p>

@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>audio_emitter_falloff</h1>
+  <h1><span data-field="title" data-format="default">audio_emitter_falloff</span></h1>
   <p>Com esta função você pode definir a distância de queda para um emissor. Esta é a distância do <i>ouvinte</i> que o emissor tem que estar antes que o som tenha &quot;caído&quot; para um volume de 0. O valor padrão para isto é 100, mas tenha cuidado ao definir este valor para qualquer valor inferior a 1, pois isso tornará qualquer som reproduzido através deste emissor inaudível para o <i>ouvinte</i>, entretanto qualquer outro valor fará com que o som se desvaneça quanto mais longe o emissor estiver do <i>ouvinte</i>.</p>
   <p>Como o som em si vai depender da referência de falloff (que é a distância sob a qual o volume da fonte normalmente cairia pela metade) e o fator de roll off (que afeta o som além da distância de referência de falloff apenas). O fator padrão é normalmente 1, e o efeito dos diferentes valores de falloff dependerá do modelo escolhido.</p>
   <p>Para um guia completo dos diferentes modelos de falloff e como esses valores são usados, por favor veja a função <span class="inline"><a href="../audio_falloff_set_model.htm">audio_falloff_set_model()</a>.</span></p>

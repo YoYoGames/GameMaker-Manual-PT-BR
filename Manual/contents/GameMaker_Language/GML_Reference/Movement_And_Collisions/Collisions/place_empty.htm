@@ -15,7 +15,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>place_empty</h1>
+  <h1><span data-field="title" data-format="default">place_empty</span></h1>
   <p>Você pode usar esta função para verificar e ver se a instância de chamada colidiria com <i>qualquer outra instância</i> de um <span class="notranslate">object</span> ou todas as instâncias em seu jogo. Para que a colisão seja resolvida corretamente, a instância que executa o código deve ter uma máscara de colisão válida (ou para o próprio <span class="notranslate">sprite</span>, ou através do <a href="../../Asset_Management/Sprites/Sprite_Instance_Variables/mask_index.htm"><span class="inline">mask_index</span></a>) e só registrará colisões com aquelas instâncias que também possuem uma máscara válida.</p>
   <p>A função é testar se não há colisões caso a instância chamadora seja colocada em uma posição específica, e você pode fornecer um argumento opcional para refinar a verificação para verificar apenas se uma posição está livre de colisões com instâncias do tipo dado. Observe que se não for fornecido um ID opcional <span class="notranslate">object</span>, a verificação será feita contra <i>todas as</i> instâncias dentro do <span class="notranslate">room</span>. A verificação de colisão será precisa ou baseada na caixa de delimitação da instância, dependendo do tipo de máscara de colisão selecionada, mas para que colisões precisas funcionem corretamente, todas as instâncias na verificação devem ter máscaras de colisão precisas.</p>
   <p>Observe que as coordenadas x/y dadas serão niveladas com o inteiro mais próximo antes da verificação ser realizada.</p>

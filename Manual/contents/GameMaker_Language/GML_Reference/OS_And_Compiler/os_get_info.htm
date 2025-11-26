@@ -15,7 +15,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>os_get_info</h1>
+  <h1><span data-field="title" data-format="default">os_get_info</span></h1>
   <p>Esta função retorna um <a href="../Data_Structures/DS_Maps/DS_Maps.htm"><span class="inline">DS Map</span></a> com informações detalhadas sobre o sistema operacional em que o jogo está sendo executado. As informações exatas retornadas dependerão do sistema operacional e do dispositivo, portanto é recomendável que você teste esta função em todas as plataformas que você deseja direcionar e emitir os valores retornados usando uma função como <span class="inline"><a href="../Debugging/show_debug_message.htm">show_debug_message()</a></span>. Note que o mapa DS não é automaticamente apagado da memória e você deve usar o <a href="../Data_Structures/DS_Maps/ds_map_destroy.htm"><span class="inline">ds_map_destroy()</span></a> funcionar quando você não precisa mais dele.</p>
   <p>Abaixo você pode encontrar alguns detalhes sobre os dados extras que serão disponibilizados para o mapa DS específicos para as seguintes plataformas, e deve ser notado que em todas as plataformas <em>exceto</em> HTML5 o mapa terá a chave &quot;<span><span class="inline">is64bit</span>&quot; que será <span class="inline">true</span> ou <span class="inline">false</span> dependendo se o corredor está rodando no modo 64-bit ou não</span>.</p>
   <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down" href="#">Windows / UWP</a></p>
@@ -101,7 +101,7 @@
       <li class="dropspot"><span><span class="inline">totalMemory</span>: A memória total do dispositivo</span></li>
       <li class="dropspot"><span><span class="inline">userMemory</span>: A memória do usuário</span></li>
       <li class="dropspot"><span><span class="inline">maxSocketBufferSize</span>: O tamanho máximo da tomada <span class="notranslate">buffer</span> </span></li>
-      <li class="dropspot">Teclas adicionais contendo informações gráficas OpenGL<br>
+      <li class="dropspot">Teclas adicionais contendo informações gráficas OpenGL<br />
          </li>
     </ul>
   </div>

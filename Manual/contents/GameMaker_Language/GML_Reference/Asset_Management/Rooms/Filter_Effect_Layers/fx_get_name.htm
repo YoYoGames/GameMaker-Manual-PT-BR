@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>fx_get_name</h1>
+  <h1><span data-field="title" data-format="default">fx_get_name</span></h1>
   <p>Esta função é utilizada para recuperar o nome de um filtro/efeito a partir de seu <span class="notranslate">struct</span>. Você especifica o FX <span class="notranslate">struct</span> para ler (como retornado de <span class="inline"><a href="fx_create.htm">fx_create()</a></span> ou <span class="inline"><a href="layer_get_fx.htm">layer_get_fx()</a></span>) e a função retorna seu nome como um <span class="notranslate">string</span>. Este nome pode então ser passado para <span class="inline"><a href="fx_create.htm">fx_create()</a></span> para criar um novo FX <span class="notranslate">struct</span> usando o mesmo tipo de filtro/efeito.</p>
   <p> </p>
   <h4>Sintaxe:</h4>
@@ -49,7 +49,7 @@
             }<br />
         }<br />
     }</p>
-  <p>O código acima executa um <a href="../../../../GML_Overview/Language_Features/for.htm"><span class="notranslate">for</span></a> percorre todas as camadas presentes no <span class="notranslate">room</span>, e verifica cada camada em busca de um FX <span class="notranslate">struct</span>. Se uma camada tem um FX <span class="notranslate">struct</span>, ele verifica o nome desse filtro/efeito chamando <span class="inline">fx_get_name()</span>; se for igual a <span class="inline2">&quot;_filter_tintfilter&quot;</span> significando que é um filtro &quot;Colour Tint&quot;, ele muda sua cor de tonalidade para azul.<br>
+  <p>O código acima executa um <a href="../../../../GML_Overview/Language_Features/for.htm"><span class="notranslate">for</span></a> percorre todas as camadas presentes no <span class="notranslate">room</span>, e verifica cada camada em busca de um FX <span class="notranslate">struct</span>. Se uma camada tem um FX <span class="notranslate">struct</span>, ele verifica o nome desse filtro/efeito chamando <span class="inline">fx_get_name()</span>; se for igual a <span class="inline2">&quot;_filter_tintfilter&quot;</span> significando que é um filtro &quot;Colour Tint&quot;, ele muda sua cor de tonalidade para azul.<br />
      </p>
   <p> </p>
   <p> </p>
