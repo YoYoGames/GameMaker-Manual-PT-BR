@@ -20,7 +20,7 @@
   <p><img>As duas instâncias acima foram adicionadas à grade MP usando a função <span class="inline">mp_grid_add_instances()</span> com a definição precisa como verdadeira. Como você pode ver, a instância verde apenas marcou os quadrados da grade que ela &quot;toca&quot; como proibido, devido ao fato de que sua máscara <span class="notranslate">sprite</span> também está configurada com precisão. No entanto, a segunda instância também marcou outras células que não <i>parecem</i> estar tocando. Isto porque a máscara <span class="notranslate">sprite</span> <b>não</b> está definida com precisão, o que significa que mesmo que você esteja usando a definição precisa na função, somente a caixa de delimitação do <span class="notranslate">sprite</span> será considerada. Isto também aconteceria se você definisse o argumento preciso da função como falso - mesmo instâncias com uma máscara precisa do <span class="notranslate">sprite</span> serão adicionadas à grade com base em suas caixas de delimitação.</p>
   <p> </p>
   <h4>Sintaxe:</h4>
-  <p class="code">mp_grid_add_instances(id, obj, prec);</p>
+  <p class="code"><span data-field="title" data-format="default">mp_grid_add_instances</span>(id, obj, prec);</p>
   <table>
     <tbody>
       <tr>

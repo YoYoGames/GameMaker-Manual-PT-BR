@@ -18,7 +18,7 @@
   <p>Esta função limpará o mapa DS (previamente criado) de todos os pares chave/valor, mas não apagará o próprio mapa DS da memória. Para isso, você deve usar a função <a href="ds_map_destroy.htm"><span class="inline">ds_map_destroy()</span></a>. Note que a limpeza de um mapa desreferenciará quaisquer estruturas de dados armazenadas no mapa, dando um vazamento de memória, portanto você precisaria passar por ele e destruir todos os itens da estrutura de dados manualmente antes de limpar o mapa para evitar isso. A única vez que isto não é necessário é quando você tiver marcado qualquer item no mapa como uma <a href="../DS_Lists/DS_Lists.htm">lista DS</a> ou como outro <a href="DS_Maps.htm">mapa DS</a>, neste caso, estes itens serão destruídos (não limpos!) e sua memória será limpa automaticamente quando o mapa pai for limpo.</p>
   <p> </p>
   <h4>Sintaxe:</h4>
-  <p class="code">ds_map_clear(id);</p>
+  <p class="code"><span data-field="title" data-format="default">ds_map_clear</span>(id);</p>
   <table>
     <tbody>
       <tr>

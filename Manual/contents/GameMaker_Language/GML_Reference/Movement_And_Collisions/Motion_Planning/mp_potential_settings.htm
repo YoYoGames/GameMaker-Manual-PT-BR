@@ -20,7 +20,7 @@
   <p>O parâmetro &quot;maxrot&quot; é um pouco mais difícil de explicar! A instância tem uma direção de movimento de corrente, e maxrot (valor padrão é 30) indica o quanto é permitido variar a direção de cada lado dessa direção de corrente em um passo. Portanto, mesmo que possa se mover, por exemplo, diretamente para o objetivo, só o fará se não violar esta mudança máxima de direção. Se você fizer do maxrot um grande valor, então a instância pode mudar muito de direção em cada passo, e isto tornará mais fácil encontrar um curto <span class="notranslate">path</span> mas o <span class="notranslate">path</span> será mais feio e menos natural. Se você fizer o valor menor, então o <span class="notranslate">path</span> será mais suave, mas pode levar desvios mais longos (e às vezes até falhar em encontrar o objetivo). Finalmente, quando nenhum passo pode ser dado, o comportamento depende do valor do parâmetro &quot;no local&quot;. Se no local for verdadeiro (o valor padrão), então a instância girará no local pela quantidade indicada com &quot;maxrot&quot; e se for falso, não se moverá de forma alguma. Defini-lo como falso é útil, por exemplo, para carros, mas reduz a chance de a instância encontrar um <span class="notranslate">path</span>.</p>
   <p> </p>
   <h4>Sintaxe:</h4>
-  <p class="code">mp_potential_settings(maxrot, rotstep, ahead, onspot)</p>
+  <p class="code"><span data-field="title" data-format="default">mp_potential_settings</span>(maxrot, rotstep, ahead, onspot)</p>
   <table>
     <tbody>
       <tr>

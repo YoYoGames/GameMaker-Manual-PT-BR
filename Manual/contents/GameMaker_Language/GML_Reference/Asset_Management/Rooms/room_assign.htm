@@ -19,7 +19,7 @@
   <p>Esta função irá copiar uma <span class="notranslate">room</span> para outra, removendo todas as instâncias, <span class="notranslate">tiles</span> etc... do <span class="notranslate">room</span> que está sendo copiado e substituindo-as completamente com o novo conteúdo <span class="notranslate">room</span>. Você fornece o índice para que o <span class="notranslate">room</span> seja copiado para (como definido no navegador <span class="notranslate">asset</span> ou como retornado pela função <a href="room_add.htm"><span class="inline">room_add()</span></a>), bem como o índice da fonte <span class="notranslate">room</span>. Note que chamar esta função em um <span class="notranslate">room</span> <span class="notranslate">asset</span> criado no navegador <span class="notranslate">Asset</span> <strong>mudará permanentemente o conteúdo da sala</strong>, e mesmo chamando <span class="inline">game_restart()</span> não retornará o <span class="notranslate">room</span> ao seu estado original (somente terminando o jogo e abrindo-o novamente começará com o <span class="notranslate">room</span> em seu estado original novamente).</p>
   <p> </p>
   <h4>Sintaxe:</h4>
-  <p class="code">room_assign(ind, source);</p>
+  <p class="code"><span data-field="title" data-format="default">room_assign</span>(ind, source);</p>
   <table>
     <tbody>
       <tr>

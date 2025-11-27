@@ -20,7 +20,7 @@
   <p><img>Como você pode ver, os pontos de ancoragem são especificados como coordenadas <span class="notranslate">room</span>, portanto deve-se ter cuidado ao defini-los, especialmente se as instâncias estão sendo criadas ao mesmo tempo que as juntas, em vez de serem colocadas no <span class="notranslate">room</span> através do editor <span class="notranslate">room</span>. Você também deve perceber que as juntas são criadas independentemente do tamanho do <span class="notranslate">sprite</span> das instâncias ou das fixações que elas têm anexadas. Portanto, se você criar uma junta de corda em outro lugar que não seja a origem da instância, ela ainda é válida e restringirá as duas instâncias em relação à posição na qual ela foi criada. Se você definir o valor &quot;col&quot; para <span class="inline">true</span> então as duas instâncias podem interagir e colidir uma com a outra, mas <i>somente</i> se elas tiverem eventos de colisão, porém se for definido para <span class="inline">false</span>, elas não colidirão não importa o que aconteça.</p>
   <p> </p>
   <h4>Sintaxe:</h4>
-  <p class="code">physics_joint_rope_create(inst1, inst2, w_anchor1_x, w_anchor1_y, w_anchor2_x, w_anchor2_y, maxlength, col)</p>
+  <p class="code"><span data-field="title" data-format="default">physics_joint_rope_create</span>(inst1, inst2, w_anchor1_x, w_anchor1_y, w_anchor2_x, w_anchor2_y, maxlength, col)</p>
   <table>
     <tbody>
       <tr>

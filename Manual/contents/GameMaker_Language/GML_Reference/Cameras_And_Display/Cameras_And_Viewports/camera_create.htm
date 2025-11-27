@@ -20,7 +20,7 @@
   <p>Note que as câmeras são como todos os recursos dinâmicos e ocuparão a memória quando criadas. Isto significa que você precisa tomar cuidado para não criar câmeras desnecessariamente e destruir aquelas que você não precisa chamando a função <a href="camera_destroy.htm"><span class="inline">camera_destroy()</span></a>. Isto também significa que as câmeras persistirão de <span class="notranslate">room</span> a <span class="notranslate">room</span> se atribuídas a uma variável <span class="inline">global</span> (elas persistirão quando atribuídas a variáveis locais ou de instância também, mas você não poderá acessá-las após alterar <span class="notranslate">room</span>, daí o vazamento de memória), para que você possa - por exemplo - criar uma nova câmera, atribuí-la a uma variável global, e então, no início de cada <span class="notranslate">room</span> definir as matrizes de visão e projeção necessárias e a porta de visão que você precisa usar.</p>
   <p> </p>
   <h4>Sintaxe:</h4>
-  <p class="code">camera_create();</p>
+  <p class="code"><span data-field="title" data-format="default">camera_create</span>();</p>
   <p> </p>
   <h4>Devoluções:</h4>
   <p class="code"><span data-keyref="Type_ID_Camera">Camera ID</span></p>
