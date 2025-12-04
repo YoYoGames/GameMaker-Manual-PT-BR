@@ -117,3 +117,4 @@ rem ...
 :skip_s3_upload
 rem ************************************************** ZIP up the output
 7z a YoYoStudioRoboHelp.zip . -r
+popd
