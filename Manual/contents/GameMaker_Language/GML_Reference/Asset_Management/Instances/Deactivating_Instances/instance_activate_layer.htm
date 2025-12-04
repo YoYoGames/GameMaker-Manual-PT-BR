@@ -19,7 +19,7 @@
   <p>Com esta função você pode ativar uma camada que tenha sido desativada anteriormente. Você precisa fornecer o <b>ID da camada</b>, que pode ser o nome da camada como escrito no editor de código (como um <span class="notranslate">string</span>) ou o valor real do ID da camada como retornado pelo <a href="../../Rooms/General_Layer_Functions/layer_create.htm"><span class="inline">layer_create()</span></a> e todas as instâncias desativadas nessa camada serão ativadas mais uma vez. Note que se você desativou uma camada que tem instâncias persistentes, você precisará reativar a camada novamente com esta função antes de mudar <span class="notranslate">room</span>, caso contrário quaisquer instâncias persistentes <i>não</i> serão transportadas e serão descartadas. Note também que a ativação não é instantânea, e uma instância que tenha sido ativada desta forma não será considerada ativa até o final do evento em que a função foi chamada.</p>
   <p> </p>
   <h4>Sintaxe:</h4>
-  <p class="code">instance_activate_layer(layer_id);</p>
+  <p class="code"><span data-field="title" data-format="default">instance_activate_layer</span>(layer_id);</p>
   <table>
     <tbody>
       <tr>

@@ -18,7 +18,7 @@
   <p>Com esta função você pode mudar a posição e/ou o fator de velocidade de qualquer ponto previamente definido para um <span class="notranslate">path</span> (o <span class="notranslate">path</span> pode ter sido criado no editor <span class="notranslate">path</span> ou através de código usando <a href="path_add.htm"><span class="inline">path_add()</span></a>). Se usado em um <span class="notranslate">path</span> do navegador <span class="notranslate">Asset</span>, note que <strong>a função mudará o ativo real</strong>, e assim afetará permanentemente como o <span class="notranslate">path</span> é usado por todas as instâncias no jogo desde o momento em que a função é usada até o final do jogo. Se isto não for o que você precisa, então você deve usar uma função como <span class="inline"><a href="path_duplicate.htm">path_duplicate()</a></span> para criar uma cópia do <span class="notranslate">path</span> primeiro, depois chamar esta função no <span class="notranslate">asset</span> duplicado (não se esqueça de chamar <span class="inline"><a href="path_delete.htm">path_delete()</a></span> no <span class="notranslate">asset</span> quando não for mais necessário).</p>
   <p> </p>
   <h4>Sintaxe:</h4>
-  <p class="code">path_change_point(index, n, x, y, speed);</p>
+  <p class="code"><span data-field="title" data-format="default">path_change_point</span>(index, n, x, y, speed);</p>
   <table>
     <tbody>
       <tr>

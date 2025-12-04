@@ -18,7 +18,7 @@
   <p>Com esta função você pode enviar um &quot;pacote&quot; de dados através da rede. A função leva o <i>id do soquete</i> para conectar e então você deve fornecer o <i>id do buffer</i> que contém os dados a serem enviados (para mais informações em <span class="notranslate">buffers</span> veja <a href="../Buffers/Buffers.htm">Referência - Buffers</a>) e finalmente o tamanho (em bytes) do pacote de dados. Os pacotes enviados com esta função são formatados de forma que o jogo <span data-keyref="GameMaker Name">GameMaker</span> que recebe os dados possa &quot;dividir&quot; os pacotes corretamente, e a função retornará o número de bytes de dados enviados, ou um número inferior a 0 se o envio falhar. Vale notar que o tamanho final dos dados enviados que são devolvidos por esta função também incluirá as informações do cabeçalho <span class="notranslate">GameMaker</span>, que é um número adicional de 12 bytes.</p>
   <p> </p>
   <h4>Sintaxe:</h4>
-  <p class="code">network_send_packet(socket, bufferid, size);</p>
+  <p class="code"><span data-field="title" data-format="default">network_send_packet</span>(socket, bufferid, size);</p>
   <table>
     <tbody>
       <tr>

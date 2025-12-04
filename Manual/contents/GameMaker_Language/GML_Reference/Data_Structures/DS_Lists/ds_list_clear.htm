@@ -18,7 +18,7 @@
   <p>Com esta função você pode limpar todos os dados da estrutura de dados da lista fornecida. Isto <i>NÃO</i> destrói a estrutura de dados (para isso você deve usar <a href="ds_list_destroy.htm"><span class="inline">ds_list_destroy()</span></a>) ele apenas limpa todos os dados e torna a lista vazia (zero em tamanho). Note que a limpeza de uma lista desreferenciará qualquer estrutura de dados nela armazenada dando um vazamento de memória, portanto, seria necessário passar pela lista e destruir todos os itens da estrutura de dados manualmente antes de limpá-la para evitar isso. A única vez que isto não é necessário é quando você tiver marcado qualquer item da lista como outra <a href="DS_Lists.htm">lista DS</a> ou como um <a href="../DS_Maps/DS_Maps.htm">mapa DS</a>, neste caso estes itens serão destruídos (não limpos!) e sua memória será limpa automaticamente quando o pai for limpo.</p>
   <p> </p>
   <h4>Sintaxe:</h4>
-  <p class="code">ds_list_clear(id);</p>
+  <p class="code"><span data-field="title" data-format="default">ds_list_clear</span>(id);</p>
   <table>
     <tbody>
       <tr>

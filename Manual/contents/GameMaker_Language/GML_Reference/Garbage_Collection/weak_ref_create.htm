@@ -18,7 +18,7 @@
   <p>Com esta função você pode criar uma <a class="glossterm" data-glossterm="referência fraca" href="#">referência fraca</a> a um <span class="notranslate">struct</span> que pode então ser usado para verificar se o <span class="notranslate">struct</span> ainda está &quot;vivo&quot; (referenciado) ou não no jogo. Você fornece a referência ao <span class="notranslate">struct</span> que deseja rastrear, e a função retornará outro <span class="notranslate">struct</span> que é uma referência fraca a esse <span class="notranslate">struct</span>. Note que você pode verificar se uma referência é &quot;forte&quot; ou &quot;fraca&quot; usando a função <span class="inline"><a href="../Variable_Functions/instanceof.htm">instanceof()</a></span>, pois uma referência forte retornará ou &quot;<span class="inline">struct</span>&quot; ou o nome da função do construtor que criou o <span class="notranslate">struct</span>, ou &quot;<span class="inline">weakref</span>&quot; se for uma referência fraca. Observe também que a referência fraca <span class="notranslate">struct</span> terá uma variável &quot;<span class="inline">ref</span>&quot; que pode ser acessada para obter a referência forte para o <span class="notranslate">struct</span> em questão, a menos que tenha sido coletado lixo, neste caso retornará <span class="inline">undefined</span>.</p>
   <p> </p>
   <h4>Sintaxe:</h4>
-  <p class="code">weak_ref_create(struct_to_track);</p>
+  <p class="code"><span data-field="title" data-format="default">weak_ref_create</span>(struct_to_track);</p>
   <table>
     <tbody>
       <tr>

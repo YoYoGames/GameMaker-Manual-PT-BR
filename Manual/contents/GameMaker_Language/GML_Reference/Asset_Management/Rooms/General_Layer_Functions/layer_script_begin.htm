@@ -18,7 +18,7 @@
   <p>Com esta função você pode atribuir uma <a href="../../../../GML_Overview/Script_Functions.htm">função de roteiro</a> a uma camada e ela será chamada antes que a camada seja renderizada. Ao adicionar uma função a uma camada, desta forma ela será executada no início de <i>cada um dos diferentes eventos de sorteio</i> para que você possa verificar na função atribuída qual evento está atualmente renderizando e adaptar o código para se adequar. Isto pode ser feito verificando a função <a href="../../Objects/Object_Events/event_type.htm"><span class="inline">event_type</span></a> e/ou o <a href="../../Objects/Object_Events/event_number.htm"><span class="inline">event_number</span></a> (ver o exemplo ampliado abaixo). Observe que a função <i>não</i> se destina a ser chamada em nenhum evento de sorteio ou evento de etapa, mas somente no início do <span class="notranslate">room</span> no <strong>Código de Criação de Salas</strong> ou no <strong>Criar Evento / </strong> <strong>Evento de Início de Sala</strong> de uma instância.</p>
   <p> </p>
   <h4>Sintaxe:</h4>
-  <p class="code">layer_script_begin(layer_id, script);</p>
+  <p class="code"><span data-field="title" data-format="default">layer_script_begin</span>(layer_id, script);</p>
   <table>
     <tbody>
       <tr>

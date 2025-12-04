@@ -28,7 +28,7 @@
   <p>A variável &quot;pontuação&quot; será incrementada <i>mesmo que a função <span class="inline">instance_destroy</span> tenha sido chamada</i>, e a instância será finalmente removida de seu jogo no final do evento. Tenha cuidado com isso, como se você tivesse (por exemplo) criado um recurso dinâmico para a instância, como uma estrutura de dados, e depois tivesse destruído esse recurso no evento de destruição, se houver alguma referência a ele após a função ou ação de destruição ter sido realizada, então você receberá um erro de &quot;recurso desconhecido&quot;, pois o evento de destruição o removeu do jogo.</p>
   <p> </p>
   <h4>Sintaxe:</h4>
-  <p class="code">instance_destroy([id, execute_event_flag]);</p>
+  <p class="code"><span data-field="title" data-format="default">instance_destroy</span>([id, execute_event_flag]);</p>
   <table>
     <tbody>
       <tr>
