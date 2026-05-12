@@ -42,7 +42,7 @@ jobs:
                if-no-files-found: error
     
 
-      Slack-Notificatoon:
+       Slack-Notificatoon:
          name: "Slack Notification"
          if: github.event_name == 'workflow_dispatch'
          runs-on: ubuntu-24.04
